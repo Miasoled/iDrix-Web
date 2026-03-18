@@ -1,7 +1,13 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <nav className="relative mt-3 flex w-full max-w-[1120px] items-center justify-between rounded-2xl border border-black/[0.06] bg-white/60 px-5 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-[40px] backdrop-saturate-[180%] transition-all dark:border-white/[0.12] dark:bg-white/[0.05] dark:shadow-[0_8px_32px_rgba(0,0,0,0.6),inset_0_1px_1px_rgba(255,255,255,0.05)]">
+    <div className="w-full flex justify-center mt-1">
+       <nav className="fixed mt-3 flex w-full max-w-[1120px] items-center justify-between rounded-2xl border border-black/[0.06] bg-white/60 px-5 py-3 shadow-[0_8px_32px_rgba(0,0,0,0.08)] backdrop-blur-[40px] backdrop-saturate-[180%] transition-all dark:border-white/[0.12] dark:bg-white/[0.05] dark:shadow-[0_8px_32px_rgba(0,0,0,0.6),inset_0_1px_1px_rgba(255,255,255,0.05)]">
       <div className="pointer-events-none absolute inset-x-0 -top-px h-[2px] opacity-0 dark:opacity-100">
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-sky-400/70 to-transparent blur-[3px]"></div>
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
@@ -46,7 +52,7 @@ export default function Navbar() {
           </button>
         </li>
         <li className="relative">
-          <button className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]">
+          <button onClick={() => setOpen(!open)} className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]">
             Servicios
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -60,10 +66,39 @@ export default function Navbar() {
               strokeLinejoin="round"
               className="lucide lucide-chevron-down h-3.5 w-3.5 opacity-60 transition-transform dark:opacity-80"
               aria-hidden="true"
-            >
+            > 
               <path d="m6 9 6 6 6-6"></path>
             </svg>
           </button>
+          {open && (
+            <div className="fixed top-10 left-0 w-[800px] bg-white shadow-xl rounded-2xl p-6 z-50 flex justify-center mt-1">
+              
+                
+                <div className="grid grid-cols-4 gap-y-6 text-sm text-gray-700 [&>p]:hover:bg-blue-500 rounded-2xl [&>p]:cursor-pointer">
+                  
+                  <p>Desarrollo de Software</p>
+                  <p>Desarrollo de Aplicaciones Móviles</p>
+                  <p>Diseño de Sitios Web</p>
+                  <p>ERP</p>
+
+                  <p>Geolocalización para vendedores</p>
+                  <p>Facturación Electrónica</p>
+                  <p>Computación en la Nube</p>
+                  <p>Soporte Técnico</p>
+
+                  <p>Redes Informáticas</p>
+                  <p>Seguridad Informática</p>
+                  <p>Inteligencia Artificial</p>
+                  <p>Machine Learning</p>
+
+                  <p>Peritaje Informático</p>
+                  <p>Automatizaciones</p>
+
+                </div>
+
+            </div>
+
+          )}
         </li>
         <li className="relative">
           <button className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]">
@@ -105,5 +140,7 @@ export default function Navbar() {
         </button>
       </div>
     </nav>
+    </div>
+   
   );
 }
