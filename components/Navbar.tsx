@@ -23,7 +23,7 @@ const serviciosDropdown = [
     label: "Desarrollo de Aplicaciones Móviles",
     href: "/servicios/desarrollo-movil",
   },
-  { label: "Diseño de Sitios Web", href: "/servicios/diseño-web" },
+  { label: "Diseño de Sitios Web", href: "/servicios/disenio-web" },
   { label: "ERP", href: "/servicios/erp" },
   {
     label: "Geolocalizacion para vendedores",
