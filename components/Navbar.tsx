@@ -32,7 +32,7 @@ const serviciosDropdown = [
 
 export function Navbar() {
   const [showServiciosDropdown, setShowServiciosDropdown] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLLIElement | null>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
@@ -93,7 +93,7 @@ export function Navbar() {
             <li
               key={item.label}
               className="relative"
-              ref={item.label === "Servicios" ? dropdownRef : null}
+              ref={item.label === "Servicios" ? dropdownRef : undefined}
             >
               <button
                 className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
