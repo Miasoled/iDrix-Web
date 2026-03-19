@@ -29,15 +29,21 @@ const serviciosDropdown = [
     label: "Geolocalizacion para vendedores",
     href: "/servicios/geocalizacion",
   },
-  { label: "Facturación Electrónica", href: "" },
-  { label: "Computación en la Nube", href: "" },
-  { label: "Soporte Técnico", href: "" },
-  { label: "Redes Informáticas", href: "" },
-  { label: "Seguridad Informática", href: "" },
-  { label: "Inteligencia Artificial", href: "" },
-  { label: "Machine Learning", href: "" },
-  { label: "Peritaje Informático", href: "" },
-  { label: "tomatizaciones", href: "" },
+  {
+    label: "Facturación Electrónica",
+    href: "/servicios/facturacion-electronica",
+  },
+  { label: "Computación en la Nube", href: "/servicios/computacion-nube" },
+  { label: "Soporte Técnico", href: "/servicios/soporte-tecnico" },
+  { label: "Redes Informáticas", href: "/servicios/redes-informaticas" },
+  { label: "Seguridad Informática", href: "/servicios/seguridad-informatica" },
+  {
+    label: "Inteligencia Artificial",
+    href: "/servicios/inteligencia-artificial",
+  },
+  { label: "Machine Learning", href: "/servicios/machine-learning" },
+  { label: "Peritaje Informático", href: "/servicios/peritaje-informatico" },
+  { label: "tomatizaciones", href: "/servicios/tomatizaciones" },
 ];
 
 export function Navbar() {
