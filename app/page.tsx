@@ -1,8 +1,9 @@
-import Image from "next/image";
+import { Navbar } from "@/components/Navbar";
 
-
-export default function Home() {
+export default function Page() {
   return (
-   <h1>iDrix</h1>
+    <main className="min-h-screen bg-background">
+      <Navbar />
+    </main>
   );
 }
