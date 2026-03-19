@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown, Zap } from "lucide-react";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
+import Link from "next/link";
 
 const navItems = [
   { label: "Inicio", hasDropdown: false },
@@ -14,20 +15,29 @@ const navItems = [
 ];
 
 const serviciosDropdown = [
-  "Desarrollo de Software",
-  "Desarrollo de Aplicaciones Móviles",
-  "Diseño de Sitios Web",
-  "ERP",
-  "Geolocalizacion para vendedores",
-  "Facturación Electrónica",
-  "Computación en la Nube",
-  "Soporte Técnico",
-  "Redes Informáticas",
-  "Seguridad Informática",
-  "Inteligencia Artificial",
-  "Machine Learning",
-  "Peritaje Informático",
-  "Automatizaciones",
+  {
+    label: "Desarrollo de Software",
+    href: "/servicios/desarrollo-software",
+  },
+  {
+    label: "Desarrollo de Aplicaciones Móviles",
+    href: "/servicios/desarrollo-movil",
+  },
+  { label: "Diseño de Sitios Web", href: "/servicios/diseño-web" },
+  { label: "ERP", href: "/servicios/erp" },
+  {
+    label: "Geolocalizacion para vendedores",
+    href: "/servicios/geocalizacion",
+  },
+  { label: "Facturación Electrónica", href: "" },
+  { label: "Computación en la Nube", href: "" },
+  { label: "Soporte Técnico", href: "" },
+  { label: "Redes Informáticas", href: "" },
+  { label: "Seguridad Informática", href: "" },
+  { label: "Inteligencia Artificial", href: "" },
+  { label: "Machine Learning", href: "" },
+  { label: "Peritaje Informático", href: "" },
+  { label: "tomatizaciones", href: "" },
 ];
 
 export function Navbar() {
@@ -119,12 +129,14 @@ export function Navbar() {
                 <div className="absolute left-0 top-full mt-2 w-[880px] -translate-x-[35%] rounded-xl border border-border bg-gradient-to-b from-card to-background p-6 shadow-xl dark:from-card dark:to-card/95">
                   <div className="relative z-10 grid grid-cols-4 gap-x-6 gap-y-2">
                     {serviciosDropdown.map((servicio) => (
-                      <button
-                        key={servicio}
+                      <Link
+                        key={servicio.href}
+                        href={servicio.href}
+                        onClick={() => setShowServiciosDropdown(false)}
                         className="rounded-md px-3 py-2.5 text-left text-sm text-foreground/90 transition-colors hover:bg-accent hover:text-accent-foreground dark:text-white/90 dark:hover:bg-primary/20 dark:hover:text-white"
                       >
-                        {servicio}
-                      </button>
+                        {servicio.label}
+                      </Link>
                     ))}
                   </div>
                 </div>
