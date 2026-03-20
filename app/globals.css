@@ -92,6 +92,7 @@
   --sidebar-accent-foreground: hsl(240 5.9% 10%);
   --sidebar-border: hsl(220 13% 91%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --info-bg: hsl(0, 0%, 100%);
 
   /* --- HERO LIGHT MODE --- */
   --hero-bg: hsl(200, 25%, 94%);
@@ -124,7 +125,7 @@
     rgba(255, 255, 255, 0.8) 40%,
     transparent 100%
   );
-
+  --info-bg: hsl(0, 0%, 100%);
   /* NUEVO: Gradiente Texto Light (glow muy sutil desde abajo hacia arriba)
      - combina un radial muy tenue (brillo blanco) en la base con un
        degradado vertical azul -> celeste para mantener legibilidad.
@@ -179,6 +180,7 @@
   --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
   --sidebar-border: hsl(240 3.7% 15.9%);
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
+  --info-bg: var(--hero-gradient);
 
   /* --- HERO DARK MODE --- */
   --hero-bg: hsl(200, 60%, 4%);
