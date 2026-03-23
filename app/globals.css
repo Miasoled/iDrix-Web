@@ -101,6 +101,13 @@
     hsl(200, 18%, 95%) 40%,
     hsl(200, 10%, 97%) 100%
   );
+
+  /* HERO SOFT BLUE LIGHT */
+  --hero-soft-blue:
+    radial-gradient(circle at 20% 30%, hsla(205, 90%, 85%, 0.35) 0%, transparent 55%),
+    radial-gradient(circle at 80% 70%, hsla(200, 85%, 88%, 0.3) 0%, transparent 60%),
+    linear-gradient(180deg, hsl(210, 35%, 97%) 0%, hsl(210, 30%, 94%) 50%, hsl(210, 28%, 92%) 100%);
+
   /* HERO WEB LIGHT */
   --hero-web-bg: radial-gradient(
     circle at 50% 40%,
@@ -108,6 +115,16 @@
     hsl(210, 25%, 92%) 40%,
     hsl(210, 22%, 88%) 100%
   );
+  /* AI SECTION LIGHT */
+  --ai-section-bg: linear-gradient(
+    135deg,
+    hsl(215, 45%, 22%) 0%,
+    hsl(215, 50%, 18%) 40%,
+    hsl(215, 55%, 15%) 100%
+  );
+
+  --ai-icon-bg: hsla(215, 80%, 60%, 0.12);
+  --ai-icon-color: hsl(215, 70%, 45%);
   --hero-bottom-fade: linear-gradient(0deg, hsl(200, 10%, 97%) 0%, transparent 100%);
   --hero-dashboard-fade: linear-gradient(0deg, hsl(200, 30%, 97%) 0%, transparent 100%);
   --hero-glow: radial-gradient(
@@ -180,6 +197,12 @@
   --sidebar-ring: hsl(217.2 91.2% 59.8%);
   --info-bg: var(--hero-gradient);
 
+  /* HERO SOFT BLUE DARK */
+  --hero-soft-blue:
+    radial-gradient(circle at 25% 20%, hsla(200, 80%, 55%, 0.12) 0%, transparent 60%),
+    radial-gradient(circle at 75% 80%, hsla(195, 80%, 60%, 0.1) 0%, transparent 65%),
+    linear-gradient(180deg, hsl(205, 60%, 10%) 0%, hsl(205, 65%, 7%) 50%, hsl(205, 70%, 5%) 100%);
+
   /* --- HERO DARK MODE --- */
   --hero-bg: hsl(200, 60%, 4%);
   /* HERO WEB DARK */
@@ -190,6 +213,16 @@
     hsl(200, 55%, 6%) 65%,
     hsl(200, 60%, 4%) 100%
   );
+  /* AI SECTION DARK */
+  --ai-section-bg: linear-gradient(
+    135deg,
+    hsl(215, 49%, 17%) 0%,
+    hsl(217, 47%, 10%) 40%,
+    hsl(0, 0%, 0%) 100%
+  );
+
+  --ai-icon-bg: hsla(215, 90%, 65%, 0.18);
+  --ai-icon-color: hsl(210, 95%, 70%);
   /* Gradiente central azul */
   --hero-gradient: radial-gradient(
     circle at 50% -10%,

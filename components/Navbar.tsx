@@ -35,7 +35,6 @@ const serviciosDropdown = [
   },
   { label: "Computación en la Nube", href: "/servicios/computacion-nube" },
   { label: "Soporte Técnico", href: "/servicios/soporte-tecnico" },
-  { label: "Redes Informáticas", href: "/servicios/redes-informaticas" },
   { label: "Seguridad Informática", href: "/servicios/seguridad-informatica" },
   {
     label: "Inteligencia Artificial",
@@ -43,7 +42,7 @@ const serviciosDropdown = [
   },
   { label: "Machine Learning", href: "/servicios/machine-learning" },
   { label: "Peritaje Informático", href: "/servicios/peritaje-informatico" },
-  { label: "tomatizaciones", href: "/servicios/tomatizaciones" },
+  { label: "Automatizaciones", href: "/servicios/automatizaciones" },
 ];
 
 export function Navbar() {
@@ -52,10 +51,7 @@ export function Navbar() {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setShowServiciosDropdown(false);
       }
     }
@@ -114,17 +110,14 @@ export function Navbar() {
               <button
                 className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
                 onClick={() => {
-                  if (item.label === "Servicios")
-                    setShowServiciosDropdown(!showServiciosDropdown);
+                  if (item.label === "Servicios") setShowServiciosDropdown(!showServiciosDropdown);
                 }}
               >
                 {item.label}
                 {item.hasDropdown && (
                   <ChevronDown
                     className={`h-3.5 w-3.5 opacity-60 transition-transform dark:opacity-80 ${
-                      item.label === "Servicios" && showServiciosDropdown
-                        ? "rotate-180"
-                        : ""
+                      item.label === "Servicios" && showServiciosDropdown ? "rotate-180" : ""
                     }`}
                   />
                 )}
