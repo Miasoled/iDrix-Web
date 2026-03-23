@@ -2,6 +2,7 @@ import { Navbar } from "@/components/Navbar";
 import { HeroMovil } from "@/components/hero-Services/hero-movil";
 import { Star, Shield, Clock, BarChart2, MessageSquare } from "lucide-react";
 import { Smartphone, Globe, Monitor } from "lucide-react";
+import { Building2, Flame } from "lucide-react";
 export default function Movil() {
   return (
     <main className="min-h-screen bg-background">
@@ -9,6 +10,7 @@ export default function Movil() {
       <HeroMovil />
       <InfoMovil />
       <TiposMovil />
+      <StackMovil />
     </main>
   );
 }
@@ -53,7 +55,7 @@ export function InfoMovil() {
         <div>
           {/* Etiqueta superior */}
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-2xl" />
+            <div className="w-8 h-[3px] bg-[hsl(207,76%,45%)] rounded-2xl" />
             <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
               Desarrollo de Apps
             </span>
@@ -149,7 +151,7 @@ export function TiposMovil() {
       <div className="max-w-6xl mx-auto">
         {/* Etiqueta superior */}
         <div className="flex items-center gap-3 mb-10">
-          <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
+          <div className="w-8 h-[3px] bg-[hsl(207,76%,45%)] rounded-full" />
           <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
             Tipos de Aplicaciones
           </span>
@@ -164,7 +166,7 @@ export function TiposMovil() {
                 ${
                   tipo.featured
                     ? "bg-[hsl(217,60%,20%)] text-white shadow-xl scale-105"
-                    : "bg-card border border-border text-foreground shadow-sm hover:shadow-md"
+                    : "bg-card border border-border text-foreground shadow-sm hover:shadow-md "
                 }`}
             >
               {/* Icono */}
@@ -226,6 +228,132 @@ export function TiposMovil() {
                           ? "bg-white/10 text-white"
                           : "bg-[hsl(210,20%,93%)] text-[hsl(210,20%,30%)] dark:bg-white/10 dark:text-white/70"
                       }`}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const tecnologias = [
+  {
+    siglas: "Fl",
+    titulo: "Flutter",
+    descripcion:
+      "SDK desarrollado por Google para crear aplicaciones nativas multiplataforma desde una única base de código.",
+    badge: "MOBILE & WEB",
+    badgeColor:
+      "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)] dark:text-[hsl(207,76%,70%)]",
+    iconBg: "bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
+    iconColor: "text-[hsl(207,76%,45%)]",
+    tags: ["Android", "iOS", "Web", "Windows", "Mac"],
+    icon: Smartphone,
+  },
+  {
+    siglas: "Xm",
+    titulo: "Xamarin",
+    descripcion:
+      "Plataforma poderosa de Microsoft para el desarrollo de apps con .NET y C#, integrando capacidades nativas completas.",
+    badge: "ENTERPRISE",
+    badgeColor:
+      "text-[hsl(270,60%,55%)] bg-[hsl(270,60%,93%)] dark:bg-[hsl(270,60%,15%)] dark:text-[hsl(270,60%,70%)]",
+    iconBg: "bg-[hsl(270,60%,93%)] dark:bg-[hsl(270,60%,15%)]",
+    iconColor: "text-[hsl(270,60%,55%)]",
+    tags: ["Android", "iOS", ".NET", "C#"],
+    icon: Building2,
+  },
+  {
+    siglas: "🔥",
+    titulo: "Firebase",
+    descripcion:
+      "Plataforma de backend escalable con bases de datos en tiempo real, autenticación y herramientas de análisis avanzado.",
+    badge: "BACKEND",
+    badgeColor:
+      "text-[hsl(30,90%,50%)] bg-[hsl(30,90%,93%)] dark:bg-[hsl(30,90%,15%)] dark:text-[hsl(30,90%,70%)]",
+    iconBg: "bg-[hsl(30,90%,93%)] dark:bg-[hsl(30,90%,15%)]",
+    iconColor: "text-[hsl(30,90%,50%)]",
+    tags: ["Auth", "Firestore", "Push", "Analytics"],
+    icon: Flame,
+  },
+  {
+    siglas: "APIs",
+    titulo: "REST & GraphQL",
+    descripcion:
+      "Integración eficiente con servicios externos y arquitecturas modernas para una comunicación de datos optimizada.",
+    badge: "INTEGRATION",
+    badgeColor:
+      "text-[hsl(150,60%,35%)] bg-[hsl(150,60%,90%)] dark:bg-[hsl(150,60%,12%)] dark:text-[hsl(150,60%,60%)]",
+    iconBg: "bg-[hsl(150,60%,90%)] dark:bg-[hsl(150,60%,12%)]",
+    iconColor: "text-[hsl(150,60%,35%)]",
+    tags: ["PHP", "NodeJS", "Java", "GraphQL"],
+    icon: Globe,
+  },
+];
+
+export function StackMovil() {
+  return (
+    <section
+      className="w-full py-20 px-4 transition-colors duration-500 bg-[hsl(210,40%,96%)]"
+      style={{ background: "var(--info-bg)" }}
+    >
+      <div className="max-w-6xl mx-auto">
+        {/* Etiqueta superior */}
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
+          <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+            Stack Tecnológico
+          </span>
+        </div>
+
+        {/* Título */}
+        <h2 className="text-4xl font-bold text-foreground mb-10">
+          Tecnologías que{" "}
+          <span className="text-[hsl(207,76%,45%)]">potencian</span> tu app
+        </h2>
+
+        {/* Grid 2x2 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {tecnologias.map((tech) => (
+            <div
+              key={tech.titulo}
+              className="relative rounded-2xl p-6 flex flex-col gap-4 bg-white border border-[hsl(210,20%,90%)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[hsl(207,76%,65%)] dark:bg-white/5 dark:border-white/10 dark:hover:border-[hsl(207,76%,45%)]"
+            >
+              {/* Badge */}
+              <span
+                className={`absolute top-5 right-5 text-[10px] font-bold tracking-widest px-2.5 py-1 rounded-full ${tech.badgeColor}`}
+              >
+                {tech.badge}
+              </span>
+
+              {/* Icono + Título */}
+              <div className="flex items-center gap-4">
+                <div
+                  className={`w-14 h-14 rounded-xl flex items-center justify-center font-bold text-lg ${tech.iconBg} ${tech.iconColor}`}
+                >
+                  {tech.siglas}
+                </div>
+                <h3 className="text-xl font-bold text-foreground">
+                  {tech.titulo}
+                </h3>
+              </div>
+
+              {/* Descripción */}
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {tech.descripcion}
+              </p>
+
+              {/* Tags */}
+              <div className="flex flex-wrap gap-2">
+                {tech.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="px-3 py-1 rounded-full text-xs font-medium bg-[hsl(210,20%,93%)] text-[hsl(210,20%,30%)] dark:bg-white/10 dark:text-white/70"
                   >
                     {tag}
                   </span>
