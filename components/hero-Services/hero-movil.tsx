@@ -120,7 +120,7 @@ export function HeroMovil() {
           <CarouselContent className="-ml-2 md:-ml-6">
             {/* CARD 1 */}
             <CarouselItem className="pl-2 md:pl-6 basis-4/5 sm:basis-1/2 lg:basis-1/3">
-              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-105 mx-2">
+              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 mx-2">
                 <Image
                   src="/img/Nativa.png"
                   alt="Nativa"
@@ -164,7 +164,7 @@ export function HeroMovil() {
 
             {/* CARD 3 */}
             <CarouselItem className="pl-2 md:pl-6 basis-4/5 sm:basis-1/2 lg:basis-1/3">
-              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-105 mx-2">
+              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 mx-2">
                 <Image
                   src="/img/PWA.png"
                   alt="PWA"
@@ -185,7 +185,7 @@ export function HeroMovil() {
             </CarouselItem>
             {/* Cards duplicadas para funcionalidad del carousel */}
             <CarouselItem className="pl-2 md:pl-6 basis-4/5 sm:basis-1/2 lg:basis-1/3">
-              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-105 mx-2">
+              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 mx-2">
                 <Image
                   src="/img/Nativa.png"
                   alt="Nativa"
@@ -229,7 +229,7 @@ export function HeroMovil() {
 
             {/* CARD 3 */}
             <CarouselItem className="pl-2 md:pl-6 basis-4/5 sm:basis-1/2 lg:basis-1/3">
-              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 hover:scale-105 mx-2">
+              <div className="rounded-2xl p-4 flex flex-col items-center shadow-lg bg-card border border-[hsl(207,76%,55%)]  transition-all duration-300 opacity-80 hover:opacity-100 mx-2">
                 <Image
                   src="/img/PWA.png"
                   alt="PWA"
