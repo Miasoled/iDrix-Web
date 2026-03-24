@@ -1,9 +1,9 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroWeb } from "@/components/hero-Services/diseño-web/hero-web";
+import { HeroWeb } from "@/components/hero-services/diseño-web/hero-web";
 import {
   PortafolioEcommerce,
   PortafolioInformativo,
-} from "@/components/hero-Services/diseño-web/portafolio";
+} from "@/components/hero-services/diseño-web/portafolio";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Icon, Link, MessageSquare, ShieldCheck } from "lucide-react";
 import { Zap, Smile, LifeBuoy, Smartphone, Search, Cloud } from "lucide-react";

@@ -1,3 +1,16 @@
+import { Navbar } from "@/components/Navbar";
+import { HeroSoftware } from "@/components/hero-services/software/hero-software";
+import { AgileMethodologies, WhyChooseUs } from "@/components/hero-services/software/content";
+import { CustomSoftwareSection } from "@/components/hero-services/software/content";
+
 export default function DesarrolloSoftware() {
-  return <h1>Desarrollo de software</h1>;
+  return (
+    <div>
+      <Navbar />
+      <HeroSoftware />
+      <WhyChooseUs />
+      <CustomSoftwareSection />
+      <AgileMethodologies />
+    </div>
+  );
 }

@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroMovil } from "@/components/hero-Services/hero-movil";
+import { HeroMovil } from "@/components/hero-services/hero-movil";
 import { Star, Shield, Clock, BarChart2, MessageSquare } from "lucide-react";
 import { Smartphone, Globe, Monitor } from "lucide-react";
 import { Building2, Flame } from "lucide-react";
@@ -19,8 +19,7 @@ const features = [
   {
     icon: Star,
     title: "Experiencia Comprobada",
-    description:
-      "Años de experiencia y portafolio exitoso en múltiples industrias.",
+    description: "Años de experiencia y portafolio exitoso en múltiples industrias.",
   },
   {
     icon: Shield,
@@ -71,15 +70,14 @@ export function InfoMovil() {
 
           {/* Párrafos */}
           <p className="text-muted-foreground text-base leading-relaxed mb-6">
-            En iDrix Technology te ayudamos con el diseño y desarrollo de
-            aplicaciones móviles para Android e iOS. Somos un equipo dedicado de
-            expertos en tecnología móvil que trabaja incansablemente para
-            ofrecer soluciones de vanguardia adaptadas a tus necesidades.
+            En iDrix Technology te ayudamos con el diseño y desarrollo de aplicaciones móviles para
+            Android e iOS. Somos un equipo dedicado de expertos en tecnología móvil que trabaja
+            incansablemente para ofrecer soluciones de vanguardia adaptadas a tus necesidades.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Con sede en Ecuador y presencia en toda Latinoamérica, combinamos la
-            innovadora metodología Design Thinking con tecnologías de última
-            generación para garantizar resultados excepcionales.
+            Con sede en Ecuador y presencia en toda Latinoamérica, combinamos la innovadora
+            metodología Design Thinking con tecnologías de última generación para garantizar
+            resultados excepcionales.
           </p>
         </div>
 
@@ -97,9 +95,7 @@ export function InfoMovil() {
 
               {/* Texto */}
               <div>
-                <h3 className="text-sm font-semibold text-foreground mb-0.5">
-                  {feature.title}
-                </h3>
+                <h3 className="text-sm font-semibold text-foreground mb-0.5">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
@@ -181,9 +177,7 @@ export function TiposMovil() {
                 <tipo.icon
                   size={22}
                   strokeWidth={1.5}
-                  className={
-                    tipo.featured ? "text-white" : "text-[hsl(207,76%,45%)]"
-                  }
+                  className={tipo.featured ? "text-white" : "text-[hsl(207,76%,45%)]"}
                 />
               </div>
 
@@ -191,11 +185,7 @@ export function TiposMovil() {
               <div>
                 <span
                   className={`text-xs font-semibold tracking-widest uppercase
-                    ${
-                      tipo.featured
-                        ? "text-[hsl(207,76%,70%)]"
-                        : "text-[hsl(207,76%,45%)]"
-                    }`}
+                    ${tipo.featured ? "text-[hsl(207,76%,70%)]" : "text-[hsl(207,76%,45%)]"}`}
                 >
                   {tipo.numero} · {tipo.label}
                 </span>
@@ -313,8 +303,7 @@ export function StackMovil() {
 
         {/* Título */}
         <h2 className="text-4xl font-bold text-foreground mb-10">
-          Tecnologías que{" "}
-          <span className="text-[hsl(207,76%,45%)]">potencian</span> tu app
+          Tecnologías que <span className="text-[hsl(207,76%,45%)]">potencian</span> tu app
         </h2>
 
         {/* Grid 2x2 */}
@@ -338,15 +327,11 @@ export function StackMovil() {
                 >
                   {tech.siglas}
                 </div>
-                <h3 className="text-xl font-bold text-foreground">
-                  {tech.titulo}
-                </h3>
+                <h3 className="text-xl font-bold text-foreground">{tech.titulo}</h3>
               </div>
 
               {/* Descripción */}
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {tech.descripcion}
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{tech.descripcion}</p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
