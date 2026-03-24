@@ -1,10 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-<<<<<<< HEAD
 import { HeroMovil } from "@/components/hero-services/hero-movil";
-import { Star, Shield, Clock, BarChart2, MessageSquare } from "lucide-react";
-=======
-import { HeroMovil } from "@/components/hero-Services/hero-movil";
->>>>>>> edc29863a78596fdb93d490d36f3ed7a9d9f9401
 import { Smartphone, Globe, Monitor } from "lucide-react";
 import { Building2, Flame } from "lucide-react";
 import {
@@ -320,15 +315,11 @@ export function StackMovil() {
 
         {/* Título */}
         <h2 className="text-4xl font-bold text-foreground mb-10">
-<<<<<<< HEAD
-          Tecnologías que <span className="text-[hsl(207,76%,45%)]">potencian</span> tu app
-=======
           Tecnologías que{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent ">
             potencian
           </span>{" "}
           tu app
->>>>>>> edc29863a78596fdb93d490d36f3ed7a9d9f9401
         </h2>
 
         {/* Grid 2x2 */}
@@ -389,15 +380,13 @@ const diferencias = [
     numero: "2",
     icon: Wifi,
     titulo: "Enfoque en Innovación",
-    descripcion:
-      "A la vanguardia de tendencias y tecnologías emergentes como Flutter y Xamarin.",
+    descripcion: "A la vanguardia de tendencias y tecnologías emergentes como Flutter y Xamarin.",
   },
   {
     numero: "3",
     icon: ShieldMinus,
     titulo: "Seguridad como Prioridad",
-    descripcion:
-      "Diseñamos con medidas robustas para proteger tus datos y los de tus clientes.",
+    descripcion: "Diseñamos con medidas robustas para proteger tus datos y los de tus clientes.",
   },
   {
     numero: "4",
@@ -410,15 +399,13 @@ const diferencias = [
     numero: "5",
     icon: Heart,
     titulo: "Satisfacción del Cliente",
-    descripcion:
-      "Trabajamos para que cada app supere tus expectativas con soporte continuo.",
+    descripcion: "Trabajamos para que cada app supere tus expectativas con soporte continuo.",
   },
   {
     numero: "6",
     icon: MessageSquare,
     titulo: "Comunicación Transparente",
-    descripcion:
-      "Te mantenemos informado en cada etapa y estamos disponibles para resolver dudas.",
+    descripcion: "Te mantenemos informado en cada etapa y estamos disponibles para resolver dudas.",
   },
 ];
 
@@ -456,22 +443,14 @@ export function DiferenciasMovil() {
 
               {/* Icono */}
               <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]">
-                <item.icon
-                  size={20}
-                  strokeWidth={1.5}
-                  className="text-[hsl(207,76%,45%)]"
-                />
+                <item.icon size={20} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
               </div>
 
               {/* Título */}
-              <h3 className="text-base font-bold text-foreground">
-                {item.titulo}
-              </h3>
+              <h3 className="text-base font-bold text-foreground">{item.titulo}</h3>
 
               {/* Descripción */}
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.descripcion}
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.descripcion}</p>
             </div>
           ))}
         </div>
@@ -492,10 +471,9 @@ export function CtaMovil() {
               Soluciones personalizadas &amp; escalables
             </h2>
             <p className="text-white/65 text-sm leading-relaxed">
-              Cada empresa es única. Nos enfocamos en aplicaciones que se
-              alinean con tus objetivos de negocio, representan tu marca y están
-              diseñadas para crecer contigo. Nuestro compromiso no termina en la
-              entrega.
+              Cada empresa es única. Nos enfocamos en aplicaciones que se alinean con tus objetivos
+              de negocio, representan tu marca y están diseñadas para crecer contigo. Nuestro
+              compromiso no termina en la entrega.
             </p>
           </div>
 
@@ -503,9 +481,7 @@ export function CtaMovil() {
           <div className="flex items-center justify-center lg:justify-end gap-0">
             {/* Stat 1 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
-                100+
-              </span>
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">100+</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Proyectos
               </span>
@@ -516,9 +492,7 @@ export function CtaMovil() {
 
             {/* Stat 2 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
-                7+
-              </span>
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">7+</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Años Exp.
               </span>
@@ -529,9 +503,7 @@ export function CtaMovil() {
 
             {/* Stat 3 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
-                4
-              </span>
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">4</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Ciudades
               </span>
@@ -547,9 +519,8 @@ export function CtaMovil() {
               ¿Listo para dar el salto al futuro?
             </h3>
             <p className="text-sm text-muted-foreground">
-              Hagamos crecer tu negocio juntos. Cuéntanos tu idea y te
-              explicamos cómo convertirla en una app de calidad para Android e
-              iOS.
+              Hagamos crecer tu negocio juntos. Cuéntanos tu idea y te explicamos cómo convertirla
+              en una app de calidad para Android e iOS.
             </p>
           </div>
 
