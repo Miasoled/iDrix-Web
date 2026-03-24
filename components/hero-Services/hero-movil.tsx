@@ -27,7 +27,7 @@ export function HeroMovil() {
         {/* Heading */}
         <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl">
           Aplicaciones móviles que <br />
-          <span className="light-text-gradient mb-2 pb-1 inline-block">
+          <span className="light-text-gradient mb-2 pb-1.5 inline-block">
             Transforman negocios
           </span>
         </h1>
