@@ -31,8 +31,7 @@ const features = [
   {
     icon: Star,
     title: "Experiencia Comprobada",
-    description:
-      "Años de experiencia y portafolio exitoso en múltiples industrias.",
+    description: "Años de experiencia y portafolio exitoso en múltiples industrias.",
   },
   {
     icon: Shield,
@@ -83,15 +82,14 @@ export function InfoMovil() {
 
           {/* Párrafos */}
           <p className="text-muted-foreground text-base leading-relaxed mb-6">
-            En iDrix Technology te ayudamos con el diseño y desarrollo de
-            aplicaciones móviles para Android e iOS. Somos un equipo dedicado de
-            expertos en tecnología móvil que trabaja incansablemente para
-            ofrecer soluciones de vanguardia adaptadas a tus necesidades.
+            En iDrix Technology te ayudamos con el diseño y desarrollo de aplicaciones móviles para
+            Android e iOS. Somos un equipo dedicado de expertos en tecnología móvil que trabaja
+            incansablemente para ofrecer soluciones de vanguardia adaptadas a tus necesidades.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Con sede en Ecuador y presencia en toda Latinoamérica, combinamos la
-            innovadora metodología Design Thinking con tecnologías de última
-            generación para garantizar resultados excepcionales.
+            Con sede en Ecuador y presencia en toda Latinoamérica, combinamos la innovadora
+            metodología Design Thinking con tecnologías de última generación para garantizar
+            resultados excepcionales.
           </p>
         </div>
 
@@ -109,9 +107,7 @@ export function InfoMovil() {
 
               {/* Texto */}
               <div>
-                <h3 className="text-sm font-semibold text-foreground mb-0.5">
-                  {feature.title}
-                </h3>
+                <h3 className="text-sm font-semibold text-foreground mb-0.5">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
@@ -193,9 +189,7 @@ export function TiposMovil() {
                 <tipo.icon
                   size={22}
                   strokeWidth={1.5}
-                  className={
-                    tipo.featured ? "text-white" : "text-[hsl(207,76%,45%)]"
-                  }
+                  className={tipo.featured ? "text-white" : "text-[hsl(207,76%,45%)]"}
                 />
               </div>
 
@@ -203,11 +197,7 @@ export function TiposMovil() {
               <div>
                 <span
                   className={`text-xs font-semibold tracking-widest uppercase
-                    ${
-                      tipo.featured
-                        ? "text-[hsl(207,76%,70%)]"
-                        : "text-[hsl(207,76%,45%)]"
-                    }`}
+                    ${tipo.featured ? "text-[hsl(207,76%,70%)]" : "text-[hsl(207,76%,45%)]"}`}
                 >
                   {tipo.numero} · {tipo.label}
                 </span>
@@ -353,15 +343,11 @@ export function StackMovil() {
                 >
                   {tech.siglas}
                 </div>
-                <h3 className="text-xl font-bold text-foreground">
-                  {tech.titulo}
-                </h3>
+                <h3 className="text-xl font-bold text-foreground">{tech.titulo}</h3>
               </div>
 
               {/* Descripción */}
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {tech.descripcion}
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{tech.descripcion}</p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
@@ -394,15 +380,13 @@ const diferencias = [
     numero: "2",
     icon: Wifi,
     titulo: "Enfoque en Innovación",
-    descripcion:
-      "A la vanguardia de tendencias y tecnologías emergentes como Flutter y Xamarin.",
+    descripcion: "A la vanguardia de tendencias y tecnologías emergentes como Flutter y Xamarin.",
   },
   {
     numero: "3",
     icon: ShieldMinus,
     titulo: "Seguridad como Prioridad",
-    descripcion:
-      "Diseñamos con medidas robustas para proteger tus datos y los de tus clientes.",
+    descripcion: "Diseñamos con medidas robustas para proteger tus datos y los de tus clientes.",
   },
   {
     numero: "4",
@@ -415,15 +399,13 @@ const diferencias = [
     numero: "5",
     icon: Heart,
     titulo: "Satisfacción del Cliente",
-    descripcion:
-      "Trabajamos para que cada app supere tus expectativas con soporte continuo.",
+    descripcion: "Trabajamos para que cada app supere tus expectativas con soporte continuo.",
   },
   {
     numero: "6",
     icon: MessageSquare,
     titulo: "Comunicación Transparente",
-    descripcion:
-      "Te mantenemos informado en cada etapa y estamos disponibles para resolver dudas.",
+    descripcion: "Te mantenemos informado en cada etapa y estamos disponibles para resolver dudas.",
   },
 ];
 
@@ -461,22 +443,14 @@ export function DiferenciasMovil() {
 
               {/* Icono */}
               <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]">
-                <item.icon
-                  size={20}
-                  strokeWidth={1.5}
-                  className="text-[hsl(207,76%,45%)]"
-                />
+                <item.icon size={20} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
               </div>
 
               {/* Título */}
-              <h3 className="text-base font-bold text-foreground">
-                {item.titulo}
-              </h3>
+              <h3 className="text-base font-bold text-foreground">{item.titulo}</h3>
 
               {/* Descripción */}
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.descripcion}
-              </p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.descripcion}</p>
             </div>
           ))}
         </div>
@@ -497,10 +471,9 @@ export function CtaMovil() {
               Soluciones personalizadas &amp; escalables
             </h2>
             <p className="text-white/65 text-sm leading-relaxed">
-              Cada empresa es única. Nos enfocamos en aplicaciones que se
-              alinean con tus objetivos de negocio, representan tu marca y están
-              diseñadas para crecer contigo. Nuestro compromiso no termina en la
-              entrega.
+              Cada empresa es única. Nos enfocamos en aplicaciones que se alinean con tus objetivos
+              de negocio, representan tu marca y están diseñadas para crecer contigo. Nuestro
+              compromiso no termina en la entrega.
             </p>
           </div>
 
@@ -508,9 +481,7 @@ export function CtaMovil() {
           <div className="flex items-center justify-center lg:justify-end gap-0">
             {/* Stat 1 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
-                100+
-              </span>
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">100+</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Proyectos
               </span>
@@ -521,9 +492,7 @@ export function CtaMovil() {
 
             {/* Stat 2 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
-                7+
-              </span>
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">7+</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Años Exp.
               </span>
@@ -534,9 +503,7 @@ export function CtaMovil() {
 
             {/* Stat 3 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
-                4
-              </span>
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">4</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Ciudades
               </span>
@@ -552,9 +519,8 @@ export function CtaMovil() {
               ¿Listo para dar el salto al futuro?
             </h3>
             <p className="text-sm text-muted-foreground">
-              Hagamos crecer tu negocio juntos. Cuéntanos tu idea y te
-              explicamos cómo convertirla en una app de calidad para Android e
-              iOS.
+              Hagamos crecer tu negocio juntos. Cuéntanos tu idea y te explicamos cómo convertirla
+              en una app de calidad para Android e iOS.
             </p>
           </div>
 
