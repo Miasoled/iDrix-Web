@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroMovil } from "@/components/hero-Services/hero-movil";
+import { HeroMovil } from "@/components/hero-services/hero-movil";
 import { Smartphone, Globe, Monitor } from "lucide-react";
 import { Building2, Flame } from "lucide-react";
 import {

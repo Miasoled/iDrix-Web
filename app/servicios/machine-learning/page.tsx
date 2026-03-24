@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroMachine } from "@/components/hero-Services/hero-machine";
+import { HeroMachine } from "@/components/hero-services/hero-machine";
 import Image from "next/image";
 
 export default function MachineLearning() {

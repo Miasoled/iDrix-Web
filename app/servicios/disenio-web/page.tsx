@@ -1,10 +1,15 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroWeb } from "@/components/hero-Services/diseño-web/hero-web";
+import { HeroWeb } from "@/components/hero-services/diseño-web/hero-web";
 import {
   PortafolioEcommerce,
   PortafolioInformativo,
-} from "@/components/hero-Services/diseño-web/portafolio";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+} from "@/components/hero-services/diseño-web/portafolio";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Icon, Link, MessageSquare, ShieldCheck } from "lucide-react";
 import { Zap, Smile, LifeBuoy, Smartphone, Search, Cloud } from "lucide-react";
 
@@ -14,7 +19,9 @@ export default function Page() {
       <Navbar />
       <HeroWeb />
       <div className="w-100% text-center mt-8">
-        <h1 className="font-semibold text-3xl font-bold">¿Porqué elegir iDrix?</h1>
+        <h1 className="font-semibold text-3xl font-bold">
+          ¿Porqué elegir iDrix?
+        </h1>
       </div>
       <div className="px-6 lg:px-20 py-10">
         {/* Cards */}
@@ -28,8 +35,8 @@ export default function Page() {
                 </div>
                 <CardTitle>Experiencia sólida</CardTitle>
                 <CardDescription>
-                  Años en la industria garantizan un conocimiento técnico impecable en cada
-                  desarrollo.
+                  Años en la industria garantizan un conocimiento técnico
+                  impecable en cada desarrollo.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -41,8 +48,8 @@ export default function Page() {
                 </div>
                 <CardTitle>Satisfacción Total</CardTitle>
                 <CardDescription>
-                  Trabajamos estrechamente con usted para asegurar que el resultado supere sus
-                  expectativas.
+                  Trabajamos estrechamente con usted para asegurar que el
+                  resultado supere sus expectativas.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -54,8 +61,8 @@ export default function Page() {
                 </div>
                 <CardTitle>Soporte Continuo</CardTitle>
                 <CardDescription>
-                  No lo dejamos solo; ofrecemos mantenimiento preventivo y correctivo
-                  post-lanzamiento.
+                  No lo dejamos solo; ofrecemos mantenimiento preventivo y
+                  correctivo post-lanzamiento.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -67,8 +74,8 @@ export default function Page() {
                 </div>
                 <CardTitle>Responsive Design</CardTitle>
                 <CardDescription>
-                  Su sitio se verá perfecto en cualquier dispositivo, desde smartphones hasta
-                  monitores 4k.
+                  Su sitio se verá perfecto en cualquier dispositivo, desde
+                  smartphones hasta monitores 4k.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -80,8 +87,8 @@ export default function Page() {
                 </div>
                 <CardTitle>Posicionamiento SEO</CardTitle>
                 <CardDescription>
-                  Estructura optimizada para buscadores que mejora su visibilidad orgánica en
-                  Google.
+                  Estructura optimizada para buscadores que mejora su
+                  visibilidad orgánica en Google.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -93,7 +100,8 @@ export default function Page() {
                 </div>
                 <CardTitle>Hosting Gratis</CardTitle>
                 <CardDescription>
-                  Incluimos el primer año de alojamiento web de alta velocidad sin costo adicional.
+                  Incluimos el primer año de alojamiento web de alta velocidad
+                  sin costo adicional.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -104,7 +112,9 @@ export default function Page() {
       <div className="px-6 lg:px-20 py-16 bg-muted/40 padding-20">
         {/* Título */}
         <div className="text-center mb-10">
-          <h2 className="text-2xl md:text-3xl font-semibold">Lo que incluimos en su proyecto</h2>
+          <h2 className="text-2xl md:text-3xl font-semibold">
+            Lo que incluimos en su proyecto
+          </h2>
         </div>
 
         {/* Grid */}
@@ -117,8 +127,8 @@ export default function Page() {
               </div>
               <CardTitle>Formulario de Contacto</CardTitle>
               <CardDescription>
-                Integración con su correo para recibir consultas directas de sus clientes
-                potenciales.
+                Integración con su correo para recibir consultas directas de sus
+                clientes potenciales.
               </CardDescription>
             </CardHeader>
           </Card>
@@ -131,8 +141,8 @@ export default function Page() {
               </div>
               <CardTitle>Redes Sociales</CardTitle>
               <CardDescription>
-                Enlaces directos y botones de compartir para maximizar su presencia en comunidades
-                digitales.
+                Enlaces directos y botones de compartir para maximizar su
+                presencia en comunidades digitales.
               </CardDescription>
             </CardHeader>
           </Card>
@@ -145,8 +155,8 @@ export default function Page() {
               </div>
               <CardTitle>Soporte y Garantía</CardTitle>
               <CardDescription>
-                Certificación de calidad y soporte técnico garantizado para la estabilidad de su
-                sitio.
+                Certificación de calidad y soporte técnico garantizado para la
+                estabilidad de su sitio.
               </CardDescription>
             </CardHeader>
           </Card>
