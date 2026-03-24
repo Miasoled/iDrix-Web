@@ -1,8 +1,23 @@
 import { Navbar } from "@/components/Navbar";
+<<<<<<< HEAD
 import { HeroMovil } from "@/components/hero-services/hero-movil";
 import { Star, Shield, Clock, BarChart2, MessageSquare } from "lucide-react";
+=======
+import { HeroMovil } from "@/components/hero-Services/hero-movil";
+>>>>>>> edc29863a78596fdb93d490d36f3ed7a9d9f9401
 import { Smartphone, Globe, Monitor } from "lucide-react";
 import { Building2, Flame } from "lucide-react";
+import {
+  Star,
+  Wifi,
+  ShieldMinus,
+  Clock,
+  Heart,
+  MessageSquare,
+  Shield,
+  BarChart2,
+} from "lucide-react";
+
 export default function Movil() {
   return (
     <main className="min-h-screen bg-background">
@@ -11,6 +26,8 @@ export default function Movil() {
       <InfoMovil />
       <TiposMovil />
       <StackMovil />
+      <DiferenciasMovil />
+      <CtaMovil />
     </main>
   );
 }
@@ -303,7 +320,15 @@ export function StackMovil() {
 
         {/* Título */}
         <h2 className="text-4xl font-bold text-foreground mb-10">
+<<<<<<< HEAD
           Tecnologías que <span className="text-[hsl(207,76%,45%)]">potencian</span> tu app
+=======
+          Tecnologías que{" "}
+          <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent ">
+            potencian
+          </span>{" "}
+          tu app
+>>>>>>> edc29863a78596fdb93d490d36f3ed7a9d9f9401
         </h2>
 
         {/* Grid 2x2 */}
@@ -346,6 +371,208 @@ export function StackMovil() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const diferencias = [
+  {
+    numero: "1",
+    icon: Star,
+    titulo: "Experiencia Comprobada",
+    descripcion:
+      "Años de historial y portafolio exitoso en múltiples sectores e industrias de LATAM.",
+  },
+  {
+    numero: "2",
+    icon: Wifi,
+    titulo: "Enfoque en Innovación",
+    descripcion:
+      "A la vanguardia de tendencias y tecnologías emergentes como Flutter y Xamarin.",
+  },
+  {
+    numero: "3",
+    icon: ShieldMinus,
+    titulo: "Seguridad como Prioridad",
+    descripcion:
+      "Diseñamos con medidas robustas para proteger tus datos y los de tus clientes.",
+  },
+  {
+    numero: "4",
+    icon: Clock,
+    titulo: "Desarrollo Rápido",
+    descripcion:
+      "Proceso ágil con Flutter y Xamarin para llevar tu app al mercado en tiempo récord.",
+  },
+  {
+    numero: "5",
+    icon: Heart,
+    titulo: "Satisfacción del Cliente",
+    descripcion:
+      "Trabajamos para que cada app supere tus expectativas con soporte continuo.",
+  },
+  {
+    numero: "6",
+    icon: MessageSquare,
+    titulo: "Comunicación Transparente",
+    descripcion:
+      "Te mantenemos informado en cada etapa y estamos disponibles para resolver dudas.",
+  },
+];
+
+export function DiferenciasMovil() {
+  return (
+    <section className="w-full py-20 px-4 transition-colors duration-500 bg-white dark:bg-[hsl(215,50%,8%)]">
+      <div className="max-w-6xl mx-auto">
+        {/* Etiqueta superior */}
+        <div className="flex items-center gap-3 mb-4">
+          <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
+          <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+            Por qué elegirnos
+          </span>
+        </div>
+
+        {/* Título */}
+        <h2 className="text-4xl font-bold text-foreground mb-10">
+          Lo que nos hace{" "}
+          <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
+            diferentes
+          </span>
+        </h2>
+
+        {/* Grid 3x2 */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {diferencias.map((item) => (
+            <div
+              key={item.numero}
+              className="relative rounded-2xl p-6 flex flex-col gap-4 bg-white border border-[hsl(210,20%,90%)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[hsl(207,76%,65%)] dark:bg-white/5 dark:border-white/10 dark:hover:border-[hsl(207,76%,45%)] overflow-hidden"
+            >
+              {/* Número decorativo de fondo */}
+              <span className="absolute bottom-3 right-4 text-7xl font-black select-none leading-none pointer-events-none text-black/5 dark:text-white/5">
+                {item.numero}
+              </span>
+
+              {/* Icono */}
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]">
+                <item.icon
+                  size={20}
+                  strokeWidth={1.5}
+                  className="text-[hsl(207,76%,45%)]"
+                />
+              </div>
+
+              {/* Título */}
+              <h3 className="text-base font-bold text-foreground">
+                {item.titulo}
+              </h3>
+
+              {/* Descripción */}
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {item.descripcion}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function CtaMovil() {
+  return (
+    <section className="w-full py-20 px-4 transition-colors duration-500 bg-[hsl(210,40%,96%)] dark:bg-[hsl(200,55%,7%)]">
+      <div className="max-w-6xl mx-auto flex flex-col gap-6">
+        {/* Card superior — azul oscuro con stats */}
+        <div className="rounded-3xl bg-[hsl(217,60%,20%)] dark:bg-[hsl(217,60%,15%)] p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Columna izquierda */}
+          <div>
+            <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
+              Soluciones personalizadas &amp; escalables
+            </h2>
+            <p className="text-white/65 text-sm leading-relaxed">
+              Cada empresa es única. Nos enfocamos en aplicaciones que se
+              alinean con tus objetivos de negocio, representan tu marca y están
+              diseñadas para crecer contigo. Nuestro compromiso no termina en la
+              entrega.
+            </p>
+          </div>
+
+          {/* Columna derecha — stats */}
+          <div className="flex items-center justify-center lg:justify-end gap-0">
+            {/* Stat 1 */}
+            <div className="flex flex-col items-center px-10">
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
+                100+
+              </span>
+              <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
+                Proyectos
+              </span>
+            </div>
+
+            {/* Divisor */}
+            <div className="w-[1px] h-12 bg-white/15" />
+
+            {/* Stat 2 */}
+            <div className="flex flex-col items-center px-10">
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
+                7+
+              </span>
+              <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
+                Años Exp.
+              </span>
+            </div>
+
+            {/* Divisor */}
+            <div className="w-[1px] h-12 bg-white/15" />
+
+            {/* Stat 3 */}
+            <div className="flex flex-col items-center px-10">
+              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">
+                4
+              </span>
+              <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
+                Ciudades
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* Card inferior — CTA */}
+        <div className="rounded-3xl bg-white border border-[hsl(210,20%,90%)] dark:bg-white/5 dark:border-white/10 p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
+          {/* Texto */}
+          <div>
+            <h3 className="text-xl font-bold text-foreground mb-1">
+              ¿Listo para dar el salto al futuro?
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              Hagamos crecer tu negocio juntos. Cuéntanos tu idea y te
+              explicamos cómo convertirla en una app de calidad para Android e
+              iOS.
+            </p>
+          </div>
+
+          {/* Botones */}
+          <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
+            <button className="flex items-center justify-center gap-2 rounded-xl bg-[hsl(207,76%,45%)] px-6 py-3 text-sm font-medium text-white shadow-[0_4px_12px_rgba(28,126,201,0.35)] transition-all hover:bg-[hsl(207,76%,40%)] hover:shadow-[0_6px_16px_rgba(28,126,201,0.45)] whitespace-nowrap">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" />
+              </svg>
+              Explícanos tu idea
+            </button>
+            <button className="flex items-center justify-center gap-2 rounded-xl border border-[hsl(210,20%,85%)] bg-white px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-[hsl(210,20%,97%)] dark:bg-white/5 dark:border-white/10 dark:text-white dark:hover:bg-white/10 whitespace-nowrap">
+              Solicitar cotización
+            </button>
+          </div>
         </div>
       </div>
     </section>
