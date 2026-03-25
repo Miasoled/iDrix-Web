@@ -2,7 +2,7 @@ import Image from "next/image";
 export function HeroMachine() {
   return (
     <section
-      className="relative flex min-h-[100svh] flex-col items-center  overflow-hidden pt-24 pb-0 transition-colors duration-500 md:pt-28 lg:pt-28 "
+      className="relative flex min-h-[100svh] px-20 flex-col items-center  overflow-hidden pt-24 pb-0 transition-colors duration-500 md:pt-28 lg:pt-28 "
       style={{ background: "var(--hero-bg)" }}
     >
       {/* Container inicial */}

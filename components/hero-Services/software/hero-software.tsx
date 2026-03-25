@@ -1,5 +1,3 @@
-import { LightningBoltIcon } from "@radix-ui/react-icons";
-
 export function HeroSoftware() {
   return (
     <section
@@ -43,9 +41,7 @@ export function HeroSoftware() {
           {/* content */}
           <div className="p-6 text-left">
             <div className="flex items-center gap-3 mb-4">
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/10 text-primary">
-                <LightningBoltIcon />
-              </div>
+              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/10 text-primary"></div>
 
               <span className="font-semibold text-foreground">iDrix Technology S.A.</span>
             </div>
