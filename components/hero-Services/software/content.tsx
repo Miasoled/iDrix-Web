@@ -1,46 +1,23 @@
-import { Code2, DollarSign, Shield, Layers } from "lucide-react";
-
-const features = [
-  {
-    icon: Users,
-    title: "Soluciones Personalizadas",
-    description:
-      "Nuestro equipo se toma el tiempo para entender tus necesidades y objetivos, diseñando una solución que se ajusta perfectamente a tu modelo de negocio.",
-  },
-  {
-    icon: Code2,
-    title: "Tecnología Avanzada",
-    description:
-      "Nos mantenemos al día con las últimas tendencias. Te proporcionamos soluciones basadas en tecnología de punta para estar por delante de la competencia.",
-  },
-  {
-    icon: DollarSign,
-    title: "Eficiencia de Costos",
-    description:
-      "Desarrollamos soluciones que se ajustan a tu presupuesto sin comprometer la calidad. Solo pagarás por las características que realmente necesitas.",
-  },
-  {
-    icon: Zap,
-    title: "Soporte y Mantenimiento",
-    description:
-      "No te abandonamos después de la entrega. Proporcionamos soporte técnico continuo para asegurarnos de que tu software funcione sin problemas.",
-  },
-  {
-    icon: Shield,
-    title: "Seguridad Robusta",
-    description:
-      "La seguridad es nuestra prioridad. Nuestras soluciones están diseñadas con medidas avanzadas para proteger tu negocio y tus datos.",
-  },
-  {
-    icon: Layers,
-    title: "Escalabilidad",
-    description:
-      "Nuestras soluciones son escalables y flexibles. A medida que tu negocio crece, tu software puede evolucionar y adaptarse.",
-  },
-];
+import {
+  Brain,
+  ArrowLeftRight,
+  BarChart3,
+  Users,
+  Smartphone,
+  Cloud,
+  Scissors,
+  Columns,
+  Code,
+  Target,
+  Zap,
+  Shield,
+  Layers,
+  Code2,
+  DollarSign,
+} from "lucide-react";
 
 export function WhyChooseUs() {
-  const features = [
+  const chooseUsFeatures = [
     {
       icon: Brain,
       title: "IA & Machine Learning",
@@ -74,28 +51,28 @@ export function WhyChooseUs() {
   ];
 
   return (
-    <section className="w-full py-8 bg-[var(--hero-bg)]">
-      <div className="max-w-6xl mx-auto px-6 text-center my-16">
-        <p className="text-sm font-semibold tracking-widest text-[var(--ai-icon-color)] uppercase mb-4">
+    <section className="w-full py-12 md:py-24 bg-[var(--hero-bg)]">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <p className="text-xs md:text-sm font-semibold tracking-widest text-[var(--ai-icon-color)] uppercase mb-4">
           ¿POR QUÉ ELEGIRNOS?
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground max-w-3xl mx-auto mb-4 my-6">
+        <h2 className="text-3xl md:text-4xl font-bold text-foreground max-w-3xl mx-auto mb-6">
           ¿Por qué elegir nuestro servicio de desarrollo de software a la medida?
         </h2>
 
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-14 my-8">
+        <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
           Entendemos que cada negocio es único. Diseñamos una solución de software que se ajusta
           perfectamente a tu modelo de negocio, presupuesto y objetivos.
         </p>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map((feature, i) => {
+        <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {chooseUsFeatures.map((feature, i) => {
             const Icon = feature.icon;
             return (
               <div
                 key={i}
-                className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition text-left"
+                className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition text-left border border-border/50"
               >
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-4">
                   <Icon size={20} />
@@ -148,36 +125,42 @@ export function CustomSoftwareSection() {
   ];
 
   return (
-    <section className="w-full py-8 bg-[var(--hero-bg)]">
-      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="w-full py-12 md:py-24 bg-[var(--hero-bg)]">
+      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
         {/* LEFT CONTENT */}
-        <div className="grid-cols-1">
-          <p className="text-sm font-semibold tracking-widest text-[var(--ai-icon-color)] uppercase mb-16">
+        <div className="flex flex-col text-center lg:text-left">
+          <p className="text-xs md:text-sm font-semibold tracking-widest text-[var(--ai-icon-color)] uppercase mb-6 md:mb-8">
             SOFTWARE A MEDIDA
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-16 leading-tight text-foreground">
-            Aprovecha al máximo el <br />
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 leading-tight text-foreground">
+            Aprovecha al máximo el <br className="hidden md:block" />
             potencial de tu <span className="text-[var(--ai-icon-color)]">sistema</span>
           </h2>
 
-          <p className="text-muted-foreground mb-16 leading-relaxed">
+          <p className="text-muted-foreground mb-8 md:mb-10 leading-relaxed text-sm md:text-base">
             El desarrollo de software a la medida que brindamos está construido con las últimas
             tecnologías, exclusivamente de acuerdo a las necesidades, criterios, recursos y
             presupuesto de cada empresa. El principal beneficio es que se adapta totalmente a los
             requerimientos de cada cliente, consiguiendo la satisfacción del usuario.
           </p>
 
-          <button className="rounded-xl bg-[hsl(207,76%,45%)] px-8 py-3 text-sm font-medium text-white shadow-[0_0_8px_var(--ai-icon-color)] transition hover:shadow-[0_0_16px_hsl(207,76%,45%)] hover:scale-105">
-            Potencia tu negocio con nosotros
-          </button>
+          <div>
+            <button className="w-full sm:w-auto rounded-xl bg-[hsl(207,76%,45%)] px-8 py-3 text-sm font-medium text-white shadow-[0_0_8px_var(--ai-icon-color)] transition hover:shadow-[0_0_16px_hsl(207,76%,45%)] hover:scale-105">
+              Potencia tu negocio con nosotros
+            </button>
+          </div>
         </div>
+
         {/* RIGHT CONTENT */}
-        <div className="grid sm:grid-cols-2 gap-6">
+        <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
           {services.map((service, i) => {
             const Icon = service.icon;
             return (
-              <div key={i} className="bg-card rounded-xl p-5 shadow-sm hover:shadow-md transition">
+              <div
+                key={i}
+                className="bg-card rounded-xl p-5 shadow-sm hover:shadow-md transition border border-border/50"
+              >
                 <div className="w-9 h-9 flex items-center justify-center rounded-md bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-3">
                   <Icon size={18} />
                 </div>
@@ -194,19 +177,6 @@ export function CustomSoftwareSection() {
   );
 }
 
-import {
-  Brain,
-  ArrowLeftRight,
-  BarChart3,
-  Users,
-  Smartphone,
-  Cloud,
-  Scissors,
-  Columns,
-  Code,
-  Target,
-  Zap,
-} from "lucide-react";
 export function AgileMethodologies() {
   const methods = [
     {
@@ -247,10 +217,10 @@ export function AgileMethodologies() {
   ];
 
   return (
-    <section className="w-full py-24 bg-[var(--hero-bg)]">
+    <section className="w-full py-12 md:py-24 bg-[var(--hero-bg)]">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <p className="text-sm font-semibold tracking-widest text-[var(--ai-icon-color)] uppercase mb-3">
+        <div className="text-center mb-12 md:mb-16">
+          <p className="text-xs md:text-sm font-semibold tracking-widest text-[var(--ai-icon-color)] uppercase mb-3">
             FRAMEWORKS DE TRABAJO
           </p>
 
@@ -258,17 +228,20 @@ export function AgileMethodologies() {
             Nuestras Metodologías <span className="text-[var(--ai-icon-color)]">Ágiles</span>
           </h2>
 
-          <p className="text-muted-foreground max-w-2xl mx-auto mt-4">
+          <p className="text-muted-foreground max-w-2xl mx-auto mt-4 text-sm md:text-base">
             Implementamos marcos de trabajo de vanguardia para garantizar la eficiencia técnica y la
             excelencia en cada entrega de software, optimizando tiempos y calidad.
           </p>
         </div>
 
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {methods.map((method, i) => {
             const Icon = method.icon;
             return (
-              <div key={i} className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition">
+              <div
+                key={i}
+                className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-border/50"
+              >
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-4">
                   <Icon size={20} />
                 </div>
@@ -278,7 +251,7 @@ export function AgileMethodologies() {
                   {method.tags.map((tag, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-medium px-2 py-1 rounded bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)]"
+                      className="text-[10px] md:text-xs font-medium px-2 py-1 rounded bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)]"
                     >
                       {tag}
                     </span>

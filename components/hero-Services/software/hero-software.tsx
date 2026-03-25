@@ -66,20 +66,20 @@ export function HeroSoftware() {
             </div>
 
             {/* stats */}
-            <div className="flex gap-10 text-sm">
+            <div className="grid grid-cols-3 gap-4 md:gap-10 text-sm">
               <div>
-                <div className="text-xl font-semibold text-foreground">16+</div>
-                <div className="text-muted-foreground text-xs">SERVICIOS</div>
+                <div className="text-lg md:text-xl font-semibold text-foreground">16+</div>
+                <div className="text-muted-foreground text-[10px] md:text-xs">SERVICIOS</div>
               </div>
 
               <div>
-                <div className="text-xl font-semibold text-foreground">7+</div>
-                <div className="text-muted-foreground text-xs">AÑOS</div>
+                <div className="text-lg md:text-xl font-semibold text-foreground">7+</div>
+                <div className="text-muted-foreground text-[10px] md:text-xs">AÑOS</div>
               </div>
 
               <div>
-                <div className="text-xl font-semibold text-foreground">100+</div>
-                <div className="text-muted-foreground text-xs">PROYECTOS</div>
+                <div className="text-lg md:text-xl font-semibold text-foreground">100+</div>
+                <div className="text-muted-foreground text-[10px] md:text-xs">PROYECTOS</div>
               </div>
             </div>
           </div>

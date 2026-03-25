@@ -34,7 +34,7 @@ const serviciosDropdown = [
     href: "/servicios/facturacion-electronica",
   },
   { label: "Computación en la Nube", href: "/servicios/computacion-nube" },
-  { label: "Soporte Técnico", href: "/servicios/soporte-tecnico" },
+
   { label: "Seguridad Informática", href: "/servicios/seguridad-informatica" },
   {
     label: "Inteligencia Artificial",

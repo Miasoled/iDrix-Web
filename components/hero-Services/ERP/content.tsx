@@ -1,7 +1,12 @@
-import { FileText, Receipt, Box, ShoppingBag, TrendingUp, Users } from "lucide-react";
-import Image from "next/image";
-import { Zap, RefreshCcw } from "lucide-react";
 import {
+  FileText,
+  Receipt,
+  Box,
+  ShoppingBag,
+  TrendingUp,
+  Users,
+  Zap,
+  RefreshCcw,
   Route,
   Smartphone,
   TrendingDown,
@@ -9,7 +14,9 @@ import {
   CheckCircle,
   BrainCircuit,
   Building2,
+  MapPin,
 } from "lucide-react";
+import Image from "next/image";
 
 export function ErpFeatures() {
   const features = [
@@ -46,11 +53,11 @@ export function ErpFeatures() {
   ];
 
   return (
-    <section className="w-full py-20 bg-background">
+    <section className="w-full py-16 md:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-6">
         {/* Title */}
-        <div className="text-center mb-14">
-          <h2 className="text-3xl font-semibold text-foreground mb-3">
+        <div className="text-center mb-10 md:mb-14">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-3">
             Todo lo que tu empresa necesita
           </h2>
 
@@ -61,7 +68,7 @@ export function ErpFeatures() {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature, index) => {
             const Icon = feature.icon;
 
@@ -109,35 +116,35 @@ export function AiSection() {
   ];
 
   return (
-    <section className="w-full py-24 text-white" style={{ background: "var(--ai-section-bg)" }}>
-      <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+    <section className="w-full py-16 md:py-24 text-white" style={{ background: "var(--ai-section-bg)" }}>
+      <div className="mx-auto grid max-w-7xl items-center gap-12 lg:gap-16 px-6 lg:grid-cols-2">
         {/* Imagen */}
         <div className="flex justify-center">
-          <div className="rounded-2xl bg-white/10 p-6 backdrop-blur-sm">
+          <div className="rounded-2xl bg-white/10 p-4 md:p-6 backdrop-blur-sm">
             <Image
               src="/img/ERP/aiSection.png"
               alt="AI Visualization"
               width={420}
               height={420}
-              className="rounded-xl object-contain"
+              className="rounded-xl object-contain w-full h-auto max-w-[420px]"
             />
           </div>
         </div>
 
         {/* Contenido */}
         <div>
-          <h2 className="mb-10 text-3xl font-semibold">
+          <h2 className="mb-8 md:mb-10 text-2xl md:text-3xl font-semibold">
             Inteligencia Artificial aplicada a tu negocio
           </h2>
 
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             {items.map((item, i) => {
               const Icon = item.icon;
 
               return (
                 <div key={i} className="flex gap-4">
                   <div
-                    className="flex h-10 w-10 items-center justify-center rounded-full"
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full"
                     style={{
                       background: "var(--ai-icon-bg)",
                       color: "var(--ai-icon-color)",
@@ -160,17 +167,14 @@ export function AiSection() {
   );
 }
 
-import { MapPin } from "lucide-react";
-
 export function MobilitySection() {
   return (
-    <section className="w-full py-24 bg-background">
-      {/* Contenedor principal con mx-auto para centrado correcto */}
-      <div className="mx-30 max-w-7xl px-6 grid items-center gap-12 lg:grid-cols-2">
+    <section className="w-full py-16 md:py-24 bg-background">
+      <div className="mx-auto max-w-7xl px-6 grid items-center gap-12 lg:grid-cols-2">
         {/* Lado Izquierdo: Texto y Card Horizontal */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-3xl font-bold text-foreground mb-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               Gestión Comercial y Movilidad
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-md">
@@ -179,13 +183,12 @@ export function MobilitySection() {
             </p>
           </div>
 
-          {/* Card usando variables de sistema */}
-          <div className="bg-card p-8 rounded-2xl shadow-sm border border-border max-w-lg">
+          {/* Card */}
+          <div className="bg-card p-6 md:p-8 rounded-2xl shadow-sm border border-border max-w-lg">
             <div className="flex gap-4">
-              {/* Punto indicador usando el color primario del tema */}
               <div
                 className="mt-1.5 h-2.5 w-2.5 rounded-full bg-primary shrink-0 animate-pulse"
-                style={{ backgroundColor: "oklch(0.6 0.118 184.704)" }} // Color acento visual
+                style={{ backgroundColor: "oklch(0.6 0.118 184.704)" }}
               />
               <div>
                 <h3 className="font-bold text-foreground mb-2">Clientes geolocalizados</h3>
@@ -198,17 +201,12 @@ export function MobilitySection() {
           </div>
         </div>
 
-        {/* Lado Derecho: Mockup Teléfono y Cards Flotantes */}
+        {/* Lado Derecho: Mockup Teléfono */}
         <div className="relative flex justify-center lg:justify-end">
-          {/* Contenedor del Teléfono (Cuerpo) */}
-          <div className="relative w-[280px] h-[560px] bg-slate-950 rounded-[3rem] border-[8px] border-slate-900 shadow-2xl overflow-hidden">
-            {/* Notch del teléfono */}
+          <div className="relative w-[260px] h-[520px] md:w-[280px] md:h-[560px] bg-slate-950 rounded-[3rem] border-[8px] border-slate-900 shadow-2xl overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-slate-900 rounded-b-2xl z-20" />
-
-            {/* Pantalla interna del teléfono */}
             <div className="w-full h-full bg-muted flex flex-col p-4 pt-12 gap-4">
-              {/* Card Interna 1: Rutas */}
-              <div className="bg-card p-5 rounded-2xl shadow-md border border-border">
+              <div className="bg-card p-4 md:p-5 rounded-2xl shadow-md border border-border">
                 <div className="flex gap-3">
                   <div className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
                   <div>
@@ -222,8 +220,7 @@ export function MobilitySection() {
                 </div>
               </div>
 
-              {/* Card Interna 2: App Vendedores */}
-              <div className="bg-card p-5 rounded-2xl shadow-md border border-border">
+              <div className="bg-card p-4 md:p-5 rounded-2xl shadow-md border border-border">
                 <div className="flex gap-3">
                   <div className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
                   <div>
@@ -237,14 +234,11 @@ export function MobilitySection() {
                 </div>
               </div>
 
-              {/* Placeholder de mapa o interfaz */}
               <div className="w-full grow bg-background/50 rounded-xl border border-dashed border-border flex items-center justify-center">
                 <MapPin className="text-muted-foreground/20" size={40} />
               </div>
             </div>
           </div>
-
-          {/* Decoración sutil de fondo (Glow) */}
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 blur-[80px] rounded-full" />
         </div>
       </div>
@@ -253,38 +247,24 @@ export function MobilitySection() {
 }
 
 export function BiSection() {
-  // Datos para las tarjetas de beneficios inferiores
   const benefits = [
     {
       icon: TrendingDown,
       value: "30%",
       text: "Reducción de costos",
-      highlight: true, // Para usar el color de texto azul en el porcentaje
+      highlight: true,
     },
-    {
-      icon: Clock,
-      text: "Ahorro de tiempo",
-    },
-    {
-      icon: CheckCircle,
-      text: "Cumplimiento SRI",
-    },
-    {
-      icon: BrainCircuit,
-      text: "Decisiones basadas en datos",
-    },
-    {
-      icon: Building2,
-      text: "Colaboración empresarial",
-    },
+    { icon: Clock, text: "Ahorro de tiempo" },
+    { icon: CheckCircle, text: "Cumplimiento SRI" },
+    { icon: BrainCircuit, text: "Decisiones basadas en datos" },
+    { icon: Building2, text: "Colaboración empresarial" },
   ];
 
   return (
-    <section className="w-full py-24" style={{ background: "var(--hero-bg)" }}>
+    <section className="w-full py-16 md:py-24" style={{ background: "var(--hero-bg)" }}>
       <div className="mx-auto max-w-7xl px-6">
-        {/* Encabezado Principal */}
-        <div className="text-center mb-16 space-y-3">
-          <h2 className="text-3xl font-semibold text-[#1e3a5f]">
+        <div className="text-center mb-12 md:mb-16 space-y-3">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#1e3a5f]">
             Business Intelligence para el Futuro
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
@@ -293,29 +273,25 @@ export function BiSection() {
           </p>
         </div>
 
-        {/* Visualización del Mockup de Tablet (Imagen Central) */}
-        <div className="flex justify-center mb-24">
-          <div className="relative w-full max-w-4xl p-2 rounded-3xl  overflow-hidden">
+        <div className="flex justify-center mb-16 md:mb-24">
+          <div className="relative w-full max-w-4xl p-1 md:p-2 rounded-2xl md:rounded-3xl overflow-hidden">
             <Image
               src="/img/ERP/BI.png"
               alt="iDrix Business Intelligence Tablet Mockup"
               width={1000}
               height={650}
-              className="rounded-2xl object-cover"
+              className="rounded-xl md:rounded-2xl object-cover w-full h-auto"
               priority
             />
           </div>
         </div>
 
-        {/* Sección Inferior: Beneficios */}
-        <div className="space-y-12">
-          {/* Título de Beneficios */}
+        <div className="space-y-10 md:space-y-12">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold text-[#1e3a5f]">Beneficios de elegir iDrix</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-[#1e3a5f]">Beneficios de elegir iDrix</h3>
           </div>
 
-          {/* Grid de Tarjetas de Beneficio */}
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
@@ -323,22 +299,17 @@ export function BiSection() {
                   key={index}
                   className="rounded-xl border border-border bg-card p-6 flex flex-col items-center justify-center text-center shadow-sm h-full"
                 >
-                  {/* Icono con color de acento azul suave */}
-                  <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-primary/5 text-primary">
-                    <Icon size={26} strokeWidth={1.5} />
+                  <div className="mb-4 md:mb-5 flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-primary/5 text-primary">
+                    <Icon size={24} strokeWidth={1.5} />
                   </div>
 
-                  {/* Valor (ej: 30%) */}
                   {benefit.value && (
-                    <span
-                      className={`text-4xl font-extrabold mb-1.5 ${benefit.highlight ? "text-primary" : "text-foreground"}`}
-                    >
+                    <span className={`text-3xl md:text-4xl font-extrabold mb-1.5 ${benefit.highlight ? "text-primary" : "text-foreground"}`}>
                       {benefit.value}
                     </span>
                   )}
 
-                  {/* Texto descriptivo */}
-                  <p className="text-sm font-medium text-[#1e3a5f] leading-snug">{benefit.text}</p>
+                  <p className="text-xs md:text-sm font-medium text-[#1e3a5f] leading-snug">{benefit.text}</p>
                 </div>
               );
             })}
@@ -348,36 +319,35 @@ export function BiSection() {
     </section>
   );
 }
+
 export function IdrixErpBanner() {
   return (
-    <section className="flex justify-center items-center py-20 bg-background font-sans">
+    <section className="flex justify-center items-center py-12 md:py-20 bg-background">
       <div
-        className="w-full max-w-5xl p-12 md:p-16 rounded-[40px] shadow-2xl text-center relative overflow-hidden border border-border"
+        className="w-full max-w-5xl p-8 md:p-16 rounded-[30px] md:rounded-[40px] shadow-2xl text-center relative overflow-hidden border border-border"
         style={{ background: "var(--ai-section-bg)" }}
       >
-        {/* Círculos decorativos usando las variables de arcos del CSS */}
         <div
-          className="absolute top-[-100px] left-[-100px] w-[350px] h-[350px] rounded-full blur-3xl opacity-50"
+          className="absolute top-[-80px] left-[-80px] md:top-[-100px] md:left-[-100px] w-[250px] h-[250px] md:w-[350px] md:h-[350px] rounded-full blur-3xl opacity-50"
           style={{ background: "var(--arch-4)" }}
         />
         <div
-          className="absolute bottom-[-150px] right-[-100px] w-[450px] h-[450px] rounded-full blur-3xl opacity-30"
+          className="absolute bottom-[-120px] right-[-80px] md:bottom-[-150px] md:right-[-100px] w-[300px] h-[300px] md:w-[450px] md:h-[450px] rounded-full blur-3xl opacity-30"
           style={{ background: "var(--arch-2)" }}
         />
 
-        {/* Contenido con Z-index para estar sobre los círculos */}
-        <div className="relative z-10 space-y-8">
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight text-white tracking-tight">
+        <div className="relative z-10 space-y-6 md:space-y-8">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white tracking-tight">
             Transforma la gestión de tu empresa con iDrix ERP
           </h2>
 
-          <p className="text-lg md:text-xl leading-relaxed max-w-2xl mx-auto text-white/80">
+          <p className="text-base md:text-xl leading-relaxed max-w-2xl mx-auto text-white/80">
             Centraliza todos los procesos de tu negocio en una plataforma inteligente, escalable y
             diseñada para ganar.
           </p>
 
           <div className="pt-4">
-            <button className="bg-primary text-primary-foreground font-bold py-4 px-10 rounded-full text-lg shadow-lg hover:opacity-90 transition-all active:scale-95 cursor-pointer">
+            <button className="bg-primary text-primary-foreground font-bold py-3.5 px-8 md:py-4 md:px-10 rounded-full text-base md:text-lg shadow-lg hover:opacity-90 transition-all active:scale-95 cursor-pointer">
               Agendar demostración
             </button>
           </div>
