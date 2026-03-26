@@ -10,10 +10,6 @@ import {
   Code,
   Target,
   Zap,
-  Shield,
-  Layers,
-  Code2,
-  DollarSign,
 } from "lucide-react";
 
 export function WhyChooseUs() {
@@ -21,7 +17,8 @@ export function WhyChooseUs() {
     {
       icon: Brain,
       title: "IA & Machine Learning",
-      description: "IA integrada para optimizar tus procesos y automatizar tareas.",
+      description:
+        "IA integrada para optimizar tus procesos y automatizar tareas.",
     },
     {
       icon: ArrowLeftRight,
@@ -31,7 +28,8 @@ export function WhyChooseUs() {
     {
       icon: BarChart3,
       title: "Big Data",
-      description: "Analítica avanzada para decisiones basadas en datos confiables.",
+      description:
+        "Analítica avanzada para decisiones basadas en datos confiables.",
     },
     {
       icon: Users,
@@ -58,12 +56,14 @@ export function WhyChooseUs() {
         </p>
 
         <h2 className="text-3xl md:text-4xl font-bold text-foreground max-w-3xl mx-auto mb-6">
-          ¿Por qué elegir nuestro servicio de desarrollo de software a la medida?
+          ¿Por qué elegir nuestro servicio de desarrollo de software a la
+          medida?
         </h2>
 
         <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
-          Entendemos que cada negocio es único. Diseñamos una solución de software que se ajusta
-          perfectamente a tu modelo de negocio, presupuesto y objetivos.
+          Entendemos que cada negocio es único. Diseñamos una solución de
+          software que se ajusta perfectamente a tu modelo de negocio,
+          presupuesto y objetivos.
         </p>
 
         <div className="grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -77,7 +77,9 @@ export function WhyChooseUs() {
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-4">
                   <Icon size={20} />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 text-foreground">{feature.title}</h3>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">
+                  {feature.title}
+                </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {feature.description}
                 </p>
@@ -95,7 +97,8 @@ export function CustomSoftwareSection() {
     {
       icon: Brain,
       title: "IA & Machine Learning",
-      description: "IA integrada para optimizar tus procesos y automatizar tareas.",
+      description:
+        "IA integrada para optimizar tus procesos y automatizar tareas.",
     },
     {
       icon: ArrowLeftRight,
@@ -105,7 +108,8 @@ export function CustomSoftwareSection() {
     {
       icon: BarChart3,
       title: "Big Data",
-      description: "Analítica avanzada para decisiones basadas en datos confiables.",
+      description:
+        "Analítica avanzada para decisiones basadas en datos confiables.",
     },
     {
       icon: Users,
@@ -135,14 +139,16 @@ export function CustomSoftwareSection() {
 
           <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 leading-tight text-foreground">
             Aprovecha al máximo el <br className="hidden md:block" />
-            potencial de tu <span className="text-[var(--ai-icon-color)]">sistema</span>
+            potencial de tu{" "}
+            <span className="text-[var(--ai-icon-color)]">sistema</span>
           </h2>
 
           <p className="text-muted-foreground mb-8 md:mb-10 leading-relaxed text-sm md:text-base">
-            El desarrollo de software a la medida que brindamos está construido con las últimas
-            tecnologías, exclusivamente de acuerdo a las necesidades, criterios, recursos y
-            presupuesto de cada empresa. El principal beneficio es que se adapta totalmente a los
-            requerimientos de cada cliente, consiguiendo la satisfacción del usuario.
+            El desarrollo de software a la medida que brindamos está construido
+            con las últimas tecnologías, exclusivamente de acuerdo a las
+            necesidades, criterios, recursos y presupuesto de cada empresa. El
+            principal beneficio es que se adapta totalmente a los requerimientos
+            de cada cliente, consiguiendo la satisfacción del usuario.
           </p>
 
           <div>
@@ -164,7 +170,9 @@ export function CustomSoftwareSection() {
                 <div className="w-9 h-9 flex items-center justify-center rounded-md bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-3">
                   <Icon size={18} />
                 </div>
-                <h3 className="font-semibold text-sm mb-1 text-foreground">{service.title}</h3>
+                <h3 className="font-semibold text-sm mb-1 text-foreground">
+                  {service.title}
+                </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {service.description}
                 </p>
@@ -225,12 +233,14 @@ export function AgileMethodologies() {
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-            Nuestras Metodologías <span className="text-[var(--ai-icon-color)]">Ágiles</span>
+            Nuestras Metodologías{" "}
+            <span className="text-[var(--ai-icon-color)]">Ágiles</span>
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto mt-4 text-sm md:text-base">
-            Implementamos marcos de trabajo de vanguardia para garantizar la eficiencia técnica y la
-            excelencia en cada entrega de software, optimizando tiempos y calidad.
+            Implementamos marcos de trabajo de vanguardia para garantizar la
+            eficiencia técnica y la excelencia en cada entrega de software,
+            optimizando tiempos y calidad.
           </p>
         </div>
 
@@ -245,8 +255,12 @@ export function AgileMethodologies() {
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-4">
                   <Icon size={20} />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 text-foreground">{method.title}</h3>
-                <p className="text-sm text-muted-foreground mb-4">{method.description}</p>
+                <h3 className="font-semibold text-lg mb-2 text-foreground">
+                  {method.title}
+                </h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  {method.description}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {method.tags.map((tag, idx) => (
                     <span
@@ -262,9 +276,12 @@ export function AgileMethodologies() {
           })}
 
           <div className="rounded-2xl p-8 bg-primary text-primary-foreground flex flex-col justify-center">
-            <h3 className="text-lg font-semibold mb-3">¿Necesitas una estrategia a medida?</h3>
+            <h3 className="text-lg font-semibold mb-3">
+              ¿Necesitas una estrategia a medida?
+            </h3>
             <p className="text-sm mb-6 opacity-90">
-              Combinamos marcos de trabajo para adaptarnos a la escala y complejidad de tu negocio.
+              Combinamos marcos de trabajo para adaptarnos a la escala y
+              complejidad de tu negocio.
             </p>
             <button className="bg-primary-foreground text-primary px-5 py-2 rounded-md font-medium hover:bg-primary-foreground/90 transition">
               Comenzar proyecto

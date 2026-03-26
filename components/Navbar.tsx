@@ -5,13 +5,14 @@ import { ChevronDown, Zap } from "lucide-react";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 import Link from "next/link";
 
+// Agregar rutas a los items del navbar
 const navItems = [
-  { label: "Inicio", hasDropdown: false },
-  { label: "Nosotros", hasDropdown: false },
-  { label: "Servicios", hasDropdown: true },
-  { label: "Portafolio", hasDropdown: false },
-  { label: "Blogs", hasDropdown: false },
-  { label: "Contáctanos", hasDropdown: false },
+  { label: "Inicio", hasDropdown: false, href: "/" },
+  { label: "Nosotros", hasDropdown: false, href: "/nosotros" },
+  { label: "Servicios", hasDropdown: true, href: null }, // null porque tiene dropdown
+  { label: "Portafolio", hasDropdown: false, href: "/portafolio" },
+  { label: "Blogs", hasDropdown: false, href: "/blogs" },
+  { label: "Contáctanos", hasDropdown: false, href: "/contacto" },
 ];
 
 const serviciosDropdown = [
@@ -51,7 +52,10 @@ export function Navbar() {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
         setShowServiciosDropdown(false);
       }
     }
@@ -90,14 +94,14 @@ export function Navbar() {
         </div>
 
         {/* Logo */}
-        <div className="relative z-10 flex items-center gap-2">
+        <Link href="/" className="relative z-10 flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary shadow-sm">
             <Zap className="h-4 w-4 fill-primary-foreground text-primary-foreground" />
           </div>
           <span className="text-lg font-semibold text-foreground dark:text-white dark:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_24px_rgba(28,126,201,0.3)]">
             iDrix
           </span>
-        </div>
+        </Link>
 
         {/* Nav Items */}
         <ul className="relative z-10 hidden items-center gap-1 md:flex">
@@ -107,23 +111,32 @@ export function Navbar() {
               className="relative"
               ref={item.label === "Servicios" ? dropdownRef : undefined}
             >
-              <button
-                className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
-                onClick={() => {
-                  if (item.label === "Servicios") setShowServiciosDropdown(!showServiciosDropdown);
-                }}
-              >
-                {item.label}
-                {item.hasDropdown && (
+              {item.hasDropdown ? (
+                // Servicios con dropdown - usa button
+                <button
+                  className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
+                  onClick={() =>
+                    setShowServiciosDropdown(!showServiciosDropdown)
+                  }
+                >
+                  {item.label}
                   <ChevronDown
                     className={`h-3.5 w-3.5 opacity-60 transition-transform dark:opacity-80 ${
-                      item.label === "Servicios" && showServiciosDropdown ? "rotate-180" : ""
+                      showServiciosDropdown ? "rotate-180" : ""
                     }`}
                   />
-                )}
-              </button>
+                </button>
+              ) : (
+                // Items sin dropdown - usa Link
+                <Link
+                  href={item.href || "#"}
+                  className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
+                >
+                  {item.label}
+                </Link>
+              )}
 
-              {/* Servicios Dropdown - Positioned under Servicios */}
+              {/* Servicios Dropdown */}
               {item.label === "Servicios" && showServiciosDropdown && (
                 <div className="absolute left-0 top-full mt-2 w-[880px] -translate-x-[35%] rounded-xl border border-border bg-gradient-to-b from-card to-background p-6 shadow-xl dark:from-card dark:to-card/95">
                   <div className="relative z-10 grid grid-cols-4 gap-x-6 gap-y-2">
@@ -147,9 +160,12 @@ export function Navbar() {
         {/* CTA Buttons & Theme Toggle */}
         <div className="relative z-10 flex items-center gap-2">
           <AnimatedThemeToggler className="rounded-lg p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground" />
-          <button className="rounded-lg bg-[hsl(207,76%,45%)] px-4 py-2 text-sm font-medium text-white transition-all hover:bg-[hsl(207,76%,40%)] shadow-md hover:shadow-lg dark:shadow-[0_0_24px_-6px_rgba(28,126,201,0.6)] dark:hover:shadow-[0_0_32px_-4px_rgba(28,126,201,0.8)]">
+          <Link
+            href="/contacto"
+            className="rounded-lg bg-[hsl(207,76%,45%)] px-4 py-2 text-sm font-medium text-white transition-all hover:bg-[hsl(207,76%,40%)] shadow-md hover:shadow-lg dark:shadow-[0_0_24px_-6px_rgba(28,126,201,0.6)] dark:hover:shadow-[0_0_32px_-4px_rgba(28,126,201,0.8)]"
+          >
             Explícanos tu idea
-          </button>
+          </Link>
         </div>
       </nav>
     </header>
