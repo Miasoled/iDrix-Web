@@ -175,6 +175,16 @@
   --arch-2: hsla(200, 55%, 65%, 0.32);
   --arch-3: hsla(200, 58%, 60%, 0.36);
   --arch-4: hsla(200, 60%, 55%, 0.4);
+
+  /* HERO CLIENTES */
+  --hero-clientes-bg: #f3f7fc;
+  --hero-clientes-radial-stop: white;
+  --hero-clientes-glow-1: rgba(190, 227, 255, 0.6);
+  --hero-clientes-glow-2: rgba(107, 215, 255, 0.5);
+  --hero-clientes-glow-3: rgba(138, 237, 255, 0.2);
+  --hero-clientes-glow-white: rgba(255, 255, 255, 0.5);
+  --hero-clientes-arc: #d2e7f9;
+  --hero-clientes-dot: white;
 }
 
 .dark {
@@ -284,6 +294,16 @@
   --arch-2: hsla(195, 85%, 55%, 0.25);
   --arch-3: hsla(195, 85%, 55%, 0.35);
   --arch-4: hsla(195, 85%, 60%, 0.55);
+
+  /* HERO CLIENTES DARK */
+  --hero-clientes-bg: hsl(200, 60%, 4%);
+  --hero-clientes-radial-stop: hsl(200, 60%, 8%);
+  --hero-clientes-glow-1: rgba(0, 34, 59, 0.87);
+  --hero-clientes-glow-2: rgba(46, 218, 244, 0.2);
+  --hero-clientes-glow-3: rgba(46, 218, 244, 0.15);
+  --hero-clientes-glow-white: rgba(255, 255, 255, 0.05);
+  --hero-clientes-arc: rgba(46, 218, 244, 0.35);
+  --hero-clientes-dot: radial-gradient(circle, rgb(12, 74, 83) 0%, rgb(0, 34, 59) 100%);
 }
 
 /* Light mode text gradient utility */
