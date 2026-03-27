@@ -48,11 +48,12 @@
   --animate-orbit: orbit calc(var(--duration) * 1s) linear infinite;
   @keyframes orbit {
     0% {
-      transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px))
-        rotate(calc(var(--angle) * -1deg));
+      transform: rotate(calc(var(--angle) * 1deg))
+        translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
     }
     100% {
-      transform: rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px))
+      transform: rotate(calc(var(--angle) * 1deg + 360deg))
+        translateY(calc(var(--radius) * 1px))
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
   }
@@ -104,9 +105,22 @@
 
   /* HERO SOFT BLUE LIGHT */
   --hero-soft-blue:
-    radial-gradient(circle at 20% 30%, hsla(205, 90%, 85%, 0.35) 0%, transparent 55%),
-    radial-gradient(circle at 80% 70%, hsla(200, 85%, 88%, 0.3) 0%, transparent 60%),
-    linear-gradient(180deg, hsl(210, 35%, 97%) 0%, hsl(210, 30%, 94%) 50%, hsl(210, 28%, 92%) 100%);
+    radial-gradient(
+      circle at 20% 30%,
+      hsla(205, 90%, 85%, 0.35) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 80% 70%,
+      hsla(200, 85%, 88%, 0.3) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      hsl(210, 35%, 97%) 0%,
+      hsl(210, 30%, 94%) 50%,
+      hsl(210, 28%, 92%) 100%
+    );
 
   /* HERO WEB LIGHT */
   --hero-web-bg: radial-gradient(
@@ -139,8 +153,16 @@
 
   --ai-icon-bg: hsla(215, 80%, 60%, 0.12);
   --ai-icon-color: hsl(215, 70%, 45%);
-  --hero-bottom-fade: linear-gradient(0deg, hsl(200, 10%, 97%) 0%, transparent 100%);
-  --hero-dashboard-fade: linear-gradient(0deg, hsl(200, 30%, 97%) 0%, transparent 100%);
+  --hero-bottom-fade: linear-gradient(
+    0deg,
+    hsl(200, 10%, 97%) 0%,
+    transparent 100%
+  );
+  --hero-dashboard-fade: linear-gradient(
+    0deg,
+    hsl(200, 30%, 97%) 0%,
+    transparent 100%
+  );
   --hero-glow: radial-gradient(
     ellipse at 50% 50%,
     rgba(255, 255, 255, 0.95) 0%,
@@ -156,9 +178,9 @@
   );
   --info-bg: hsl(0, 0%, 100%);
   /* NUEVO: Gradiente Texto Light (glow muy sutil desde abajo hacia arriba)
-     - combina un radial muy tenue (brillo blanco) en la base con un
-       degradado vertical azul -> celeste para mantener legibilidad.
-  */
+      - combina un radial muy tenue (brillo blanco) en la base con un
+        degradado vertical azul -> celeste para mantener legibilidad.
+    */
   /* Más tenue: blanco casi imperceptible y pegado a la base (similar a referencia) */
   /* Reducido: blanco aún más tenue para que apenas se note el glow */
   --text-gradient-light:
@@ -223,9 +245,22 @@
 
   /* HERO SOFT BLUE DARK */
   --hero-soft-blue:
-    radial-gradient(circle at 25% 20%, hsla(200, 80%, 55%, 0.12) 0%, transparent 60%),
-    radial-gradient(circle at 75% 80%, hsla(195, 80%, 60%, 0.1) 0%, transparent 65%),
-    linear-gradient(180deg, hsl(205, 60%, 10%) 0%, hsl(205, 65%, 7%) 50%, hsl(205, 70%, 5%) 100%);
+    radial-gradient(
+      circle at 25% 20%,
+      hsla(200, 80%, 55%, 0.12) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at 75% 80%,
+      hsla(195, 80%, 60%, 0.1) 0%,
+      transparent 65%
+    ),
+    linear-gradient(
+      180deg,
+      hsl(205, 60%, 10%) 0%,
+      hsl(205, 65%, 7%) 50%,
+      hsl(205, 70%, 5%) 100%
+    );
 
   /* --- HERO DARK MODE --- */
   --hero-bg: hsl(200, 60%, 4%);
@@ -270,8 +305,16 @@
     hsl(200, 60%, 4%) 80%
   );
 
-  --hero-bottom-fade: linear-gradient(0deg, hsl(200, 60%, 4%) 0%, transparent 100%);
-  --hero-dashboard-fade: linear-gradient(0deg, hsl(200, 60%, 4%) 20%, transparent 100%);
+  --hero-bottom-fade: linear-gradient(
+    0deg,
+    hsl(200, 60%, 4%) 0%,
+    transparent 100%
+  );
+  --hero-dashboard-fade: linear-gradient(
+    0deg,
+    hsl(200, 60%, 4%) 20%,
+    transparent 100%
+  );
 
   --hero-glow: radial-gradient(
     ellipse at 50% 0%,
@@ -287,7 +330,12 @@
   );
 
   /* NUEVO: Gradiente Texto Dark (Holográfico Sutil) */
-  --text-gradient-dark: linear-gradient(90deg, #ffffff 0%, #e0f0ff 50%, #7dd3fc 100%);
+  --text-gradient-dark: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #e0f0ff 50%,
+    #7dd3fc 100%
+  );
 
   /* ARCOS DARK MODE (Azules y Visibles) */
   --arch-1: hsla(195, 85%, 55%, 0.15);
@@ -325,7 +373,8 @@
 
 /*blue escale*/
 .dark .dark\:blue-scale {
-  filter: grayscale(100%) sepia(30%) hue-rotate(160deg) saturate(200%) brightness(0.9);
+  filter: grayscale(100%) sepia(30%) hue-rotate(160deg) saturate(200%)
+    brightness(0.9);
 }
 
 /* View transition styles for theme toggler */
@@ -357,11 +406,12 @@
 
   @keyframes orbit {
     0% {
-      transform: rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px))
-        rotate(calc(var(--angle) * -1deg));
+      transform: rotate(calc(var(--angle) * 1deg))
+        translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg));
     }
     100% {
-      transform: rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px))
+      transform: rotate(calc(var(--angle) * 1deg + 360deg))
+        translateY(calc(var(--radius) * 1px))
         rotate(calc((var(--angle) * -1deg) - 360deg));
     }
   }
