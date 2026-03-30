@@ -24,7 +24,7 @@ export function Formulario() {
               </span>
             </div>
             <div className="flex gap-4">
-              <div className="flex-1 rounded-xl p-4 bg-[hsl(210,40%,96%)] dark:bg-white/5 ">
+              <div className="flex-1 rounded-xl p-4 bg-[hsl(210,40%,96%)] backdrop-blur dark:bg-white/5 ">
                 <p className="text-xs text-muted-foreground">LUNES – VIERNES</p>
                 <p className="font-bold text-foreground">08:30 – 18:00</p>
               </div>
@@ -59,7 +59,7 @@ export function Formulario() {
                 },
               ].map((c, i) => (
                 <div key={i} className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-xl  bg-white/10 flex items-center justify-center flex-shrink-0">
                     <c.icon
                       size={18}
                       strokeWidth={1.5}
@@ -80,19 +80,19 @@ export function Formulario() {
           </div>
 
           {/* Redes */}
-          <div className="rounded-2xl p-6 bg-white border dark:border-[hsl(207,68%,60%)] dark:shadow-[0_0_25px_rgba(28,126,201,0.4)] dark:bg-white/5 ">
+          <div className="rounded-2xl p-6  bg-white border dark:border-[hsl(207,68%,60%)] dark:shadow-[0_0_25px_rgba(28,126,201,0.4)] dark:bg-white/5 ">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
               <span className="text-xs font-bold tracking-widest uppercase text-[hsl(207,76%,45%)]">
                 Síguenos en
               </span>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 ">
               {[Facebook, Instagram, Youtube, Linkedin].map((Icon, i) => (
                 <a
                   key={i}
                   href="#"
-                  className="w-10 h-10 rounded-xl border border-border flex items-center justify-center text-[hsl(207,76%,45%)] hover:bg-[hsl(207,76%,45%)] hover:text-white transition-all dark:border-white/10"
+                  className="w-10 h-10 rounded-xl backdrop-blur border border-border flex items-center justify-center text-[hsl(207,76%,45%)] hover:bg-[hsl(207,76%,45%)] hover:text-white transition-all dark:border-white/10"
                 >
                   <Icon size={18} strokeWidth={1.5} />
                 </a>
