@@ -9,8 +9,8 @@ import Link from "next/link";
 const navItems = [
   { label: "Inicio", hasDropdown: false, href: "/" },
   { label: "Nosotros", hasDropdown: false, href: "/nosotros" },
-  { label: "Servicios", hasDropdown: true, href: null }, // null porque tiene dropdown
-  { label: "Portafolio", hasDropdown: false, href: "/portafolio" },
+  { label: "Servicios", hasDropdown: true, href: null },
+  { label: "Portafolio", hasDropdown: true, href: null }, // Cambiado a true
   { label: "Blogs", hasDropdown: false, href: "/blogs" },
   { label: "Contáctanos", hasDropdown: false, href: "/contacto" },
 ];
@@ -35,7 +35,6 @@ const serviciosDropdown = [
     href: "/servicios/facturacion-electronica",
   },
   { label: "Computación en la Nube", href: "/servicios/computacion-nube" },
-
   { label: "Seguridad Informática", href: "/servicios/seguridad-informatica" },
   {
     label: "Inteligencia Artificial",
@@ -46,25 +45,56 @@ const serviciosDropdown = [
   { label: "Automatizaciones", href: "/servicios/automatizaciones" },
 ];
 
+// Nuevo dropdown para Portafolio
+const portafolioDropdown = [
+  {
+    label: "Clientes",
+    href: "/portafolio/clientes",
+    description: "Empresas que confían en nosotros",
+  },
+  {
+    label: "Partners",
+    href: "/portafolio/partners",
+    description: "Nuestros aliados estratégicos",
+  },
+  {
+    label: "Testimonios",
+    href: "/portafolio/testimonios",
+    description: "Lo que dicen sobre nosotros",
+  },
+];
+
 export function Navbar() {
   const [showServiciosDropdown, setShowServiciosDropdown] = useState(false);
-  const dropdownRef = useRef<HTMLLIElement | null>(null);
+  const [showPortafolioDropdown, setShowPortafolioDropdown] = useState(false);
+
+  const serviciosDropdownRef = useRef<HTMLLIElement | null>(null);
+  const portafolioDropdownRef = useRef<HTMLLIElement | null>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        serviciosDropdownRef.current &&
+        !serviciosDropdownRef.current.contains(event.target as Node)
+      ) {
         setShowServiciosDropdown(false);
+      }
+      if (
+        portafolioDropdownRef.current &&
+        !portafolioDropdownRef.current.contains(event.target as Node)
+      ) {
+        setShowPortafolioDropdown(false);
       }
     }
 
-    if (showServiciosDropdown) {
+    if (showServiciosDropdown || showPortafolioDropdown) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [showServiciosDropdown]);
+  }, [showServiciosDropdown, showPortafolioDropdown]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-4 pt-[env(safe-area-inset-top,0px)]">
@@ -106,23 +136,38 @@ export function Navbar() {
             <li
               key={item.label}
               className="relative"
-              ref={item.label === "Servicios" ? dropdownRef : undefined}
+              ref={
+                item.label === "Servicios"
+                  ? serviciosDropdownRef
+                  : item.label === "Portafolio"
+                    ? portafolioDropdownRef
+                    : undefined
+              }
             >
               {item.hasDropdown ? (
-                // Servicios con dropdown - usa button
                 <button
                   className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
-                  onClick={() => setShowServiciosDropdown(!showServiciosDropdown)}
+                  onClick={() => {
+                    if (item.label === "Servicios") {
+                      setShowServiciosDropdown(!showServiciosDropdown);
+                      setShowPortafolioDropdown(false);
+                    } else if (item.label === "Portafolio") {
+                      setShowPortafolioDropdown(!showPortafolioDropdown);
+                      setShowServiciosDropdown(false);
+                    }
+                  }}
                 >
                   {item.label}
                   <ChevronDown
                     className={`h-3.5 w-3.5 opacity-60 transition-transform dark:opacity-80 ${
-                      showServiciosDropdown ? "rotate-180" : ""
+                      (item.label === "Servicios" && showServiciosDropdown) ||
+                      (item.label === "Portafolio" && showPortafolioDropdown)
+                        ? "rotate-180"
+                        : ""
                     }`}
                   />
                 </button>
               ) : (
-                // Items sin dropdown - usa Link
                 <Link
                   href={item.href || "#"}
                   className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
@@ -146,6 +191,32 @@ export function Navbar() {
                       </Link>
                     ))}
                   </div>
+                </div>
+              )}
+
+              {/* Portafolio Dropdown */}
+              {item.label === "Portafolio" && showPortafolioDropdown && (
+                <div className="absolute left-0 top-full mt-2 w-80 rounded-xl border border-border bg-gradient-to-b from-card to-background p-3 shadow-xl dark:from-card dark:to-card/95">
+                  <div className="relative z-10 flex flex-col gap-1">
+                    {portafolioDropdown.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        onClick={() => setShowPortafolioDropdown(false)}
+                        className="group rounded-lg px-4 py-3 transition-all hover:bg-accent dark:hover:bg-primary/20"
+                      >
+                        <div className="flex flex-col">
+                          <span className="text-sm font-medium text-foreground/90 group-hover:text-foreground dark:text-white/90">
+                            {item.label}
+                          </span>
+                          <span className="text-xs text-muted-foreground">
+                            {item.description}
+                          </span>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  git
                 </div>
               )}
             </li>
