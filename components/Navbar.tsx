@@ -10,7 +10,7 @@ const navItems = [
   { label: "Inicio", hasDropdown: false, href: "/" },
   { label: "Nosotros", hasDropdown: false, href: "/nosotros" },
   { label: "Servicios", hasDropdown: true, href: null }, // null porque tiene dropdown
-  { label: "Portafolio", hasDropdown: false, href: "/portafolio" },
+  { label: "Portafolio", hasDropdown: true, href: null },
   { label: "Blogs", hasDropdown: false, href: "/blogs" },
   { label: "Contáctanos", hasDropdown: false, href: "/contacto" },
 ];
@@ -46,25 +46,42 @@ const serviciosDropdown = [
   { label: "Automatizaciones", href: "/servicios/automatizaciones" },
 ];
 
+const portafolioDropdown = [
+  { label: "Nuestros Clientes", href: "/portafolio/clientes" },
+  { label: "Nuestros Partners", href: "/portafolio/partners" },
+  { label: "Testimonios", href: "/portafolio/testimonios" },
+];
+
 export function Navbar() {
   const [showServiciosDropdown, setShowServiciosDropdown] = useState(false);
-  const dropdownRef = useRef<HTMLLIElement | null>(null);
+  const [showPortafolioDropdown, setShowPortafolioDropdown] = useState(false);
+  const serviciosDropdownRef = useRef<HTMLLIElement | null>(null);
+  const portafolioDropdownRef = useRef<HTMLLIElement | null>(null);
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (
+        serviciosDropdownRef.current &&
+        !serviciosDropdownRef.current.contains(event.target as Node)
+      ) {
         setShowServiciosDropdown(false);
+      }
+      if (
+        portafolioDropdownRef.current &&
+        !portafolioDropdownRef.current.contains(event.target as Node)
+      ) {
+        setShowPortafolioDropdown(false);
       }
     }
 
-    if (showServiciosDropdown) {
+    if (showServiciosDropdown || showPortafolioDropdown) {
       document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [showServiciosDropdown]);
+  }, [showServiciosDropdown, showPortafolioDropdown]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex flex-col items-center px-4 pt-[env(safe-area-inset-top,0px)]">
@@ -106,18 +123,35 @@ export function Navbar() {
             <li
               key={item.label}
               className="relative"
-              ref={item.label === "Servicios" ? dropdownRef : undefined}
+              ref={
+                item.label === "Servicios"
+                  ? serviciosDropdownRef
+                  : item.label === "Portafolio"
+                    ? portafolioDropdownRef
+                    : undefined
+              }
             >
               {item.hasDropdown ? (
-                // Servicios con dropdown - usa button
+                // Items con dropdown
                 <button
                   className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-muted-foreground transition-all hover:text-foreground dark:text-white/90 dark:[text-shadow:0_0_8px_rgba(255,255,255,0.2)] dark:hover:text-white dark:hover:[text-shadow:0_0_12px_rgba(255,255,255,0.4),0_0_20px_rgba(28,126,201,0.25)]"
-                  onClick={() => setShowServiciosDropdown(!showServiciosDropdown)}
+                  onClick={() => {
+                    if (item.label === "Servicios") {
+                      setShowServiciosDropdown(!showServiciosDropdown);
+                      setShowPortafolioDropdown(false);
+                    } else if (item.label === "Portafolio") {
+                      setShowPortafolioDropdown(!showPortafolioDropdown);
+                      setShowServiciosDropdown(false);
+                    }
+                  }}
                 >
                   {item.label}
                   <ChevronDown
                     className={`h-3.5 w-3.5 opacity-60 transition-transform dark:opacity-80 ${
-                      showServiciosDropdown ? "rotate-180" : ""
+                      (item.label === "Servicios" && showServiciosDropdown) ||
+                      (item.label === "Portafolio" && showPortafolioDropdown)
+                        ? "rotate-180"
+                        : ""
                     }`}
                   />
                 </button>
@@ -143,6 +177,24 @@ export function Navbar() {
                         className="rounded-md px-3 py-2.5 text-left text-sm text-foreground/90 transition-colors hover:bg-accent hover:text-accent-foreground dark:text-white/90 dark:hover:bg-primary/20 dark:hover:text-white"
                       >
                         {servicio.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Portafolio Dropdown */}
+              {item.label === "Portafolio" && showPortafolioDropdown && (
+                <div className="absolute left-0 top-full mt-2 w-[240px] -translate-x-1/4 rounded-xl border border-border bg-gradient-to-b from-card to-background p-4 shadow-xl dark:from-card dark:to-card/95">
+                  <div className="relative z-10 flex flex-col gap-1">
+                    {portafolioDropdown.map((subItem) => (
+                      <Link
+                        key={subItem.href}
+                        href={subItem.href}
+                        onClick={() => setShowPortafolioDropdown(false)}
+                        className="rounded-md px-3 py-2.5 text-left text-sm text-foreground/90 transition-colors hover:bg-accent hover:text-accent-foreground dark:text-white/90 dark:hover:bg-primary/20 dark:hover:text-white"
+                      >
+                        {subItem.label}
                       </Link>
                     ))}
                   </div>

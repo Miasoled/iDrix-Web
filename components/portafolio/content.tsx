@@ -85,6 +85,8 @@ const clientes = [
       "La repartija ofrece servicios de entretenimiento y diversión que satisfagan a los clientes",
     logo: "repartija",
     color: "#f05a28",
+    largo: "160px",
+    Ancho: "200px",
   },
   {
     id: 11,
@@ -97,7 +99,7 @@ const clientes = [
     id: 12,
     nombre: "Construcción y ventas",
     descripcion: "Se especializa en la construcción y venta de casas",
-    logo: "constructora-bustillos",
+    logo: "constructora",
     color: "#5d6dff",
   },
   {
@@ -120,14 +122,14 @@ const clientes = [
     id: 15,
     nombre: "Asesoría empresarial",
     descripcion: "Impulsar el crecimiento profesional y empresarial",
-    logo: "grupo-afa",
+    logo: "Grupo-AEA",
     color: "#3498db",
   },
   {
     id: 16,
     nombre: "Comprobantes SRI",
     descripcion: "Descarga y gestiona tus documentos electrónicos de forma automática.",
-    logo: "plusfactura",
+    logo: "plus-factura",
     color: "#9b59b6",
   },
   {
@@ -135,7 +137,7 @@ const clientes = [
     nombre: "Aseguradora",
     descripcion:
       "Empresa aseguradora líder en Bolivia. Especializados en todo tipo de seguros privados.",
-    logo: "nacional-seguros",
+    logo: "aseguradora",
     color: "#2980b9",
   },
   {
@@ -175,7 +177,7 @@ function ClienteCard({ cliente }: { cliente: Cliente }) {
       className="relative flex flex-col rounded-2xl overflow-hidden bg-card justify-between"
       style={{
         boxShadow: "0 2px 16px 0 rgba(30,60,120,0.10)",
-        border: "5px solid rgba(255,255,255,0.5)",
+        border: "5px solid var(--border-color, rgba(255,255,255,0.5))",
       }}
     >
       {/* ── Zona superior: degradado de color → transparente ── */}
@@ -238,8 +240,8 @@ function ClienteCard({ cliente }: { cliente: Cliente }) {
 // ─────────────────────────────────────────────
 export default function ClientCards() {
   return (
-    <section className="w-full px-4 py-8">
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-3 max-w-4xl mx-auto">
+    <section className="w-full px-4 py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
         {clientes.map((cliente) => (
           <ClienteCard key={cliente.id} cliente={cliente} />
         ))}
