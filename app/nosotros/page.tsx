@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Politicas } from "@/components/hero-services/nosotros/politicas";
 import { Valores } from "@/components/hero-services/nosotros/valores";
+import EquipoTrabajo from "@/components/hero-services/nosotros/equipo";
 import Image from "next/image";
 
 import { HeroNosotros } from "@/components/hero-services/nosotros/hero-nosotros";
@@ -13,6 +14,7 @@ export default function Nosotros() {
       <MisionVision />
       <Politicas />
       <Valores />
+      <EquipoTrabajo />
     </main>
   );
 }
@@ -57,7 +59,7 @@ export function MisionVision() {
                 className="absolute rounded-full w-80 h-80 -left-10 top-0 dark:hidden"
                 style={{
                   background:
-                    "radial-gradient(circle at 60% 50%, transparent 38%, hsl(207,76%,72%) 52%, hsl(207,76%,85%) 62%, white 75%, transparent 85%)",
+                    "linear-gradient(to top, hsl(207,76%,40%), hsl(207,76%,85%), white)",
                 }}
               />
               {/* Halo dark */}
@@ -69,7 +71,7 @@ export function MisionVision() {
                 }}
               />
               {/* Círculo encima */}
-              <div className="absolute rounded-full w-72 h-72 right-0 top-4 z-10 bg-white border-8 border-white dark:bg-[hsl(215,50%,12%)] dark:border-[hsl(215,50%,12%)] flex flex-col items-center justify-center text-center px-6">
+              <div className="absolute rounded-full w-72 h-72 right-0 top-4 z-10 bg-white border-12 border-white dark:bg-[hsl(215,50%,12%)] dark:border-[hsl(215,50%,8%)] flex flex-col items-center justify-center text-center px-6">
                 <div className="absolute inset-2 rounded-full border border-gray-300 dark:border-white/10 pointer-events-none" />
                 <div className="relative z-20">
                   <p className="text-lg font-bold text-[hsl(217,60%,20%)] dark:text-white mb-2">
@@ -91,7 +93,7 @@ export function MisionVision() {
                 className="absolute rounded-full w-80 h-80 -right-10 top-0 dark:hidden"
                 style={{
                   background:
-                    "radial-gradient(circle at 40% 50%, transparent 38%, hsl(217,60%,35%) 52%, hsl(217,60%,45%) 62%, hsl(217,60%,70%) 75%, transparent 85%)",
+                    "linear-gradient(to bottom, hsl(207,76%,40%), hsl(207,76%,85%), white)",
                 }}
               />
               {/* Halo dark */}
@@ -104,13 +106,13 @@ export function MisionVision() {
               />
               {/* Círculo azul oscuro encima */}
               <div
-                className="absolute rounded-full w-72 h-72 left-0 top-4 z-10 border-12 border-white dark:border-[hsl(215,50%,8%)] flex flex-col items-center justify-center text-center px-6"
+                className="absolute rounded-full w-72 h-72 left-0 top-4 z-10 border-14 border-white dark:border-[hsl(215,50%,8%)] flex flex-col items-center justify-center text-center px-6"
                 style={{
                   background:
                     "linear-gradient(135deg, hsl(215,45%,22%) 0%, hsl(215,50%,18%) 40%, hsl(215,55%,15%) 100%)",
                 }}
               >
-                <div className="absolute inset-2 rounded-full border border-white/10 pointer-events-none" />
+                <div className="absolute inset-2 rounded-full pointer-events-none" />
                 <div className="relative z-20">
                   <p className="text-lg font-bold text-white mb-2">Misión</p>
                   <p className="text-sm text-white/80 leading-relaxed">

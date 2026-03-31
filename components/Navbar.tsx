@@ -216,7 +216,6 @@ export function Navbar() {
                       </Link>
                     ))}
                   </div>
-                  git
                 </div>
               )}
             </li>
