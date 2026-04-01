@@ -1,9 +1,9 @@
 import { Navbar } from "@/components/Navbar";
-import { HeroWeb } from "@/components/hero-services/diseño-web/hero-web";
+import { HeroWeb } from "@/components/hero-services/diseno-web/hero-web";
 import {
   PortafolioEcommerce,
   PortafolioInformativo,
-} from "@/components/hero-services/diseño-web/portafolio";
+} from "@/components/hero-services/diseno-web/portafolio";
 import {
   Card,
   CardDescription,
