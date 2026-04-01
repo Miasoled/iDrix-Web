@@ -17,7 +17,8 @@ export function HeroErp() {
 
             {/* Title */}
             <h1 className="mb-6 text-3xl font-bold leading-tight text-foreground md:text-5xl">
-              El <span className="light-text-gradient">ERP</span> que revoluciona
+              El <span className="light-text-gradient">ERP</span> que
+              revoluciona
               <br />
               la gestión empresarial
               <br />
@@ -26,14 +27,14 @@ export function HeroErp() {
 
             {/* Subtitle */}
             <p className="mb-4 max-w-xl mx-auto lg:mx-0 text-base text-muted-foreground">
-              Automatiza contabilidad, facturación, inventario, ventas y nómina con inteligencia
-              artificial desde una sola plataforma.
+              Automatiza contabilidad, facturación, inventario, ventas y nómina
+              con inteligencia artificial desde una sola plataforma.
             </p>
 
             <p className="mb-8 max-w-xl mx-auto lg:mx-0 text-base text-muted-foreground">
-              iDrix ERP proporciona unes una solución empresarial diseñada específicamente para los
-              desafíos de negocios, empresas y pymes ecuatorianas, integrando normativas locales con
-              tecnología global.
+              iDrix ERP proporciona unes una solución empresarial diseñada
+              específicamente para los desafíos de negocios, empresas y pymes
+              ecuatorianas, integrando normativas locales con tecnología global.
             </p>
 
             {/* CTA */}
@@ -49,7 +50,7 @@ export function HeroErp() {
             {/* Card + imagen */}
             <div className="relative rounded-2xl p-4 md:p-6 shadow-xl border border-border bg-hero-gradient w-full max-w-[500px]">
               <Image
-                src="/img/ERP/HeadImg.png"
+                src="/img/erp-i/HeadImg.png"
                 alt="ERP Dashboard"
                 width={500}
                 height={420}

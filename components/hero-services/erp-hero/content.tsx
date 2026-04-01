@@ -62,8 +62,8 @@ export function ErpFeatures() {
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
-            Módulos integrados que funcionan en perfecta armonía para optimizar cada rincón de tu
-            operación.
+            Módulos integrados que funcionan en perfecta armonía para optimizar
+            cada rincón de tu operación.
           </p>
         </div>
 
@@ -83,10 +83,14 @@ export function ErpFeatures() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-base font-semibold text-foreground mb-2">{feature.title}</h3>
+                <h3 className="text-base font-semibold text-foreground mb-2">
+                  {feature.title}
+                </h3>
 
                 {/* Description */}
-                <p className="text-sm text-muted-foreground leading-relaxed">{feature.desc}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {feature.desc}
+                </p>
               </div>
             );
           })}
@@ -116,13 +120,16 @@ export function AiSection() {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24 text-white" style={{ background: "var(--ai-section-bg)" }}>
+    <section
+      className="w-full py-16 md:py-24 text-white"
+      style={{ background: "var(--ai-section-bg)" }}
+    >
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:gap-16 px-6 lg:grid-cols-2">
         {/* Imagen */}
         <div className="flex justify-center">
           <div className="rounded-2xl bg-white/10 p-4 md:p-6 backdrop-blur-sm">
             <Image
-              src="/img/ERP/aiSection.png"
+              src="/img/erp-i/aiSection.png"
               alt="AI Visualization"
               width={420}
               height={420}
@@ -155,7 +162,9 @@ export function AiSection() {
 
                   <div>
                     <h3 className="font-semibold mb-1">{item.title}</h3>
-                    <p className="text-sm text-white/75 leading-relaxed">{item.text}</p>
+                    <p className="text-sm text-white/75 leading-relaxed">
+                      {item.text}
+                    </p>
                   </div>
                 </div>
               );
@@ -178,8 +187,8 @@ export function MobilitySection() {
               Gestión Comercial y Movilidad
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-md">
-              Lleva tu oficina en el bolsillo. iDrix potencia a tu equipo de ventas en campo con
-              herramientas de vanguardia.
+              Lleva tu oficina en el bolsillo. iDrix potencia a tu equipo de
+              ventas en campo con herramientas de vanguardia.
             </p>
           </div>
 
@@ -191,10 +200,12 @@ export function MobilitySection() {
                 style={{ backgroundColor: "oklch(0.6 0.118 184.704)" }}
               />
               <div>
-                <h3 className="font-bold text-foreground mb-2">Clientes geolocalizados</h3>
+                <h3 className="font-bold text-foreground mb-2">
+                  Clientes geolocalizados
+                </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Visualización en mapa de toda tu cartera de clientes para una mejor cobertura
-                  comercial.
+                  Visualización en mapa de toda tu cartera de clientes para una
+                  mejor cobertura comercial.
                 </p>
               </div>
             </div>
@@ -261,22 +272,25 @@ export function BiSection() {
   ];
 
   return (
-    <section className="w-full py-16 md:py-24" style={{ background: "var(--hero-bg)" }}>
+    <section
+      className="w-full py-16 md:py-24"
+      style={{ background: "var(--hero-bg)" }}
+    >
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-12 md:mb-16 space-y-3">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#1e3a5f]">
             Business Intelligence para el Futuro
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
-            Toma el control total de tu empresa con análisis de datos avanzado. No solo registras,
-            también proyectas.
+            Toma el control total de tu empresa con análisis de datos avanzado.
+            No solo registras, también proyectas.
           </p>
         </div>
 
         <div className="flex justify-center mb-16 md:mb-24">
           <div className="relative w-full max-w-4xl p-1 md:p-2 rounded-2xl md:rounded-3xl overflow-hidden">
             <Image
-              src="/img/ERP/BI.png"
+              src="/img/erp-i/BI.png"
               alt="iDrix Business Intelligence Tablet Mockup"
               width={1000}
               height={650}
@@ -288,7 +302,9 @@ export function BiSection() {
 
         <div className="space-y-10 md:space-y-12">
           <div className="text-center">
-            <h3 className="text-xl md:text-2xl font-semibold text-[#1e3a5f]">Beneficios de elegir iDrix</h3>
+            <h3 className="text-xl md:text-2xl font-semibold text-[#1e3a5f]">
+              Beneficios de elegir iDrix
+            </h3>
           </div>
 
           <div className="grid gap-4 md:gap-6 sm:grid-cols-2 lg:grid-cols-5">
@@ -304,12 +320,16 @@ export function BiSection() {
                   </div>
 
                   {benefit.value && (
-                    <span className={`text-3xl md:text-4xl font-extrabold mb-1.5 ${benefit.highlight ? "text-primary" : "text-foreground"}`}>
+                    <span
+                      className={`text-3xl md:text-4xl font-extrabold mb-1.5 ${benefit.highlight ? "text-primary" : "text-foreground"}`}
+                    >
                       {benefit.value}
                     </span>
                   )}
 
-                  <p className="text-xs md:text-sm font-medium text-[#1e3a5f] leading-snug">{benefit.text}</p>
+                  <p className="text-xs md:text-sm font-medium text-[#1e3a5f] leading-snug">
+                    {benefit.text}
+                  </p>
                 </div>
               );
             })}
@@ -342,8 +362,8 @@ export function IdrixErpBanner() {
           </h2>
 
           <p className="text-base md:text-xl leading-relaxed max-w-2xl mx-auto text-white/80">
-            Centraliza todos los procesos de tu negocio en una plataforma inteligente, escalable y
-            diseñada para ganar.
+            Centraliza todos los procesos de tu negocio en una plataforma
+            inteligente, escalable y diseñada para ganar.
           </p>
 
           <div className="pt-4">

@@ -21,8 +21,8 @@ export function CloudHero() {
           Con Idrix
         </h2>
         <p className="text-muted-foreground mt-6 leading-relaxed">
-          La computación en la nube permite acceder y gestionar datos desde cualquier lugar y en
-          cualquier momento a través de internet.
+          La computación en la nube permite acceder y gestionar datos desde
+          cualquier lugar y en cualquier momento a través de internet.
         </p>
       </div>
 
@@ -69,11 +69,12 @@ function CloudImg() {
           </div>
 
           {/* Imagen (encima del círculo) */}
-          <img
+          <Image
             src="/img/cloud.png"
             alt="Idrix cloud illustration"
-            className="relative ml-22 mb-3 w-[450px] h-[450px] object-contain z-20 pointer-events-none dark:blue-scale"
-            style={{ zIndex: 2 }}
+            width={450}
+            height={450}
+            className="relative ml-22 mb-3 object-contain z-20 pointer-events-none dark:blue-scale"
           />
         </div>
 
@@ -111,7 +112,10 @@ function CloudImg() {
                 idrix
               </span>
             </div>
-            <p className="text-sm leading-relaxed" style={{ color: "var(--muted-foreground)" }}>
+            <p
+              className="text-sm leading-relaxed"
+              style={{ color: "var(--muted-foreground)" }}
+            >
               Lleva tu negocio a otro nivel con Idrix
             </p>
           </div>
@@ -153,7 +157,9 @@ export function CloudCards() {
           <Card className="h-full shadow-lg rounded-2xl bg-card p-6">
             <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
               <CloudIcon className="w-4 h-4 text-muted-foreground" />
-              <span className="text-xs font-bold text-foreground">Computación en la nube</span>
+              <span className="text-xs font-bold text-foreground">
+                Computación en la nube
+              </span>
             </div>
 
             <CardHeader className="p-0 mb-6">
@@ -164,16 +170,19 @@ export function CloudCards() {
 
             <CardContent className="p-0">
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Aloja tu infraestructura en data centers de clase mundial como Google Cloud, Amazon
-                AWS y Microsoft Azure, garantizando seguridad, disponibilidad y alto rendimiento
-                para tus aplicaciones.
+                Aloja tu infraestructura en data centers de clase mundial como
+                Google Cloud, Amazon AWS y Microsoft Azure, garantizando
+                seguridad, disponibilidad y alto rendimiento para tus
+                aplicaciones.
               </p>
               <div className="flex justify-center">
                 {/*ilustración de la nube */}
-                <img
-                  src="/img/cloud2.png"
+                <Image
+                  src="/img/Cloud2.png"
                   alt="Ilustración Cloud"
-                  className="w-90 h-70 dark:blue-scale"
+                  width={360}
+                  height={280}
+                  className="dark:blue-scale"
                 />
               </div>
             </CardContent>
@@ -186,11 +195,14 @@ export function CloudCards() {
           <Card className="shadow-lg rounded-2xl bg-card p-6 flex-grow">
             <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
               <CloudIcon className="w-4 h-4 text-muted-foreground" />
-              <span className="text-xs font-bold text-foreground">Flexibilidad</span>
+              <span className="text-xs font-bold text-foreground">
+                Flexibilidad
+              </span>
             </div>
             <CardContent className="p-0">
               <p className="text-muted-foreground leading-relaxed">
-                Adapta fácilmente los recursos de tu sistema según las necesidades de tu empresa.
+                Adapta fácilmente los recursos de tu sistema según las
+                necesidades de tu empresa.
               </p>
             </CardContent>
           </Card>
@@ -199,12 +211,14 @@ export function CloudCards() {
           <Card className="shadow-lg rounded-2xl bg-card p-6 flex-grow">
             <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
               <CloudIcon className="w-4 h-4 text-muted-foreground" />
-              <span className="text-xs font-bold text-foreground uppercase">transformación</span>
+              <span className="text-xs font-bold text-foreground uppercase">
+                transformación
+              </span>
             </div>
             <CardContent className="p-0">
               <p className="text-muted-foreground leading-relaxed">
-                La transformación digital permite reducir costos operativos y ofrecer experiencias
-                más rápidas y simples a los clientes.
+                La transformación digital permite reducir costos operativos y
+                ofrecer experiencias más rápidas y simples a los clientes.
               </p>
             </CardContent>
           </Card>
@@ -216,7 +230,13 @@ export function CloudCards() {
 
 function CloudIcon(props: SVGProps<SVGSVGElement>) {
   return (
-    <svg {...props} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+    <svg
+      {...props}
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+    >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
