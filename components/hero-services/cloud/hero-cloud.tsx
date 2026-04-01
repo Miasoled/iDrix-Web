@@ -11,10 +11,10 @@ import { SVGProps } from "react";
 
 export function CloudHero() {
   return (
-    <section className="relative w-full min-h-[85vh] flex flex-col items-center justify-start pt-28 pb-0 overflow-hidden">
+    <section className="relative w-full flex flex-col items-center justify-start pt-28 pb-0 overflow-hidden">
       {/* TITLE */}
       <div className="text-center max-w-3xl px-6">
-        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl ">
           Computación en la Nube
         </h1>
         <h2 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight light-text-gradient transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
@@ -27,7 +27,7 @@ export function CloudHero() {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="w-full flex justify-center pr-18 ">
+      <div className="w-full flex justify-center pr-18">
         <CloudImg />
       </div>
     </section>
@@ -36,7 +36,8 @@ export function CloudHero() {
 
 function CloudImg() {
   return (
-    <section className="min-h-screen flex-row items-center justify-center">
+    // ✅ CAMBIO: eliminado min-h-screen para que la sección no ocupe toda la pantalla
+    <section className="flex flex-row items-center justify-center">
       <div className="flex items-center gap-0 max-w-5xl w-full">
         {/* ── Círculo con sombra ── */}
         <div className="relative flex-shrink-0">
@@ -69,13 +70,14 @@ function CloudImg() {
           </div>
 
           {/* Imagen (encima del círculo) */}
-          <Image
-            src="/img/cloud.png"
-            alt="Idrix cloud illustration"
-            width={450}
-            height={450}
-            className="relative ml-22 mb-3 object-contain z-20 pointer-events-none dark:blue-scale"
-          />
+          <div className="relative ml-22 mb-3 w-[450px] h-[450px] z-20">
+            <Image
+              src="/img/cloud.png"
+              alt="Idrix cloud illustration"
+              fill
+              className="object-contain pointer-events-none dark:blue-scale"
+            />
+          </div>
         </div>
 
         {/* ── Panel derecho ── */}
@@ -142,10 +144,11 @@ function CloudImg() {
 
 export function CloudCards() {
   return (
-    <section className="min-h-screen  p-10 pt-0 flex flex-col items-center justify-center font-sans">
+    // ✅ CAMBIO: eliminado min-h-screen y ajustado pt-0 → pt-6 para reducir espacio entre secciones
+    <section className="p-10 pt-16 flex flex-col items-center justify-center font-sans">
       {/* Encabezado superior azul */}
       <div className="w-full max-w-5xl mb-8 flex items-center gap-2">
-        <div className="h-1 w-8 bg-[var(--ai-icon-color)] rounded-full"></div>
+        <div className="h-1 w-10 bg-[var(--ai-icon-color)] rounded-full"></div>
         <span className="text-[var(--ai-icon-color)] font-bold uppercase tracking-wider text-sm">
           Computación en la nube
         </span>
@@ -175,23 +178,20 @@ export function CloudCards() {
                 seguridad, disponibilidad y alto rendimiento para tus
                 aplicaciones.
               </p>
-              <div className="flex justify-center">
-                {/*ilustración de la nube */}
-                <div className="relative w-90 h-70">
-                  <Image
-                    src="/img/Cloud2.png"
-                    alt="Ilustración Cloud"
-                    fill
-                    className="object-contain dark:blue-scale"
-                  />
-                </div>
+              <div className="relative w-90 h-70">
+                <Image
+                  src="/img/Cloud2.png"
+                  alt="Ilustración Cloud"
+                  fill
+                  className="object-contain dark:blue-scale"
+                />
               </div>
             </CardContent>
           </Card>
         </div>
 
         {/* Columna Derecha (Dos tarjetas) */}
-        <div className="flex flex-col gap-6 ">
+        <div className="flex flex-col gap-6">
           {/* Tarjeta Flexibilidad */}
           <Card className="shadow-lg rounded-2xl bg-card p-6 flex-grow">
             <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
