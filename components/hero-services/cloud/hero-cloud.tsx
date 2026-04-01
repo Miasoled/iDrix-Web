@@ -177,13 +177,14 @@ export function CloudCards() {
               </p>
               <div className="flex justify-center">
                 {/*ilustración de la nube */}
-                <Image
-                  src="/img/Cloud2.png"
-                  alt="Ilustración Cloud"
-                  width={360}
-                  height={280}
-                  className="dark:blue-scale"
-                />
+                <div className="relative w-90 h-70">
+                  <Image
+                    src="/img/Cloud2.png"
+                    alt="Ilustración Cloud"
+                    fill
+                    className="object-contain dark:blue-scale"
+                  />
+                </div>
               </div>
             </CardContent>
           </Card>
