@@ -1,5 +1,5 @@
 import { HeroErp } from "../../../components/hero-services/erp-hero/hero-erp";
-import { Navbar } from "@/components/git Navbar";
+import { Navbar } from "@/components/Navbar";
 import {
   ErpFeatures,
   IdrixErpBanner,
