@@ -12,6 +12,7 @@ import {
   Shield,
   BarChart2,
 } from "lucide-react";
+import FooterIdrix from "@/components/footer";
 
 export default function Movil() {
   return (
@@ -23,6 +24,7 @@ export default function Movil() {
       <StackMovil />
       <DiferenciasMovil />
       <CtaMovil />
+      <FooterIdrix />
     </main>
   );
 }

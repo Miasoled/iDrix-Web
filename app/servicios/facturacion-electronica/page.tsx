@@ -24,12 +24,10 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { HeroFacturacion } from "@/components/hero-services/hero-facturacion";
+import FooterIdrix from "@/components/footer";
 export default function FacturacionElectronica() {
   return (
-    <main
-      className="min-h-screen"
-      style={{ background: "var(--hero-soft-blue)" }}
-    >
+    <main className="min-h-screen" style={{ background: "var(--hero-soft-blue)" }}>
       <Navbar />
       <HeroFacturacion />
       <QueEsFacturacion />
@@ -37,16 +35,12 @@ export default function FacturacionElectronica() {
       <FirmaFacturacion />
       <VentajasFactura />
       <Soporte />
+      <FooterIdrix />
     </main>
   );
 }
 
-const documentos = [
-  "Facturas de Venta",
-  "Notas de Crédito",
-  "Retenciones",
-  "Guías de Remisión",
-];
+const documentos = ["Facturas de Venta", "Notas de Crédito", "Retenciones", "Guías de Remisión"];
 
 export function QueEsFacturacion() {
   return (
@@ -68,16 +62,10 @@ export function QueEsFacturacion() {
           {/* Badge flotante +500 Proyectos */}
           <div className="absolute -bottom-12 -right-5 bg-white/80 dark:bg-[hsl(215,50%,12%)] border border-[hsl(210,20%,90%)] dark:border-white/10 rounded-2xl px-4 py-3 shadow-lg flex items-start gap-3 max-w-[200px]">
             <div className="w-9 h-9 flex-shrink-0 rounded-xl bg-[hsl(207,76%,45%)]/10 flex items-center justify-center">
-              <TerminalSquare
-                size={18}
-                strokeWidth={1.5}
-                className="text-[hsl(207,76%,45%)]"
-              />
+              <TerminalSquare size={18} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
             </div>
             <div>
-              <p className="text-sm font-bold text-foreground">
-                +500 Proyectos
-              </p>
+              <p className="text-sm font-bold text-foreground">+500 Proyectos</p>
               <p className="text-xs text-muted-foreground leading-relaxed mt-0.5">
                 Desarrollo ágil y optimización de código continuo.
               </p>
@@ -98,17 +86,15 @@ export function QueEsFacturacion() {
           {/* Párrafo 1 */}
           <p className="text-muted-foreground leading-relaxed text-base">
             Es una modalidad de facturación que tiene la misma{" "}
-            <strong className="text-foreground">validez legal</strong> que los
-            comprobantes físicos (en papel). Se genera de forma digital y debe
-            incluir una{" "}
-            <strong className="text-foreground">firma electrónica</strong> para
-            garantizar su autenticidad.
+            <strong className="text-foreground">validez legal</strong> que los comprobantes físicos
+            (en papel). Se genera de forma digital y debe incluir una{" "}
+            <strong className="text-foreground">firma electrónica</strong> para garantizar su
+            autenticidad.
           </p>
 
           {/* Párrafo 2 */}
           <p className="text-muted-foreground leading-relaxed text-base">
-            Este sistema cubre todos los documentos autorizados por el SRI,
-            incluyendo:
+            Este sistema cubre todos los documentos autorizados por el SRI, incluyendo:
           </p>
 
           {/* Grid de documentos */}
@@ -144,8 +130,7 @@ export function DocumentosFacturacion() {
             Facturación electrónica en Ecuador
           </h2>
           <p className="text-muted-foreground text-sm">
-            Emisión autorizada por el SRI para todo tipo de documentos
-            tributarios.
+            Emisión autorizada por el SRI para todo tipo de documentos tributarios.
           </p>
         </div>
 
@@ -156,11 +141,7 @@ export function DocumentosFacturacion() {
               key={factura.titulo}
               className="rounded-2xl p-6 flex flex-col items-center gap-3 bg-white border border-[hsl(210,20%,90%)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[hsl(207,76%,65%)] dark:bg-white/5 dark:border-white/10 dark:hover:border-[hsl(207,76%,45%)]"
             >
-              <factura.icon
-                size={28}
-                strokeWidth={1.5}
-                className="text-[hsl(207,76%,45%)]"
-              />
+              <factura.icon size={28} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
               <span className="text-sm font-semibold text-foreground text-center">
                 {factura.titulo}
               </span>
@@ -171,11 +152,7 @@ export function DocumentosFacturacion() {
         {/* Banner SRI */}
         <div className="rounded-2xl px-6 py-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 bg-[hsl(207,76%,45%)]/10 border border-[hsl(210,20%,90%)] shadow-sm dark:bg-white/5 dark:border-white/10">
           <div className="flex items-center gap-3">
-            <Scale
-              size={20}
-              strokeWidth={1.5}
-              className="text-[hsl(207,76%,45%)] flex-shrink-0"
-            />
+            <Scale size={20} strokeWidth={1.5} className="text-[hsl(207,76%,45%)] flex-shrink-0" />
             <p className="text-sm text-foreground">
               Cumplimiento total con la normativa vigente del{" "}
               <span className="text-[hsl(207,76%,45%)] font-medium">SRI</span>
@@ -214,10 +191,9 @@ export function FirmaFacturacion() {
               Firma Electrónica Integrada
             </h2>
             <p className="text-sm text-white/70 leading-relaxed">
-              La firma electrónica es un requisito indispensable para la
-              facturación digital en Ecuador. En iDrix facilitamos este proceso
-              gestionando su firma a través de proveedores autorizados por{" "}
-              <strong className="text-white">ARCOTEL</strong>.
+              La firma electrónica es un requisito indispensable para la facturación digital en
+              Ecuador. En iDrix facilitamos este proceso gestionando su firma a través de
+              proveedores autorizados por <strong className="text-white">ARCOTEL</strong>.
             </p>
             <div className="flex flex-col gap-3">
               {checks.map((item) => (
@@ -235,15 +211,9 @@ export function FirmaFacturacion() {
 
           {/* Columna derecha — card firma digital */}
           <div className="rounded-2xl border border-white/10 bg-white/5 p-10 flex flex-col items-center gap-3 text-center">
-            <PenLine
-              size={52}
-              strokeWidth={1}
-              className="text-[hsl(207,76%,55%)]"
-            />
+            <PenLine size={52} strokeWidth={1} className="text-[hsl(207,76%,55%)]" />
             <h3 className="text-lg font-bold text-white">Tu firma digital</h3>
-            <p className="text-sm text-white/60">
-              Validada y lista para facturar en minutos.
-            </p>
+            <p className="text-sm text-white/60">Validada y lista para facturar en minutos.</p>
           </div>
         </div>
 
@@ -252,18 +222,12 @@ export function FirmaFacturacion() {
           {/* Card 1 */}
           <div className="relative rounded-3xl p-7 flex flex-col gap-4 overflow-hidden border border-white/10 bg-white/5">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-white/10">
-              <FileKey
-                size={22}
-                strokeWidth={1.5}
-                className="text-[hsl(207,76%,55%)]"
-              />
+              <FileKey size={22} strokeWidth={1.5} className="text-[hsl(207,76%,55%)]" />
             </div>
-            <h3 className="text-lg font-bold text-white">
-              Formatos Compatibles
-            </h3>
+            <h3 className="text-lg font-bold text-white">Formatos Compatibles</h3>
             <p className="text-sm text-white/70 leading-relaxed">
-              Gestionamos tu firma a través de proveedores autorizados en los
-              formatos más seguros de la industria.
+              Gestionamos tu firma a través de proveedores autorizados en los formatos más seguros
+              de la industria.
             </p>
             <div className="flex gap-3 mt-auto">
               {[".p12", ".pfx"].map((fac) => (
@@ -283,11 +247,7 @@ export function FirmaFacturacion() {
           {/* Card 2 */}
           <div className="relative rounded-3xl p-7 flex flex-col gap-4 overflow-hidden border border-white/10 bg-white/5">
             <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-white/10">
-              <User
-                size={22}
-                strokeWidth={1.5}
-                className="text-[hsl(207,76%,55%)]"
-              />
+              <User size={22} strokeWidth={1.5} className="text-[hsl(207,76%,55%)]" />
             </div>
             <h3 className="text-lg font-bold text-white">Persona Natural</h3>
             <p className="text-sm text-white/70 leading-relaxed">
@@ -316,8 +276,7 @@ export function VentajasFactura() {
     {
       icon: Settings,
       titulo: "Automatización",
-      label:
-        "Optimización de procesos internos para reducir tareas repetitivas.",
+      label: "Optimización de procesos internos para reducir tareas repetitivas.",
     },
     {
       icon: Leaf,
@@ -354,8 +313,7 @@ export function VentajasFactura() {
 
         {/* Titulo */}
         <h2 className="text-4xl font-bold text-foreground mb-8">
-          Ventajas de <span className="light-text-gradient">nuestra</span>{" "}
-          solución
+          Ventajas de <span className="light-text-gradient">nuestra</span> solución
         </h2>
 
         {/* Cards */}
@@ -370,23 +328,16 @@ export function VentajasFactura() {
                 <div className="w-10 h-10 flex items-center justify-center rounded-lg bg-[var(--ai-icon-bg)] text-[var(--ai-icon-color)] mb-4">
                   <Icon size={20} />
                 </div>
-                <h3 className="font-semibold text-lg mb-2 text-foreground ">
-                  {venta.titulo}
-                </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  {venta.label}
-                </p>
+                <h3 className="font-semibold text-lg mb-2 text-foreground ">{venta.titulo}</h3>
+                <p className="text-sm text-muted-foreground mb-4">{venta.label}</p>
               </div>
             );
           })}
 
           <div className="rounded-2xl p-8 bg-[hsl(207,76%,45%)]/90 dark:bg-[hsl(207,76%,45%)]/20 text-primary-foreground flex flex-col justify-center">
-            <h3 className="text-lg font-semibold mb-3 dark:text-primary">
-              ¿Listo para innovar?
-            </h3>
+            <h3 className="text-lg font-semibold mb-3 dark:text-primary">¿Listo para innovar?</h3>
             <p className="text-sm mb-6 opacity-90 dark:text-primary">
-              Hablemos sobrecómo iDrix puede transformar su flujo de trabajo hoy
-              mismo.
+              Hablemos sobrecómo iDrix puede transformar su flujo de trabajo hoy mismo.
             </p>
             <div className="flex flex-row gap-1 items-center">
               <span className="dark:text-primary rounded-md font-medium transition">
@@ -456,10 +407,7 @@ export function Soporte() {
           const Icon = icon;
 
           return (
-            <div
-              key={title}
-              className="relative flex flex-col items-center text-center gap-4"
-            >
+            <div key={title} className="relative flex flex-col items-center text-center gap-4">
               {/* Connector line (between icons, desktop only) */}
               {i < soporte.length - 1 && (
                 <span className="hidden md:block absolute top-7 left-[calc(50%+28px)] w-[calc(100%-56px)] h-px bg-[hsl(210,30%,80%)] dark:bg-[hsl(215,30%,25%)]" />

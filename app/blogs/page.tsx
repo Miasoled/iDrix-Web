@@ -1,20 +1,21 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroBlog } from "@/components/hero-services/blogs/hero-blog";
+import FooterIdrix from "@/components/footer";
+
 export default function Blog() {
   return (
-    <main
-      className="min-h-screen"
-      style={{ background: "var(--hero-soft-blue) " }}
-    >
+    <main className="min-h-screen" style={{ background: "var(--hero-soft-blue) " }}>
       <Navbar />
       <HeroBlog />
       <Investigacion />
+      <FooterIdrix />
     </main>
   );
 }
 
 import Image from "next/image";
 import { Search, ArrowRight } from "lucide-react";
+import { Footer } from "react-day-picker";
 
 const articulos = [
   {
@@ -101,14 +102,10 @@ const categorias = [
 ];
 
 const badgeColors: Record<string, string> = {
-  OFIMÁTICA:
-    "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
-  CLOUD:
-    "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
-  SEGURIDAD:
-    "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
-  LEGAL:
-    "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
+  OFIMÁTICA: "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
+  CLOUD: "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
+  SEGURIDAD: "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
+  LEGAL: "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
   IA: "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)] dark:bg-[hsl(207,76%,15%)]",
 };
 
@@ -148,29 +145,20 @@ export function Investigacion() {
                 >
                   {/* Imagen */}
                   <div className="relative w-full h-44">
-                    <Image
-                      src={a.imagen}
-                      alt={a.titulo}
-                      fill
-                      className="object-cover"
-                    />
+                    <Image src={a.imagen} alt={a.titulo} fill className="object-cover" />
                   </div>
 
                   {/* Contenido */}
                   <div className="p-5 flex flex-col gap-3 flex-1">
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-muted-foreground">
-                        {a.fecha}
-                      </span>
+                      <span className="text-xs text-muted-foreground">{a.fecha}</span>
                       <span
                         className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${badgeColors[a.categoria] ?? "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)]"}`}
                       >
                         {a.categoria}
                       </span>
                     </div>
-                    <h3 className="text-base font-bold text-foreground leading-snug">
-                      {a.titulo}
-                    </h3>
+                    <h3 className="text-base font-bold text-foreground leading-snug">{a.titulo}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">
                       {a.descripcion}
                     </p>
@@ -191,25 +179,16 @@ export function Investigacion() {
             {/* Artículos recientes */}
             <div className="rounded-2xl p-5 bg-white border border-[hsl(210,20%,90%)] shadow-sm dark:bg-white/5 dark:border-white/10">
               <div className="flex items-center gap-2 border-l-4 border-[hsl(207,76%,45%)] pl-3 mb-5">
-                <h3 className="text-base font-bold text-foreground">
-                  Artículos Recientes
-                </h3>
+                <h3 className="text-base font-bold text-foreground">Artículos Recientes</h3>
               </div>
               <div className="flex flex-col gap-4">
                 {recientes.map((r) => (
                   <div key={r.titulo} className="flex items-start gap-3">
                     <div className="relative w-14 h-14 flex-shrink-0 rounded-xl overflow-hidden">
-                      <Image
-                        src={r.imagen}
-                        alt={r.titulo}
-                        fill
-                        className="object-cover"
-                      />
+                      <Image src={r.imagen} alt={r.titulo} fill className="object-cover" />
                     </div>
                     <div>
-                      <p className="text-xs text-[hsl(207,76%,45%)] mb-0.5">
-                        {r.fecha}
-                      </p>
+                      <p className="text-xs text-[hsl(207,76%,45%)] mb-0.5">{r.fecha}</p>
                       <p className="text-sm font-semibold text-foreground leading-snug line-clamp-2">
                         {r.titulo}
                       </p>
@@ -222,22 +201,15 @@ export function Investigacion() {
             {/* Categorías */}
             <div className="rounded-2xl p-5 bg-white border border-[hsl(210,20%,90%)] shadow-sm dark:bg-white/5 dark:border-white/10">
               <div className="flex items-center gap-2 border-l-4 border-[hsl(207,76%,45%)] pl-3 mb-5">
-                <h3 className="text-base font-bold text-foreground">
-                  Categorías
-                </h3>
+                <h3 className="text-base font-bold text-foreground">Categorías</h3>
               </div>
               <div className="flex flex-col gap-3">
                 {categorias.map((c) => (
-                  <div
-                    key={c.nombre}
-                    className="flex items-center justify-between"
-                  >
+                  <div key={c.nombre} className="flex items-center justify-between">
                     <span className="text-sm text-foreground hover:text-[hsl(207,76%,45%)] cursor-pointer transition-colors">
                       {c.nombre}
                     </span>
-                    <span className="text-xs font-medium text-muted-foreground">
-                      {c.count}
-                    </span>
+                    <span className="text-xs font-medium text-muted-foreground">{c.count}</span>
                   </div>
                 ))}
               </div>

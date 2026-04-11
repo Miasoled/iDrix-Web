@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import FooterIdrix from "@/components/footer";
 import { HeroInformatica } from "@/components/hero-services/hero-informatica";
 import {
   Search,
@@ -32,6 +33,7 @@ export default function SeguridadInformatica() {
       <Autenticacion />
       <OWASP />
       <Testing />
+      <FooterIdrix />
     </main>
   );
 }
@@ -40,14 +42,12 @@ const servicios = [
   {
     icon: Search,
     titulo: "Informática forense",
-    label:
-      "Investigación profunda de incidentes y recolección de evidencia digital.",
+    label: "Investigación profunda de incidentes y recolección de evidencia digital.",
   },
   {
     icon: Wifi,
     titulo: "Seguridad inalámbrica",
-    label:
-      "Protección avanzada de redes Wi-Fi empresariales y puntos de acceso.",
+    label: "Protección avanzada de redes Wi-Fi empresariales y puntos de acceso.",
   },
   {
     icon: Bug,
@@ -57,8 +57,7 @@ const servicios = [
   {
     icon: ShieldCheck,
     titulo: "Pentesting",
-    label:
-      "Pruebas de penetración controladas para identificar vulnerabilidades.",
+    label: "Pruebas de penetración controladas para identificar vulnerabilidades.",
   },
 ];
 
@@ -96,18 +95,10 @@ export function CapacitacionInformatica() {
               className="rounded-2xl p-6 flex flex-col gap-3 bg-white border border-[hsl(210,20%,90%)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[hsl(207,76%,65%)] dark:bg-white/5 dark:border-white/10 dark:hover:border-[hsl(207,76%,45%)]"
             >
               <div className="w-10 h-10 flex items-center justify-center bg-[hsl(207,76%,45%)]/10 rounded-lg">
-                <item.icon
-                  size={20}
-                  strokeWidth={1.5}
-                  className="text-[hsl(207,76%,45%)]"
-                />
+                <item.icon size={20} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
               </div>
-              <h3 className="text-base font-bold text-foreground">
-                {item.titulo}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.label}
-              </p>
+              <h3 className="text-base font-bold text-foreground">{item.titulo}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed">{item.label}</p>
             </div>
           ))}
         </div>
@@ -171,9 +162,9 @@ export function Autenticacion() {
               </span>{" "}
             </h2>
             <p className="text-sm mr-15 mb-5 leading-relaxed text-muted-foreground">
-              Añada una capa extra de seguridad a susu cuentas corporativas. El
-              2FA asegura que solo el personal autorizado pueda acceder a la
-              información, incluso si su contraseña ha sido comprometida.
+              Añada una capa extra de seguridad a susu cuentas corporativas. El 2FA asegura que solo
+              el personal autorizado pueda acceder a la información, incluso si su contraseña ha
+              sido comprometida.
             </p>
             <div className="flex flex-col gap-3 w-full pr-10">
               {autenticaciones.map((autenticacion) => (
@@ -214,9 +205,8 @@ export function Autenticacion() {
                 Auditorías de seguridad
               </h2>
               <p className="text-sm leading-relaxed text-[hsl(215,15%,40%)] dark:text-muted-foreground">
-                Evaluación integral de la infraestructura tecnológica para
-                garantizar el cumplimiento de los más altos estándares de
-                seguridad.
+                Evaluación integral de la infraestructura tecnológica para garantizar el
+                cumplimiento de los más altos estándares de seguridad.
               </p>
             </div>
             <ul className="flex flex-col gap-4">
@@ -282,24 +272,17 @@ export function OWASP() {
 
             {/* Description */}
             <p className="text-sm leading-relaxed text-[hsl(210,30%,65%)]">
-              Implementamos OWASP Zed Attack Proxy (ZAP) para detectar
-              vulnerabilidades en aplicaciones web durante el desarrollo y
-              pruebas. Es la herramienta de seguridad gratuita más popular del
-              mundo, mantenida por cientos de voluntarios internacionales.
+              Implementamos OWASP Zed Attack Proxy (ZAP) para detectar vulnerabilidades en
+              aplicaciones web durante el desarrollo y pruebas. Es la herramienta de seguridad
+              gratuita más popular del mundo, mantenida por cientos de voluntarios internacionales.
             </p>
 
             {/* Features grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3">
               {owasp.map(({ icon: Icon, text }) => (
                 <div key={text} className="flex items-center gap-3">
-                  <Icon
-                    size={16}
-                    strokeWidth={1.8}
-                    className="shrink-0 text-[hsl(207,76%,55%)]"
-                  />
-                  <span className="text-sm text-[hsl(210,25%,75%)]">
-                    {text}
-                  </span>
+                  <Icon size={16} strokeWidth={1.8} className="shrink-0 text-[hsl(207,76%,55%)]" />
+                  <span className="text-sm text-[hsl(210,25%,75%)]">{text}</span>
                 </div>
               ))}
             </div>

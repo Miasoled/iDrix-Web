@@ -5,6 +5,7 @@ import EquipoTrabajo from "@/components/hero-services/nosotros/equipo";
 import Image from "next/image";
 
 import { HeroNosotros } from "@/components/hero-services/nosotros/hero-nosotros";
+import FooterIdrix from "@/components/footer";
 
 export default function Nosotros() {
   return (
@@ -15,6 +16,7 @@ export default function Nosotros() {
       <Politicas />
       <Valores />
       <EquipoTrabajo />
+      <FooterIdrix />
     </main>
   );
 }
@@ -31,8 +33,7 @@ export function MisionVision() {
           <div
             className="h-[3px] w-64 rounded-full"
             style={{
-              background:
-                "linear-gradient(to right, hsl(207,76%,45%), transparent)",
+              background: "linear-gradient(to right, hsl(207,76%,45%), transparent)",
             }}
           />
         </div>
@@ -58,8 +59,7 @@ export function MisionVision() {
               <div
                 className="absolute rounded-full w-80 h-80 -left-10 top-0 dark:hidden"
                 style={{
-                  background:
-                    "linear-gradient(to top, hsl(207,76%,40%), hsl(207,76%,85%), white)",
+                  background: "linear-gradient(to top, hsl(207,76%,40%), hsl(207,76%,85%), white)",
                 }}
               />
               {/* Halo dark */}
@@ -78,9 +78,8 @@ export function MisionVision() {
                     Visión
                   </p>
                   <p className="text-sm text-gray-500 dark:text-white/60 leading-relaxed">
-                    Ser una empresa líder en desarrollo de software en América
-                    Latina, reconocida por su innovación, calidad y compromiso
-                    con el éxito de sus clientes.
+                    Ser una empresa líder en desarrollo de software en América Latina, reconocida
+                    por su innovación, calidad y compromiso con el éxito de sus clientes.
                   </p>
                 </div>
               </div>
@@ -116,9 +115,8 @@ export function MisionVision() {
                 <div className="relative z-20">
                   <p className="text-lg font-bold text-white mb-2">Misión</p>
                   <p className="text-sm text-white/80 leading-relaxed">
-                    Impulsar el crecimiento de empresas y emprendedores mediante
-                    software a medida que transforme ideas en soluciones
-                    digitales eficientes y escalables.
+                    Impulsar el crecimiento de empresas y emprendedores mediante software a medida
+                    que transforme ideas en soluciones digitales eficientes y escalables.
                   </p>
                 </div>
               </div>

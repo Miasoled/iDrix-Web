@@ -1,5 +1,6 @@
 import { CloudCards, CloudHero } from "@/components/hero-services/cloud/hero-cloud";
 import { Navbar } from "@/components/Navbar";
+import FooterIdrix from "@/components/footer";
 
 export default function ComputacionNube() {
   return (
@@ -7,6 +8,8 @@ export default function ComputacionNube() {
       <Navbar />
       <CloudHero />
       <CloudCards />
+      <FooterIdrix />
+      <FooterIdrix />
     </main>
   );
 }
