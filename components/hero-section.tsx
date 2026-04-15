@@ -1,3 +1,7 @@
+"use client";
+
+import { ScrollReveal } from "./page-wrapper";
+
 export function HeroSection() {
   return (
     <section
@@ -129,73 +133,76 @@ export function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center">
-        {/* Badge */}
-        <div className="mb-4 flex items-center gap-2 rounded-full border border-[hsl(200,25%,85%)] bg-[hsl(0,0%,100%,0.8)] px-4 py-2 shadow-[0_1px_4px_rgba(0,0,0,0.04)] backdrop-blur-md transition-colors dark:border-primary/30 dark:bg-primary/10 dark:shadow-[0_0_30px_rgba(28,126,201,0.4),0_0_60px_rgba(28,126,201,0.2),inset_0_1px_2px_rgba(255,255,255,0.1)] md:mb-6">
-          <span className="flex items-center gap-1.5 rounded-full bg-[hsl(200,25%,96%)] px-2.5 py-0.5 text-xs font-medium text-[hsl(200,50%,15%)] dark:bg-primary/40 dark:text-white dark:shadow-[0_0_20px_rgba(28,126,201,0.6)]">
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              className="text-[hsl(207,76%,45%)] dark:text-white dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
-            >
-              <path
-                d="M7 1L8.5 5.5L13 7L8.5 8.5L7 13L5.5 8.5L1 7L5.5 5.5L7 1Z"
-                fill="currentColor"
-              />
-            </svg>
-            Innovación
-          </span>
-          <span className="text-sm text-[hsl(200,15%,40%)] dark:text-white/90 transition-colors">
-            Desarrollo de Software a Medida
-          </span>
+      <ScrollReveal delay={0.2}>
+        <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center">
+          {/* Badge */}
+          <div className="mb-4 flex items-center gap-2 rounded-full border border-[hsl(200,25%,85%)] bg-[hsl(0,0%,100%,0.8)] px-4 py-2 shadow-[0_1px_4px_rgba(0,0,0,0.04)] backdrop-blur-md transition-colors dark:border-primary/30 dark:bg-primary/10 dark:shadow-[0_0_30px_rgba(28,126,201,0.4),0_0_60px_rgba(28,126,201,0.2),inset_0_1px_2px_rgba(255,255,255,0.1)] md:mb-6">
+            <span className="flex items-center gap-1.5 rounded-full bg-[hsl(200,25%,96%)] px-2.5 py-0.5 text-xs font-medium text-[hsl(200,50%,15%)] dark:bg-primary/40 dark:text-white dark:shadow-[0_0_20px_rgba(28,126,201,0.6)]">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                className="text-[hsl(207,76%,45%)] dark:text-white dark:drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]"
+              >
+                <path
+                  d="M7 1L8.5 5.5L13 7L8.5 8.5L7 13L5.5 8.5L1 7L5.5 5.5L7 1Z"
+                  fill="currentColor"
+                />
+              </svg>
+              Innovación
+            </span>
+            <span className="text-sm text-[hsl(200,15%,40%)] dark:text-white/90 transition-colors">
+              Desarrollo de Software a Medida
+            </span>
+          </div>
+
+          {/* Heading Responsivo */}
+          <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
+            Impulsa tu negocio con <br className="hidden sm:block" />
+            <span className="light-text-gradient">Desarrollo a medida</span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="mb-6 max-w-xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
+            Convierte tu visión en soluciones digitales reales y escalables.
+          </p>
+
+          {/* CTA Buttons - Arreglo Responsive */}
+          <div className="flex w-full flex-col items-center gap-3 px-4 sm:w-auto sm:flex-row sm:gap-4 sm:px-0">
+            <button className="w-full rounded-xl bg-[hsl(207,76%,45%)] px-7 py-3.5 text-base font-medium text-[hsl(0,0%,100%)] shadow-[0_1px_2px_rgba(0,0,0,0.1),0_4px_12px_rgba(28,126,201,0.25)] transition-all hover:bg-[hsl(207,76%,40%)] hover:shadow-[0_1px_2px_rgba(0,0,0,0.1),0_6px_16px_rgba(28,126,201,0.35)] dark:shadow-[0_0_30px_-5px_rgba(28,126,201,0.6)] dark:hover:shadow-[0_0_40px_-5px_rgba(28,126,201,0.7)] sm:w-auto">
+              Comenzar proyecto
+            </button>
+            <button className="w-full rounded-xl border border-[hsl(200,25%,85%)] bg-[hsl(0,0%,100%)] px-7 py-3.5 text-base font-medium text-[hsl(200,50%,15%)] shadow-[0_1px_3px_rgba(0,0,0,0.04)] transition-all hover:border-[hsl(200,25%,78%)] hover:bg-[hsl(200,25%,98%)] dark:bg-white/5 dark:border-white/10 dark:text-white dark:hover:bg-white/10 sm:w-auto">
+              Solicitar cotización
+            </button>
+          </div>
         </div>
-
-        {/* Heading Responsivo */}
-        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
-          Impulsa tu negocio con <br className="hidden sm:block" />
-          <span className="light-text-gradient">Desarrollo a medida</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p className="mb-6 max-w-xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
-          Convierte tu visión en soluciones digitales reales y escalables.
-        </p>
-
-        {/* CTA Buttons - Arreglo Responsive */}
-        {/* En móvil (por defecto) son flex-col y w-full. En sm (tablet) son flex-row y w-auto */}
-        <div className="flex w-full flex-col items-center gap-3 px-4 sm:w-auto sm:flex-row sm:gap-4 sm:px-0">
-          <button className="w-full rounded-xl bg-[hsl(207,76%,45%)] px-7 py-3.5 text-base font-medium text-[hsl(0,0%,100%)] shadow-[0_1px_2px_rgba(0,0,0,0.1),0_4px_12px_rgba(28,126,201,0.25)] transition-all hover:bg-[hsl(207,76%,40%)] hover:shadow-[0_1px_2px_rgba(0,0,0,0.1),0_6px_16px_rgba(28,126,201,0.35)] dark:shadow-[0_0_30px_-5px_rgba(28,126,201,0.6)] dark:hover:shadow-[0_0_40px_-5px_rgba(28,126,201,0.7)] sm:w-auto">
-            Comenzar proyecto
-          </button>
-          <button className="w-full rounded-xl border border-[hsl(200,25%,85%)] bg-[hsl(0,0%,100%)] px-7 py-3.5 text-base font-medium text-[hsl(200,50%,15%)] shadow-[0_1px_3px_rgba(0,0,0,0.04)] transition-all hover:border-[hsl(200,25%,78%)] hover:bg-[hsl(200,25%,98%)] dark:bg-white/5 dark:border-white/10 dark:text-white dark:hover:bg-white/10 sm:w-auto">
-            Solicitar cotización
-          </button>
-        </div>
-      </div>
+      </ScrollReveal>
 
       {/* Hero Video */}
-      <div className="relative z-10 mt-6 w-[88%] max-w-[680px] px-4 pb-0 md:mt-8 lg:mt-10">
-        <div className="relative overflow-hidden rounded-xl border border-[hsl(200,25%,90%)] bg-[hsl(0,0%,100%)] shadow-[0_4px_40px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] transition-all dark:bg-white/5 dark:border-white/10 dark:shadow-[0_0_40px_-5px_rgba(28,126,201,0.15)] md:rounded-2xl">
-          {/* Top fade overlay */}
-          <div className="pointer-events-none absolute -top-px left-0 right-0 z-10 h-1 rounded-t-xl bg-[linear-gradient(90deg,hsl(200,50%,85%),hsl(200,50%,88%),hsl(200,50%,85%))] dark:bg-[linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,0.1),rgba(255,255,255,0))] md:rounded-t-2xl" />
-          <video
-            src="/videos/HeroRepresentation.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full"
-            style={{ height: "auto", display: "block" }}
+      <ScrollReveal delay={0.4}>
+        <div className="relative z-10 mt-6 w-[88%] max-w-[680px] px-4 pb-0 md:mt-8 lg:mt-10">
+          <div className="relative overflow-hidden rounded-xl border border-[hsl(200,25%,90%)] bg-[hsl(0,0%,100%)] shadow-[0_4px_40px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.04)] transition-all dark:bg-white/5 dark:border-white/10 dark:shadow-[0_0_40px_-5px_rgba(28,126,201,0.15)] md:rounded-2xl">
+            {/* Top fade overlay */}
+            <div className="pointer-events-none absolute -top-px left-0 right-0 z-10 h-1 rounded-t-xl bg-[linear-gradient(90deg,hsl(200,50%,85%),hsl(200,50%,88%),hsl(200,50%,85%))] dark:bg-[linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,0.1),rgba(255,255,255,0))] md:rounded-t-2xl" />
+            <video
+              src="/videos/HeroRepresentation.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full"
+              style={{ height: "auto", display: "block" }}
+            />
+          </div>
+          {/* Bottom fade */}
+          <div
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-16 transition-colors duration-500 md:h-24"
+            style={{ background: "var(--hero-dashboard-fade)" }}
           />
         </div>
-        {/* Bottom fade */}
-        <div
-          className="pointer-events-none absolute inset-x-0 bottom-0 h-16 transition-colors duration-500 md:h-24"
-          style={{ background: "var(--hero-dashboard-fade)" }}
-        />
-      </div>
+      </ScrollReveal>
     </section>
   );
 }

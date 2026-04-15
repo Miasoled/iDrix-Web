@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
 import { HeroMovil } from "@/components/hero-services/hero-movil";
 import { Smartphone, Globe, Monitor } from "lucide-react";
@@ -13,17 +15,30 @@ import {
   BarChart2,
 } from "lucide-react";
 import FooterIdrix from "@/components/footer";
+import { ScrollReveal } from "@/components/page-wrapper";
 
 export default function Movil() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <HeroMovil />
-      <InfoMovil />
-      <TiposMovil />
-      <StackMovil />
-      <DiferenciasMovil />
-      <CtaMovil />
+      <ScrollReveal direction="fadeUp">
+        <HeroMovil />
+      </ScrollReveal>
+      <ScrollReveal direction="slideRight">
+        <InfoMovil />
+      </ScrollReveal>
+      <ScrollReveal direction="slideLeft">
+        <TiposMovil />
+      </ScrollReveal>
+      <ScrollReveal direction="scaleIn">
+        <StackMovil />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeIn">
+        <DiferenciasMovil />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeUp">
+        <CtaMovil />
+      </ScrollReveal>
       <FooterIdrix />
     </main>
   );

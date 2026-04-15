@@ -1,3 +1,5 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
 
 import {
@@ -25,16 +27,30 @@ import {
 import Image from "next/image";
 import { HeroFacturacion } from "@/components/hero-services/hero-facturacion";
 import FooterIdrix from "@/components/footer";
+import { ScrollReveal } from "@/components/page-wrapper";
+
 export default function FacturacionElectronica() {
   return (
     <main className="min-h-screen" style={{ background: "var(--hero-soft-blue)" }}>
       <Navbar />
-      <HeroFacturacion />
-      <QueEsFacturacion />
-      <DocumentosFacturacion />
-      <FirmaFacturacion />
-      <VentajasFactura />
-      <Soporte />
+      <ScrollReveal direction="fadeUp">
+        <HeroFacturacion />
+      </ScrollReveal>
+      <ScrollReveal direction="slideLeft">
+        <QueEsFacturacion />
+      </ScrollReveal>
+      <ScrollReveal direction="slideRight">
+        <DocumentosFacturacion />
+      </ScrollReveal>
+      <ScrollReveal direction="scaleIn">
+        <FirmaFacturacion />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeIn">
+        <VentajasFactura />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeUp">
+        <Soporte />
+      </ScrollReveal>
       <FooterIdrix />
     </main>
   );

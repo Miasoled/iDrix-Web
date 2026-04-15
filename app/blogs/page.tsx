@@ -1,21 +1,26 @@
+"use client";
+
+import Image from "next/image";
+import { Search, ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBlog } from "@/components/hero-services/blogs/hero-blog";
 import FooterIdrix from "@/components/footer";
+import { ScrollReveal } from "@/components/page-wrapper";
 
 export default function Blog() {
   return (
     <main className="min-h-screen" style={{ background: "var(--hero-soft-blue) " }}>
       <Navbar />
-      <HeroBlog />
-      <Investigacion />
+      <ScrollReveal direction="fadeIn">
+        <HeroBlog />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeUp">
+        <Investigacion />
+      </ScrollReveal>
       <FooterIdrix />
     </main>
   );
 }
-
-import Image from "next/image";
-import { Search, ArrowRight } from "lucide-react";
-import { Footer } from "react-day-picker";
 
 const articulos = [
   {
@@ -145,7 +150,7 @@ export function Investigacion() {
                 >
                   {/* Imagen */}
                   <div className="relative w-full h-44">
-                    <Image src={a.imagen} alt={a.titulo} fill className="object-cover" />
+                    <NextImage src={a.imagen} alt={a.titulo} fill className="object-cover" />
                   </div>
 
                   {/* Contenido */}
@@ -185,7 +190,7 @@ export function Investigacion() {
                 {recientes.map((r) => (
                   <div key={r.titulo} className="flex items-start gap-3">
                     <div className="relative w-14 h-14 flex-shrink-0 rounded-xl overflow-hidden">
-                      <Image src={r.imagen} alt={r.titulo} fill className="object-cover" />
+                      <NextImage src={r.imagen} alt={r.titulo} fill className="object-cover" />
                     </div>
                     <div>
                       <p className="text-xs text-[hsl(207,76%,45%)] mb-0.5">{r.fecha}</p>

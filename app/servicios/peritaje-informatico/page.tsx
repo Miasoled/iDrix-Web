@@ -1,6 +1,9 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
 import FooterIdrix from "@/components/footer";
 import { HeroPeritaje } from "@/components/hero-services/hero-peritaje";
+import { ScrollReveal } from "@/components/page-wrapper";
 import {
   Scale,
   FileText,
@@ -11,15 +14,26 @@ import {
   RefreshCcwDot,
   Video,
 } from "lucide-react";
+
 export default function PeritajeInformatico() {
   return (
     <div className="min-h-screen bg-gray-100">
       <Navbar />
-      <HeroPeritaje />
-      <GarantiaPeritaje />
-      <ServiciosPeritaje />
-      <ProcesoPeritaje />
-      <Judicial />
+      <ScrollReveal direction="fadeUp">
+        <HeroPeritaje />
+      </ScrollReveal>
+      <ScrollReveal direction="slideRight">
+        <GarantiaPeritaje />
+      </ScrollReveal>
+      <ScrollReveal direction="slideLeft">
+        <ServiciosPeritaje />
+      </ScrollReveal>
+      <ScrollReveal direction="scaleIn">
+        <ProcesoPeritaje />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeIn">
+        <Judicial />
+      </ScrollReveal>
       <FooterIdrix />
     </div>
   );

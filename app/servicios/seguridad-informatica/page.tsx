@@ -1,6 +1,9 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
 import FooterIdrix from "@/components/footer";
 import { HeroInformatica } from "@/components/hero-services/hero-informatica";
+import { ScrollReveal } from "@/components/page-wrapper";
 import {
   Search,
   Wifi,
@@ -28,11 +31,21 @@ export default function SeguridadInformatica() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <HeroInformatica />
-      <CapacitacionInformatica />
-      <Autenticacion />
-      <OWASP />
-      <Testing />
+      <ScrollReveal direction="fadeUp">
+        <HeroInformatica />
+      </ScrollReveal>
+      <ScrollReveal direction="slideLeft">
+        <CapacitacionInformatica />
+      </ScrollReveal>
+      <ScrollReveal direction="slideRight">
+        <Autenticacion />
+      </ScrollReveal>
+      <ScrollReveal direction="scaleIn">
+        <OWASP />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeIn">
+        <Testing />
+      </ScrollReveal>
       <FooterIdrix />
     </main>
   );

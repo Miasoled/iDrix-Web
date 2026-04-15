@@ -1,15 +1,21 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
 import FooterIdrix from "@/components/footer";
 import { HeroContacto } from "@/components/hero-services/contact/hero-contacto";
+import { ScrollReveal } from "@/components/page-wrapper";
 import { MapPin, Phone } from "lucide-react";
-import { Footer } from "react-day-picker";
 
 export default function Contacto() {
   return (
     <main className="min-h-screen" style={{ background: "var(--hero-soft-blue)" }}>
       <Navbar />
-      <HeroContacto />
-      <Ubicacion />
+      <ScrollReveal direction="slideRight">
+        <HeroContacto />
+      </ScrollReveal>
+      <ScrollReveal direction="scaleIn">
+        <Ubicacion />
+      </ScrollReveal>
       <FooterIdrix />
     </main>
   );

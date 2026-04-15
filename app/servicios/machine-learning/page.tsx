@@ -1,18 +1,33 @@
+"use client";
+
 import { Navbar } from "@/components/Navbar";
 import { HeroMachine } from "@/components/hero-services/hero-machine";
 import Image from "next/image";
 import FooterIdrix from "@/components/footer";
+import { ScrollReveal } from "@/components/page-wrapper";
 
 export default function MachineLearning() {
   return (
     <main className="min-h-screen bg-background">
       <Navbar />
-      <HeroMachine />
-      <QueEsMachineLearning />
-      <EcosistemaInteligente />
-      <Algoritmos />
-      <ProcesamientoDigital />
-      <ExtarccionCaracteristicas />
+      <ScrollReveal direction="fadeUp">
+        <HeroMachine />
+      </ScrollReveal>
+      <ScrollReveal direction="slideLeft">
+        <QueEsMachineLearning />
+      </ScrollReveal>
+      <ScrollReveal direction="slideRight">
+        <EcosistemaInteligente />
+      </ScrollReveal>
+      <ScrollReveal direction="scaleIn">
+        <Algoritmos />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeIn">
+        <ProcesamientoDigital />
+      </ScrollReveal>
+      <ScrollReveal direction="fadeUp">
+        <ExtarccionCaracteristicas />
+      </ScrollReveal>
       <FooterIdrix />
     </main>
   );
