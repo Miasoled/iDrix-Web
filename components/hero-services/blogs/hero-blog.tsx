@@ -19,7 +19,6 @@ export function HeroBlog() {
             alt="Decoración fondo"
             fill
             className="object-cover"
-            style={{ objectPosition: "right 90%" }}
             priority
           />
         </div>
@@ -48,15 +47,11 @@ export function HeroBlog() {
         </div>
 
         <h1 className="mb-4 text-balance text-4xl font-black leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
-          Blog de{" "}
-          <span className="light-text-gradient mb-2 pb-2 inline-block">
-            Tecnología
-          </span>
+          Blog de <span className="light-text-gradient mb-2 pb-2 inline-block">Tecnología</span>
         </h1>
         <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground md:text-lg">
-          ¡Bienvenido a nuestro blog de tecnología de vanguardia! Te mantenemos
-          actualizado con las últimas noticia, tendenciasy avances en el mundo
-          tecnológico.
+          ¡Bienvenido a nuestro blog de tecnología de vanguardia! Te mantenemos actualizado con las
+          últimas noticia, tendenciasy avances en el mundo tecnológico.
         </p>
       </div>
       <Barra />

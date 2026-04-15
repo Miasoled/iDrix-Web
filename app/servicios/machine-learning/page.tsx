@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { HeroMachine } from "@/components/hero-services/hero-machine";
 import Image from "next/image";
+import FooterIdrix from "@/components/footer";
 
 export default function MachineLearning() {
   return (
@@ -12,6 +13,7 @@ export default function MachineLearning() {
       <Algoritmos />
       <ProcesamientoDigital />
       <ExtarccionCaracteristicas />
+      <FooterIdrix />
     </main>
   );
 }
@@ -65,12 +67,9 @@ export function QueEsMachineLearning() {
           >
             Sistemas que aprenden solos, decisiones que impulsan tu negocio
           </h2>
-          <p
-            className="text-sm leading-relaxed"
-            style={{ color: "hsl(210,35%,68%)" }}
-          >
-            Usando datos históricos de tu empresa, entrenamos modelos que
-            identifican patrones invisibles y generan predicciones accionables.
+          <p className="text-sm leading-relaxed" style={{ color: "hsl(210,35%,68%)" }}>
+            Usando datos históricos de tu empresa, entrenamos modelos que identifican patrones
+            invisibles y generan predicciones accionables.
           </p>
           <hr style={{ borderColor: "hsl(215,40%,28%)" }} />
           <ul className="flex flex-col gap-4">
@@ -80,14 +79,8 @@ export function QueEsMachineLearning() {
                   className="mt-2 w-2 h-2 rounded-full flex-shrink-0"
                   style={{ background: "hsl(210,80%,62%)" }}
                 />
-                <p
-                  className="text-sm leading-relaxed"
-                  style={{ color: "hsl(210,30%,78%)" }}
-                >
-                  <span
-                    className="font-bold"
-                    style={{ color: "hsl(210,100%,92%)" }}
-                  >
+                <p className="text-sm leading-relaxed" style={{ color: "hsl(210,30%,78%)" }}>
+                  <span className="font-bold" style={{ color: "hsl(210,100%,92%)" }}>
                     {bold}
                   </span>{" "}
                   — {desc}
@@ -104,12 +97,10 @@ export function QueEsMachineLearning() {
               ¿Qué es el Machine Learning?
             </h2>
             <p className="text-sm leading-relaxed text-[hsl(215,15%,40%)] dark:text-muted-foreground">
-              Es la disciplina de la IA que permite a los sistemas aprender y
-              mejorar automáticamente a partir de la experiencia sin ser
-              programados explícitamente. Mediante el análisis de grandes
-              volúmenes de datos, nuestros modelos identifican patrones
-              complejos para predecir comportamientos futuros con alta
-              precisión.
+              Es la disciplina de la IA que permite a los sistemas aprender y mejorar
+              automáticamente a partir de la experiencia sin ser programados explícitamente.
+              Mediante el análisis de grandes volúmenes de datos, nuestros modelos identifican
+              patrones complejos para predecir comportamientos futuros con alta precisión.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -151,22 +142,14 @@ const card = [
     tag: "Inteligencia Artificial",
     abbr: "IA",
     desc: 'La capacidad de las computadoras de mostrar un comportamiento "inteligente", predictivo con base a datos históricos.',
-    features: [
-      "Percepción Visual",
-      "Toma de Decisiones",
-      "Resolución de Problemas",
-    ],
+    features: ["Percepción Visual", "Toma de Decisiones", "Resolución de Problemas"],
   },
   {
     tag: "Machine Learning",
     abbr: "ML",
     featured: true,
     desc: "Técnica para crear comportamiento inteligente mediante entrenamientos automáticos basados en exposición a datos.",
-    features: [
-      "Modelos Predictivos",
-      "Minería de Datos",
-      "Detección de Patrones",
-    ],
+    features: ["Modelos Predictivos", "Minería de Datos", "Detección de Patrones"],
   },
   {
     tag: "Deep Learning",
@@ -200,8 +183,8 @@ export function EcosistemaInteligente() {
           </span>
         </h2>
         <p className="text-sm text-[hsl(215,15%,45%)] dark:text-muted-foreground max-w-sm mx-auto leading-relaxed">
-          Entienda las diferencias entre las tecnologías que impulsan la
-          transformación digital moderna.
+          Entienda las diferencias entre las tecnologías que impulsan la transformación digital
+          moderna.
         </p>
       </div>
 
@@ -310,9 +293,7 @@ export function Algoritmos() {
                 <span className="w-2 h-2 rounded-full bg-[hsl(207,76%,55%)] shrink-0" />
                 <p className="text-sm font-bold text-white">{title}</p>
               </div>
-              <p className="text-xs leading-relaxed text-[hsl(210,30%,65%)] pl-4">
-                {desc}
-              </p>
+              <p className="text-xs leading-relaxed text-[hsl(210,30%,65%)] pl-4">{desc}</p>
             </div>
           </div>
         ))}
@@ -353,8 +334,8 @@ export function ProcesamientoDigital() {
           </span>
         </h2>
         <p className="text-sm text-[hsl(215,15%,45%)] dark:text-muted-foreground max-w-md mx-auto leading-relaxed">
-          Transformamos la percepción visual en datos estructurados mediante
-          visión artificial avanzada.
+          Transformamos la percepción visual en datos estructurados mediante visión artificial
+          avanzada.
         </p>
       </div>
 
@@ -445,18 +426,14 @@ export function ExtarccionCaracteristicas() {
           >
             {/* Header */}
             <div className="flex items-center justify-between">
-              <span className="text-2xl font-black text-[hsl(210,50%,50%)]">
-                {number}
-              </span>
+              <span className="text-2xl font-black text-[hsl(210,50%,50%)]">{number}</span>
               <span className="text-[10px] font-bold tracking-widest px-3 py-1 rounded-full bg-[hsl(210,70%,20%)] text-[hsl(195,85%,65%)]">
                 {tag}
               </span>
             </div>
             {/* Abbr + desc */}
             <h3 className="text-2xl font-black text-white">{abbr}</h3>
-            <p className="text-xs leading-relaxed text-[hsl(210,30%,65%)]">
-              {desc}
-            </p>
+            <p className="text-xs leading-relaxed text-[hsl(210,30%,65%)]">{desc}</p>
             {/* Image */}
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-[hsl(220,60%,8%)] mt-auto">
               <Image src={img} alt={abbr} fill className="object-cover" />

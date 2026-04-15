@@ -1,3 +1,4 @@
+import FooterIdrix from "@/components/footer";
 import { Navbar } from "@/components/Navbar";
 import { HeroClientes } from "@/components/portafolio/hero-clientes";
 
@@ -8,6 +9,7 @@ export default function Page() {
       <div className="relative z-10">
         <Navbar />
         <HeroClientes />
+        <FooterIdrix />
       </div>
     </main>
   );

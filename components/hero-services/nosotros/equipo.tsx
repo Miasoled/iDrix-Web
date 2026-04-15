@@ -1,16 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Shield,
-  Code2,
-  BarChart3,
-  Users,
-  Search,
-  Monitor,
-  Video,
-  Globe,
-} from "lucide-react";
+import { Shield, Code2, BarChart3, Users, Search, Monitor, Video, Globe } from "lucide-react";
 
 interface TeamMember {
   id: number;
@@ -146,16 +137,11 @@ const teamMembers: TeamMember[] = [
 
 export default function EquipoTrabajo() {
   return (
-    <section
-      className="py-20 bg-background"
-      id="equipo"
-      style={{ background: "var(--hero-bg)" }}
-    >
+    <section className="py-20 bg-background" id="equipo" style={{ background: "var(--hero-bg)" }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            Equipo de trabajo en{" "}
-            <span className="light-text-gradient">Idrix Technologies</span>
+            Equipo de trabajo en <span className="light-text-gradient">Idrix Technologies</span>
           </h2>
         </div>
 
@@ -163,18 +149,13 @@ export default function EquipoTrabajo() {
           {teamMembers.map((member) => (
             <div
               key={member.id}
-              className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300"
+              className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 p-6"
             >
               {/* Header Azul */}
-              <div className="bg-[#1e3a8a] dark:bg-[#0f172a] h-32 relative flex items-end p-6">
+              <div className="bg-[#1e3a8a] dark:bg-[#0f172a] h-32 relative flex items-end p-6 rounded-t-3xl">
                 {/* Foto circular */}
                 <div className="absolute -bottom-12 left-6 w-24 h-24 rounded-full border-[6px] border-card overflow-hidden shadow-lg">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
+                  <Image src={member.image} alt={member.name} fill className="object-cover" />
                 </div>
 
                 {/* Icono lupa */}
@@ -184,17 +165,13 @@ export default function EquipoTrabajo() {
 
                 {/* Nombre */}
                 <div className="ml-36">
-                  <h3 className="text-white text-xl font-bold tracking-wide">
-                    {member.name}
-                  </h3>
+                  <h3 className="text-white text-xl font-bold tracking-wide">{member.name}</h3>
                 </div>
               </div>
 
               {/* Contenido */}
               <div className="pt-16 pb-8 px-7">
-                <p className="text-primary font-semibold text-[15px] mb-3">
-                  {member.title}
-                </p>
+                <p className="text-primary font-semibold text-[15px] mb-3">{member.title}</p>
 
                 <p className="text-muted-foreground text-[14.5px] leading-relaxed mb-6">
                   {member.bio}

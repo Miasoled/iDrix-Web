@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/Navbar";
+import FooterIdrix from "@/components/footer";
 import { HeroPeritaje } from "@/components/hero-services/hero-peritaje";
 import {
   Scale,
@@ -19,6 +20,7 @@ export default function PeritajeInformatico() {
       <ServiciosPeritaje />
       <ProcesoPeritaje />
       <Judicial />
+      <FooterIdrix />
     </div>
   );
 }
@@ -56,9 +58,8 @@ export function GarantiaPeritaje() {
             Garantía y Acreditación Oficial
           </h2>
           <p className="text-muted-foreground text-base max-w-xl mx-auto leading-relaxed">
-            Nuestros procesos cumplen con los más altos estándares
-            internacionales para garantizar la integridad de la cadena de
-            custodia.
+            Nuestros procesos cumplen con los más altos estándares internacionales para garantizar
+            la integridad de la cadena de custodia.
           </p>
         </div>
 
@@ -71,22 +72,14 @@ export function GarantiaPeritaje() {
             >
               {/* Icono */}
               <div className="w-10 h-10 flex items-center justify-center">
-                <item.icon
-                  size={24}
-                  strokeWidth={1.5}
-                  className="text-[hsl(207,76%,45%)]"
-                />
+                <item.icon size={24} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
               </div>
 
               {/* Label */}
-              <span className="text-xs text-muted-foreground">
-                {item.label}
-              </span>
+              <span className="text-xs text-muted-foreground">{item.label}</span>
 
               {/* Título */}
-              <h3 className="text-lg font-bold text-foreground -mt-2">
-                {item.titulo}
-              </h3>
+              <h3 className="text-lg font-bold text-foreground -mt-2">{item.titulo}</h3>
             </div>
           ))}
         </div>
@@ -111,8 +104,7 @@ const servicio = [
   {
     icon: RefreshCcwDot,
     titulo: "Recuperación de datos",
-    label:
-      "Restauración de información eliminada o dañada en discos duros, móviles y servidores.",
+    label: "Restauración de información eliminada o dañada en discos duros, móviles y servidores.",
   },
   {
     icon: Video,
@@ -139,8 +131,7 @@ export function ServiciosPeritaje() {
           </h2>
 
           <p className="text-muted-foreground  max-w-xl">
-            Soluciones integrales en tecnología forense para el sector legal y
-            corporativo
+            Soluciones integrales en tecnología forense para el sector legal y corporativo
           </p>
         </div>
         <div
@@ -153,18 +144,10 @@ export function ServiciosPeritaje() {
               className="rounded-2xl p-6 flex flex-col gap-4 bg-white border border-[hsl(210,20%,90%)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[hsl(207,76%,65%)] dark:bg-white/5 dark:border-white/10 dark:hover:border-[hsl(207,76%,45%)]"
             >
               <div className="w-10 h-10 flex items-center justify-center bg-[hsl(207,76%,45%)]/10 rounded-sm">
-                <item.icon
-                  size={24}
-                  strokeWidth={1.5}
-                  className="text-[hsl(207,76%,45%)]"
-                />
+                <item.icon size={24} strokeWidth={1.5} className="text-[hsl(207,76%,45%)]" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground -mt-2">
-                {item.titulo}
-              </h3>
-              <span className="text-accent text-muted-foreground">
-                {item.label}
-              </span>
+              <h3 className="text-2xl font-bold text-foreground -mt-2">{item.titulo}</h3>
+              <span className="text-accent text-muted-foreground">{item.label}</span>
             </div>
           ))}
         </div>
@@ -214,18 +197,14 @@ export function ProcesoPeritaje() {
           Forense
         </h2>
         <p className="text-sm text-[hsl(215,15%,45%)] dark:text-muted-foreground max-w-md mx-auto">
-          Una metodología rigurosa para asegurar la admisibilidad de la prueba
-          en los tribunales.
+          Una metodología rigurosa para asegurar la admisibilidad de la prueba en los tribunales.
         </p>
       </div>
 
       {/* Steps */}
       <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-y-10 gap-x-4">
         {proceso.map(({ title, desc, icon }, i) => (
-          <div
-            key={title}
-            className="relative flex flex-col items-center text-center gap-4"
-          >
+          <div key={title} className="relative flex flex-col items-center text-center gap-4">
             {/* Connector line (between icons, desktop only) */}
             {i < proceso.length - 1 && (
               <span className="hidden md:block absolute top-7 left-[calc(50%+28px)] w-[calc(100%-56px)] h-px bg-[hsl(210,30%,80%)] dark:bg-[hsl(215,30%,25%)]" />

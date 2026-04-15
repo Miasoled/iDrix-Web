@@ -1,12 +1,10 @@
 import { HeroErp } from "../../../components/hero-services/erp-hero/hero-erp";
 import { Navbar } from "@/components/Navbar";
-import {
-  ErpFeatures,
-  IdrixErpBanner,
-} from "@/components/hero-services/erp-hero/content";
+import { ErpFeatures, IdrixErpBanner } from "@/components/hero-services/erp-hero/content";
 import { AiSection } from "@/components/hero-services/erp-hero/content";
 import { MobilitySection } from "@/components/hero-services/erp-hero/content";
 import { BiSection } from "@/components/hero-services/erp-hero/content";
+import FooterIdrix from "@/components/footer";
 
 export default function Page() {
   return (
@@ -18,6 +16,7 @@ export default function Page() {
       <MobilitySection />
       <BiSection />
       <IdrixErpBanner />
+      <FooterIdrix />
     </main>
   );
 }

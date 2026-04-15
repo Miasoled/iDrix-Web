@@ -1,16 +1,16 @@
 import { Navbar } from "@/components/Navbar";
+import FooterIdrix from "@/components/footer";
 import { HeroContacto } from "@/components/hero-services/contact/hero-contacto";
 import { MapPin, Phone } from "lucide-react";
+import { Footer } from "react-day-picker";
 
 export default function Contacto() {
   return (
-    <main
-      className="min-h-screen"
-      style={{ background: "var(--hero-soft-blue)" }}
-    >
+    <main className="min-h-screen" style={{ background: "var(--hero-soft-blue)" }}>
       <Navbar />
       <HeroContacto />
       <Ubicacion />
+      <FooterIdrix />
     </main>
   );
 }
@@ -44,11 +44,7 @@ export function Ubicacion() {
           </span>
         </div>
         <h2 className="text-4xl font-bold text-foreground mb-10">
-          ¿Cómo llegar a{" "}
-          <span className="light-text-gradient mb-2 pb-2 inline-block">
-            iDrix
-          </span>
-          ?
+          ¿Cómo llegar a <span className="light-text-gradient mb-2 pb-2 inline-block">iDrix</span>?
         </h2>
 
         {/* Grid */}
@@ -76,9 +72,7 @@ export function Ubicacion() {
                     className="text-[hsl(207,76%,45%)] flex-shrink-0 mt-0.5"
                   />
                   <div>
-                    <p className="text-sm font-semibold text-foreground">
-                      {s.direccion}
-                    </p>
+                    <p className="text-sm font-semibold text-foreground">{s.direccion}</p>
                     <p className="text-xs text-muted-foreground">{s.ciudad}</p>
                   </div>
                 </div>
