@@ -152,7 +152,7 @@ export default function EquipoTrabajo() {
               className="group bg-card border border-border rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-300 p-6"
             >
               {/* Header Azul */}
-              <div className="bg-[#1e3a8a] dark:bg-[#0f172a] h-32 relative flex items-end p-6 rounded-t-3xl">
+              <div className="bg-[#122457] dark:bg-[#0f172a] h-32 relative flex items-end p-6 rounded-t-3xl">
                 {/* Foto circular */}
                 <div className="absolute -bottom-12 left-6 w-24 h-24 rounded-full border-[6px] border-card overflow-hidden shadow-lg">
                   <Image src={member.image} alt={member.name} fill className="object-cover" />
