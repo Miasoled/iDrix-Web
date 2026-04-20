@@ -150,7 +150,7 @@ export function Investigacion() {
                 >
                   {/* Imagen */}
                   <div className="relative w-full h-44">
-                    <NextImage src={a.imagen} alt={a.titulo} fill className="object-cover" />
+                    <Image src={a.imagen} alt={a.titulo} fill className="object-cover" />
                   </div>
 
                   {/* Contenido */}
@@ -190,7 +190,7 @@ export function Investigacion() {
                 {recientes.map((r) => (
                   <div key={r.titulo} className="flex items-start gap-3">
                     <div className="relative w-14 h-14 flex-shrink-0 rounded-xl overflow-hidden">
-                      <NextImage src={r.imagen} alt={r.titulo} fill className="object-cover" />
+                      <Image src={r.imagen} alt={r.titulo} fill className="object-cover" />
                     </div>
                     <div>
                       <p className="text-xs text-[hsl(207,76%,45%)] mb-0.5">{r.fecha}</p>
