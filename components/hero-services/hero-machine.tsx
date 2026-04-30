@@ -29,12 +29,12 @@ export function HeroMachine() {
       <div className="grid grid-cols-1 text-center md:grid-cols-2 ">
         {/* Heading */}
         <div className="relative z-10 flex w-full max-w-4xl flex-col text-left items-start px-4 ">
-          <h1 className="mb-4 text-balance sm:text-8xl font-black leading-[1.1] text-7xl">
+          <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
             Machine <br />{" "}
             <span className="light-text-gradient">Learning</span>{" "}
           </h1>
 
-          <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground md:text-lg">
+          <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
             Potenciamos su empresa en Latinoamérica con soluciones avanzadas de
             inteligencia artificial, modelos predictivos y redes neuronales
             profundas que transforman datos en decisiones estratégicas.

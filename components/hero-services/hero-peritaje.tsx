@@ -29,13 +29,13 @@ export function HeroPeritaje() {
 
       {/* Content */}
       <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center">
-        <h1 className="mb-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-7xl">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Peritaje Informático
           <br />
           <span className="light-text-gradient">Forense</span>
         </h1>
 
-        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground md:text-lg">
+        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
           Extracción técnica de contenido digital con validez legal y
           acreditación oficial ante el Consejo de la Judicatura para procesos
           judiciales complejos.

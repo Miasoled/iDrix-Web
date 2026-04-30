@@ -141,13 +141,13 @@ export function HeroTestimonio() {
 
       {/* Título y descripción */}
       <div className="relative z-10 flex flex-col items-center text-center px-6 mt-8">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary">
+        <h1 className="mb-2 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-primary transition-all md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Testimonios
         </h1>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold light-text-gradient mb-4 pb-2.5 inline-block">
+        <h2 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight light-text-gradient transition-all md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           iDrix Technology
-        </h1>
-        <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
+        </h2>
+        <p className="mb-6 max-w-2xl mx-auto text-balance text-base leading-relaxed text-muted-foreground transition-colors md:text-lg">
           Explora cómo nuestra empresa tecnológica ha impactado positivamente
           las vidas de nuestros usuarios a través de sus testimonios.
         </p>

@@ -9,6 +9,7 @@ import {
   Scale,
   ArrowRight,
 } from "lucide-react";
+import Link from "next/link";
 
 function useSpotlight() {
   const ref = useRef<HTMLDivElement>(null);
@@ -71,18 +72,21 @@ const policies = [
     badge: "Privacidad",
     title: "Políticas de Privacidad",
     desc: "Garantizamos la confidencialidad y protección de tus datos personales conforme a las normativas de Ecuador y estándares internacionales.",
+    href: "/politicas/privacidad",
   },
   {
     icon: Cookie,
     badge: "Cookies",
     title: "Políticas de Cookies",
     desc: "Este sitio utiliza cookies para mejorar tu experiencia, almacenando información anónima como preferencias y datos de navegación.",
+    href: "/politicas/cookies",
   },
   {
     icon: Scale,
     badge: "Propiedad intelectual",
     title: "Políticas de Propiedad Intelectual",
     desc: "Todo el software desarrollado a medida es propiedad exclusiva del cliente una vez completado el proyecto y realizados los pagos.",
+    href: "/politicas/intelectual",
   },
 ];
 
@@ -139,7 +143,7 @@ export function Politicas() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {policies.map(({ icon, badge, title, desc }) => (
+        {policies.map(({ icon, badge, title, desc, href }) => (
           <Card
             key={badge}
             className="bg-white dark:bg-white/5 border-border dark:border-[hsl(207,68%,60%)]/30 flex flex-col gap-3"
@@ -149,12 +153,12 @@ export function Politicas() {
             <p className="text-sm leading-relaxed text-muted-foreground flex-1">
               {desc}
             </p>
-            <a
-              href="#"
+            <Link
+              href={href}
               className="inline-flex items-center gap-1.5 text-sm font-semibold text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,65%)] hover:gap-3 transition-all w-fit mt-1"
             >
               Ver política <ArrowRight size={15} />
-            </a>
+            </Link>
           </Card>
         ))}
       </div>

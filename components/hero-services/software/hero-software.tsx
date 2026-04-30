@@ -6,14 +6,14 @@ export function HeroSoftware() {
     >
       <div className="relative z-10 flex w-full max-w-5xl flex-col items-center px-6 text-center">
         {/* TITLE */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-foreground mb-6">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-foreground transition-all md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Impulsa tu negocio con
           <br />
           <span className="light-text-gradient">Desarrollo a medida</span>
         </h1>
 
         {/* SUBTITLE */}
-        <p className="max-w-2xl text-muted-foreground text-base md:text-lg mb-10">
+        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-muted-foreground transition-colors md:text-lg">
           Convierte tu visión en soluciones digitales reales y escalables. La mejor empresa de
           desarrollo de software en Ecuador.
         </p>

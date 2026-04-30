@@ -25,7 +25,7 @@ export function HeroMovil() {
       {/* Content */}
       <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-5 text-center">
         {/* Heading */}
-        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Aplicaciones móviles que <br />
           <span className="light-text-gradient mb-2 pb-1.5 inline-block">
             Transforman negocios
@@ -33,10 +33,10 @@ export function HeroMovil() {
         </h1>
 
         {/* Subtitle */}
-        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground md:text-lg">
-          Desarrollamos apps nativas nativas, híbridas y PWA para Android e iOS,
-          utilizando Flutter y Xamarin para ofrecer soliuciones rápidas, seguras
-          y escalables desde.
+        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
+          Desarrollamos apps nativas, híbridas y PWA para Android e iOS,
+          utilizando Flutter y Xamarin para ofrecer soluciones rápidas, seguras
+          y escalables.
         </p>
 
         {/* CTA */}

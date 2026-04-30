@@ -37,13 +37,13 @@ export function HeroFacturacion() {
         </span>
       </div>
       <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center">
-        <h1 className="mb-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-7xl">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Impulsa tu negocio con
           <br />
           <span className="light-text-gradient">Facturación Electrónica</span>
         </h1>
 
-        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground md:text-lg">
+        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
           Optimiza tus procesos contables y administrativos con iDrix
           Technology. El proceso de facturación que cruza información contable
           con organismos de control de manera eficiente y segura.

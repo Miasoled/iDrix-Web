@@ -129,10 +129,12 @@ export function Valores() {
         </div>
 
         {/* Col 2: Conocimiento (featured) */}
-        <Card className="row-span-2 bg-[hsl(215,60%,22%)] dark:bg-[hsl(215,55%,14%)] border-[hsl(215,60%,30%)] dark:border-[hsl(207,68%,60%)]/30 relative justify-between">
+        <Card className="row-span-2 bg-[hsl(215,60%,22%)] dark:bg-[hsl(215,55%,14%)] border-[hsl(215,60%,30%)] dark:border-[hsl(207,68%,60%)]/30 justify-between shadow-xl">
           <div>
             <IconBadge icon={BookOpen} dark />
-            <h3 className="mt-4 text-2xl font-bold text-white">Conocimiento</h3>
+            <h3 className="mt-4 mb-4 text-2xl font-bold text-white">
+              Conocimiento
+            </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
               Pleno conocimiento de las tecnologías actuales, creando una
               cultura de aprendizaje de las tecnologías y de nuestros clientes,

@@ -13,14 +13,14 @@ export function CloudHero() {
   return (
     <section className="relative w-full flex flex-col items-center justify-start pt-28 pb-0 overflow-hidden">
       {/* TITLE */}
-      <div className="text-center max-w-3xl px-6">
-        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl ">
+      <div className="text-center max-w-4xl px-6">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Computación en la Nube
         </h1>
         <h2 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight light-text-gradient transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Con Idrix
         </h2>
-        <p className="text-muted-foreground mt-6 leading-relaxed">
+        <p className="mb-6 max-w-2xl mx-auto text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
           La computación en la nube permite acceder y gestionar datos desde
           cualquier lugar y en cualquier momento a través de internet.
         </p>

@@ -147,13 +147,13 @@ export function HeroPartners() {
       </div>
 
       <div className="flex flex-col mt-8 px-6 z-10 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary ">
+        <h1 className="mb-2 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-primary transition-all md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Nuestros Partners
         </h1>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold light-text-gradient mb-2 pb-2.5 inline-block">
+        <h2 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight light-text-gradient transition-all md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           iDrix Technology
-        </h1>
-        <p className="max-w-2xl mx-auto mt-7 text-muted-foreground">
+        </h2>
+        <p className="mb-6 max-w-2xl mx-auto text-balance text-base leading-relaxed text-muted-foreground transition-colors md:text-lg">
           Bienvenido a iDrix Technology S.A, tu socio confiable en el desarrollo
           de software. Nos enorgullece presentarte a nuestros clientes, quienes
           confían en nosotros para impulsar su éxito en el mundo digital.

@@ -31,14 +31,14 @@ export function HeroInformatica() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl items-center">
         {/* Columna izquierda */}
         <div className="flex flex-col items-start text-left">
-          <h1 className="mb-4 font-black leading-[1.1] text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[hsl(200,50%,15%)] dark:text-white">
+          <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
             Seguridad <br />
             <span className="light-text-gradient dark:bg-gradient-to-r dark:from-[hsl(207,76%,60%)] dark:to-[hsl(200,80%,70%)] dark:bg-clip-text dark:text-transparent">
               Informática
             </span>
           </h1>
 
-          <p className="mb-6 max-w-md text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground">
+          <p className="mb-6 max-w-md text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
             La seguridad informática es la disciplina encargada de proteger la
             integridad, confidencialidad y privacidad de la información
             almacenada en sistemas informáticos.

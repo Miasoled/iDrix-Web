@@ -34,7 +34,7 @@ export default function HeroIA() {
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl items-center">
           <div className="flex flex-col items-start text-left">
-            <h1 className="mb-4 font-black leading-[1.1] text-2xl sm:text-6xl lg:text-6xl xl:text-6xl text-[hsl(200,50%,15%)] dark:text-white">
+            <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
               El ERP que <br />
               revoluciona
               <span className="light-text-gradient dark:bg-gradient-to-r dark:from-[hsl(207,76%,60%)] dark:to-[hsl(200,80%,70%)] dark:bg-clip-text dark:text-transparent block">
@@ -42,7 +42,7 @@ export default function HeroIA() {
               </span>
             </h1>
 
-            <p className="mb-8 max-w-md text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground">
+            <p className="mb-8 max-w-md text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
               Llevamos la inteligencia artificial generativa al ecosistema
               financiero de Ecuador. Automatiza, predice y escala tu empresa con
               precisión etérea.

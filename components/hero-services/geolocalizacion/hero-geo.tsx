@@ -19,12 +19,12 @@ export default function HeroGeo() {
             </span>
           </div>
 
-          <h1 className="text-4xl md:text-7xl lg:text-7xl xl:text-7xl font-bold tracking-tight text-foreground leading-[1.1] lg:leading-[0.95]">
+          <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-foreground transition-all md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
             Seguimiento en <br />
             <span className="text-transparent bg-clip-text light-text-gradient">Tiempo Real</span>
           </h1>
 
-          <p className="text-muted-foreground text-lg md:text-xl max-w-lg mx-auto lg:mx-0 leading-relaxed font-medium">
+          <p className="mb-6 max-w-lg mx-auto lg:mx-0 text-balance text-base leading-relaxed text-muted-foreground transition-colors md:text-lg font-medium">
             Optimice sus rutas comerciales con Geoldrix, una plataforma inteligente que integra
             geolocalización, monitoreo y análisis en tiempo real.
           </p>

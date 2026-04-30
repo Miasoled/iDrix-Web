@@ -8,13 +8,13 @@ export function AutomatizacionesHero() {
     <section className="relative w-full flex flex-col items-center justify-start pt-28 pb-0 overflow-hidden">
       {/* TITLE */}
       <div className="text-center max-w-4xl px-6">
-        <h1 className="mb-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-6xl lg:text-7xl ">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Automatización Inteligente
         </h1>
-        <h2 className="mb-4 text-balance text-4xl font-bold leading-[1.1] tracking-tight light-text-gradient transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
+        <h2 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight light-text-gradient transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           con Idrix
         </h2>
-        <p className="text-muted-foreground mt-6 leading-relaxed max-w-2xl mx-auto">
+        <p className="mb-6 max-w-2xl mx-auto text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
           Optimiza cada paso de tu tienda online con flujos de trabajo automatizados. Reduce
           errores, ahorra tiempo y aumenta tus ventas liberando a tu equipo de tareas repetitivas.
         </p>

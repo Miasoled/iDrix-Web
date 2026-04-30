@@ -109,23 +109,18 @@ export default function FooterIdrix() {
               <h3 className="font-semibold text-foreground mb-5">LEGAL</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li>
-                  <Link href="#" className="hover:text-foreground transition-colors">
+                  <Link href="/politicas/privacidad" className="hover:text-foreground transition-colors">
                     Privacidad
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-foreground transition-colors">
-                    Términos de Servicio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-foreground transition-colors">
+                  <Link href="/politicas/cookies" className="hover:text-foreground transition-colors">
                     Cookies
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="hover:text-foreground transition-colors">
-                    Licencias
+                  <Link href="/politicas/intelectual" className="hover:text-foreground transition-colors">
+                    Propiedad Intelectual
                   </Link>
                 </li>
               </ul>

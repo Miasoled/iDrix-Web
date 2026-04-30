@@ -7,13 +7,13 @@ export function HeroWeb() {
       {/* Content */}
       <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center">
         {/* Heading */}
-        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent md:text-5xl lg:text-6xl">
+        <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
           Conozca más acerca de nuestro servicio <br />
           <span className="light-text-gradient">Desarrollo de Software</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground md:text-lg">
+        <p className="mb-6 max-w-2xl text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
           Un equipo de ingenieros apasionados por la tecnología, dedicados a transformar sus ideas
           en experiencias digitales impactantes y funcionales que impulsan el crecimiento de su
           marca.
