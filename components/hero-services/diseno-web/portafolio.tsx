@@ -55,7 +55,13 @@ const proyectosEcommerce = [
    CARD REUTILIZABLE
 ================================ */
 
-function ProjectCard({ project }: any) {
+interface Project {
+  title: string;
+  image: string;
+  subtitle?: string;
+}
+
+function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="relative overflow-hidden rounded-2xl group shadow-md">
       <Image

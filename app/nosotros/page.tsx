@@ -4,6 +4,8 @@ import { Navbar } from "@/components/Navbar";
 import { Politicas } from "@/components/hero-services/nosotros/politicas";
 import { Valores } from "@/components/hero-services/nosotros/valores";
 import EquipoTrabajo from "@/components/hero-services/nosotros/equipo";
+import { BrochuresSection } from "@/components/hero-services/nosotros/brochures-seccion";
+import { HistoriaSection } from "@/components/hero-services/nosotros/historia-seccion";
 import { ScrollReveal } from "@/components/page-wrapper";
 import Image from "next/image";
 
@@ -17,6 +19,9 @@ export default function Nosotros() {
       <ScrollReveal direction="fadeIn">
         <HeroNosotros />
       </ScrollReveal>
+      <ScrollReveal direction="slideRight">
+        <HistoriaSection />
+      </ScrollReveal>
       <ScrollReveal direction="slideLeft">
         <MisionVision />
       </ScrollReveal>
@@ -28,6 +33,10 @@ export default function Nosotros() {
       </ScrollReveal>
       <ScrollReveal direction="scaleIn">
         <EquipoTrabajo />
+      </ScrollReveal>
+
+      <ScrollReveal direction="slideLeft">
+        <BrochuresSection />
       </ScrollReveal>
       <FooterIdrix />
     </main>

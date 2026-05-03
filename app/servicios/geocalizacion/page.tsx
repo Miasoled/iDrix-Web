@@ -4,7 +4,6 @@ import HeroGeo from "@/components/hero-services/geolocalizacion/hero-geo";
 import { Navbar } from "@/components/Navbar";
 import {
   CardsGeo,
-  MetricCard,
   Monitoreo,
   Beneficios,
 } from "@/components/hero-services/geolocalizacion/content";
@@ -13,7 +12,7 @@ import { ScrollReveal } from "@/components/page-wrapper";
 
 export default function Geocalizacion() {
   return (
-    <main className="min-h-screen" style={{ background: "var(--hero-soft-blue)" }}>
+    <main className="min-h-screen">
       <Navbar />
       <ScrollReveal direction="fadeUp">
         <HeroGeo />

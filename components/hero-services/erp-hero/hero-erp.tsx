@@ -23,7 +23,7 @@ export function HeroErp() {
             </div>
 
             {/* Title */}
-            <h1 className="mb-4 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-5xl lg:text-6xl xl:text-[4.2rem]">
+            <h1 className="mb-4 text-balance text-5xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:mb-5 md:text-6xl lg:text-7xl xl:text-[5rem]">
               El <span className="light-text-gradient">ERP</span> que
               revoluciona
               <br />
@@ -39,9 +39,9 @@ export function HeroErp() {
             </p>
 
             <p className="mb-8 max-w-xl mx-auto lg:mx-0 text-balance text-base leading-relaxed text-[hsl(200,15%,45%)] dark:text-muted-foreground transition-colors md:text-lg">
-              iDrix ERP es una solución empresarial diseñada
-              específicamente para los desafíos de negocios, empresas y pymes
-              ecuatorianas, integrando normativas locales con tecnología global.
+              iDrix ERP es una solución empresarial diseñada específicamente
+              para los desafíos de negocios, empresas y pymes ecuatorianas,
+              integrando normativas locales con tecnología global.
             </p>
 
             {/* CTA */}

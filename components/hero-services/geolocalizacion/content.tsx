@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import {
   Navigation,
   Users,
@@ -12,15 +13,22 @@ import {
   Search,
   Download,
   ShieldCheck,
+  ClipboardCheck,
+  AlertTriangle,
+  BarChart3,
+  TrendingDown,
+  Clock3,
 } from "lucide-react";
 
 export function CardsGeo() {
   return (
-    <section className="w-full max-w-7xl mx-auto p-4 md:p-6 space-y-6 md:space-y-8 font-sans">
+    <section className="w-full max-w-7xl mx-auto p-4 md:p-6 space-y-6 md:space-y-8 font-sans py-16">
       {/* Título de la sección */}
-      <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 md:mb-10 text-center md:text-left">
-        Módulos <span className="text-[var(--ai-icon-color)]">Integrados</span>
-      </h2>
+      <div className="flex flex-col items-center md:items-start gap-2 mb-10">
+        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground text-center md:text-left">
+          Módulos <span className="light-text-gradient">Integrados</span>
+        </h2>
+      </div>
 
       {/* Grid Principal */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
@@ -32,10 +40,13 @@ export function CardsGeo() {
             <div className="mb-auto">
               <div className="flex items-center gap-3 text-[var(--ai-icon-color)] mb-4">
                 <Navigation className="w-6 h-6 rotate-45" />
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground">Gestión de Rutas</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                  Gestión de Rutas
+                </h3>
               </div>
               <p className="text-muted-foreground text-base leading-relaxed max-w-sm">
-                Optimización y control total de recorridos con visualización en tiempo real.
+                Optimización y control total de recorridos con visualización en
+                tiempo real.
               </p>
             </div>
 
@@ -85,7 +96,9 @@ export function CardsGeo() {
             <div className="w-10 h-10 bg-muted text-[var(--ai-icon-color)] rounded-xl flex items-center justify-center mb-4">
               <Users className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-foreground">Gestión de Clientes</h3>
+            <h3 className="text-lg font-bold text-foreground">
+              Gestión de Clientes
+            </h3>
             <p className="text-muted-foreground text-xs mt-2">
               Mapa de clientes e indicadores de frecuencia de compra.
             </p>
@@ -105,7 +118,9 @@ export function CardsGeo() {
             <div className="w-10 h-10 bg-muted text-indigo-500 rounded-xl flex items-center justify-center mb-4 border border-border">
               <Monitor className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-foreground">Gestión de Vendedores</h3>
+            <h3 className="text-lg font-bold text-foreground">
+              Gestión de Vendedores
+            </h3>
             <p className="text-muted-foreground text-xs mt-2 leading-relaxed">
               Panel de control de fuerza de ventas y desempeño individual.
             </p>
@@ -146,7 +161,8 @@ export function CardsGeo() {
               </h3>
             </div>
             <p className="text-blue-100/80 text-sm leading-relaxed max-w-xs">
-              Monitoreo satelital constante para una supervisión total de su flota.
+              Monitoreo satelital constante para una supervisión total de su
+              flota.
             </p>
             <div className="grid grid-cols-2 gap-2 md:gap-3">
               {[
@@ -184,8 +200,12 @@ export function CardsGeo() {
         {/* Trayectoria Histórica */}
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <History className="w-5 h-5 text-[var(--ai-icon-color)] mb-4" />
-          <h4 className="font-bold text-foreground text-sm">Trayectoria Histórica</h4>
-          <p className="text-muted-foreground text-[10px] mt-1">Análisis de recorridos pasados.</p>
+          <h4 className="font-bold text-foreground text-sm">
+            Trayectoria Histórica
+          </h4>
+          <p className="text-muted-foreground text-[10px] mt-1">
+            Análisis de recorridos pasados.
+          </p>
           <div className="mt-6 flex items-center gap-2">
             <div className="w-full h-1 bg-muted rounded-full relative">
               <div className="absolute left-0 top-1/2 -translate-y-1/2 w-3 h-3 bg-[var(--ai-icon-color)] rounded-full" />
@@ -198,7 +218,9 @@ export function CardsGeo() {
         {/* Paradas de Distribución */}
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <Navigation className="w-5 h-5 text-[var(--ai-icon-color)] mb-4" />
-          <h4 className="font-bold text-foreground text-sm">Paradas de Distribución</h4>
+          <h4 className="font-bold text-foreground text-sm">
+            Paradas de Distribución
+          </h4>
           <div className="mt-4 space-y-2">
             {[
               { color: "bg-emerald-500", label: "Con venta" },
@@ -207,7 +229,9 @@ export function CardsGeo() {
             ].map((st, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className={`w-2 h-2 rounded-full ${st.color}`} />
-                <span className="text-[10px] font-bold text-muted-foreground">{st.label}</span>
+                <span className="text-[10px] font-bold text-muted-foreground">
+                  {st.label}
+                </span>
               </div>
             ))}
           </div>
@@ -226,7 +250,9 @@ export function CardsGeo() {
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <MapIcon className="w-5 h-5 text-indigo-500 mb-4" />
           <h4 className="font-bold text-foreground text-sm">Mapas de Calor</h4>
-          <p className="text-muted-foreground text-[10px] mt-1">Densidad de servicios.</p>
+          <p className="text-muted-foreground text-[10px] mt-1">
+            Densidad de servicios.
+          </p>
           <div className="mt-4 rounded-xl overflow-hidden h-16 bg-muted relative">
             <div className="absolute inset-0 bg-gradient-to-br from-emerald-200/30 via-amber-200/30 to-red-200/30" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-emerald-500 rounded-full blur-sm" />
@@ -236,9 +262,6 @@ export function CardsGeo() {
     </section>
   );
 }
-
-import { Card, CardContent } from "@/components/ui/card";
-import { ClipboardCheck, AlertTriangle } from "lucide-react";
 
 interface MetricCardProps {
   title: string;
@@ -276,7 +299,9 @@ export function MetricCard({
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground">
             {value}
           </h2>
-          <span className={`${textColor} text-[10px] md:text-xs font-semibold`}>{statusText}</span>
+          <span className={`${textColor} text-[10px] md:text-xs font-semibold`}>
+            {statusText}
+          </span>
         </div>
       </CardContent>
     </Card>
@@ -310,11 +335,14 @@ export function Monitoreo() {
   ];
 
   return (
-    <section className="py-12 md:py-20 px-6 md:px-10 font-sans bg-background">
-      <div className="max-w-7xl mx-auto space-y-10 md:space-y-12">
-        <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-center text-foreground">
-          Panel de monitoreo en vivo
-        </h1>
+    <section className="py-16 md:py-24 px-6 md:px-10 font-sans bg-background">
+      <div className="max-w-7xl mx-auto space-y-12">
+        <div className="flex flex-col items-center gap-2">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center text-[hsl(200,50%,15%)] dark:text-white">
+            Panel de monitoreo{" "}
+            <span className="light-text-gradient">en vivo</span>
+          </h2>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
           {metrics.map((metric, index) => (
@@ -326,28 +354,44 @@ export function Monitoreo() {
   );
 }
 
-import { BarChart3, TrendingDown, Clock3 } from "lucide-react";
+interface BenefitCardProps {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+}
 
 // Sub-componente para las 4 tarjetas superiores
-function BenefitCard({ icon: Icon, title, description }: any) {
+function BenefitCard({ icon: Icon, title, description }: BenefitCardProps) {
   return (
     <Card className="border-border shadow-sm rounded-2xl bg-card transition-all hover:shadow-md">
       <CardContent className="p-6 md:p-7 space-y-4">
         <div className="w-10 h-10 bg-muted rounded-xl flex items-center justify-center text-[var(--ai-icon-color)] border border-border">
           <Icon className="w-5 h-5" />
         </div>
-        <h4 className="text-lg font-bold text-foreground tracking-tight leading-snug">{title}</h4>
-        <p className="text-muted-foreground text-xs leading-relaxed">{description}</p>
+        <h4 className="text-lg font-bold text-[hsl(200,50%,15%)] dark:text-white tracking-tight leading-snug">
+          {title}
+        </h4>
+        <p className="text-muted-foreground text-xs leading-relaxed">
+          {description}
+        </p>
       </CardContent>
     </Card>
   );
 }
 
+interface ResultItemProps {
+  value: string;
+  text: string;
+  color: string;
+}
+
 // Sub-componente para los ítems de la lista de resultados reales
-function ResultItem({ value, text, color }: any) {
+function ResultItem({ value, text, color }: ResultItemProps) {
   return (
     <div className="flex items-center gap-4 bg-white/5 backdrop-blur-sm border border-white/5 rounded-2xl p-4 md:p-5 hover:bg-white/10 transition-colors">
-      <div className={`w-3 h-3 flex-shrink-0 rounded-full ${color} animate-pulse`} />
+      <div
+        className={`w-3 h-3 flex-shrink-0 rounded-full ${color} animate-pulse`}
+      />
       <p className="text-xs md:text-sm text-white leading-relaxed">
         <span className="font-bold text-white/95">{value}</span> {text}
       </p>
@@ -360,12 +404,14 @@ export function Beneficios() {
     {
       icon: BarChart3,
       title: "35% Aumento de Productividad",
-      description: "Incremento promedio en la productividad mediante rutas optimizadas.",
+      description:
+        "Incremento promedio en la productividad mediante rutas optimizadas.",
     },
     {
       icon: TrendingDown,
       title: "25% Reducción de Costos",
-      description: "Disminución en costos operativos por optimización de desplazamientos.",
+      description:
+        "Disminución en costos operativos por optimización de desplazamientos.",
     },
     {
       icon: Clock3,
@@ -403,24 +449,19 @@ export function Beneficios() {
   ];
 
   return (
-    <section className="bg-background py-12 md:py-20 px-6 md:px-10 font-sans border-t border-border">
+    <section className="bg-background py-16 md:py-24 px-6 md:px-10 font-sans border-t border-border">
       <div className="max-w-7xl mx-auto space-y-12 md:space-y-16">
         {/* ENCABEZADO DE SECCIÓN */}
         <div className="text-center md:text-left space-y-3">
-          <div className="inline-flex items-center gap-2">
+          <div className="flex items-center gap-2">
             <div className="h-0.5 w-6 bg-[var(--ai-icon-color)] rounded-full" />
             <span className="text-xs font-bold text-[var(--ai-icon-color)] uppercase tracking-widest">
               Resultados comprobados
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground leading-[1.15]">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[hsl(200,50%,15%)] dark:text-white leading-[1.15]">
             Beneficios que{" "}
-            <span
-              className="text-transparent bg-clip-text"
-              style={{ backgroundImage: "var(--text-gradient-light)" }}
-            >
-              transforman
-            </span>{" "}
+            <span className="light-text-gradient">transforman</span>{" "}
             <br className="hidden md:block" />
             su operación
           </h2>
@@ -447,8 +488,8 @@ export function Beneficios() {
               Nuestros clientes han experimentado mejoras significativas
             </h3>
             <p className="text-blue-100/90 text-sm leading-relaxed max-w-lg">
-              Empresas en todo Ecuador han transformado sus operaciones comerciales con nuestra
-              plataforma de seguimiento inteligente.
+              Empresas en todo Ecuador han transformado sus operaciones
+              comerciales con nuestra plataforma de seguimiento inteligente.
             </p>
 
             {/* Gráfico de Barras Mockup */}
