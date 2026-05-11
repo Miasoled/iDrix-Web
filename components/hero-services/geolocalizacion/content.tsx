@@ -25,7 +25,7 @@ export function CardsGeo() {
     <section className="w-full max-w-7xl mx-auto p-4 md:p-6 space-y-6 md:space-y-8 font-sans py-16">
       {/* Título de la sección */}
       <div className="flex flex-col items-center md:items-start gap-2 mb-10">
-        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground text-center md:text-left">
+        <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground text-center md:text-left">
           Módulos <span className="light-text-gradient">Integrados</span>
         </h2>
       </div>
@@ -40,7 +40,7 @@ export function CardsGeo() {
             <div className="mb-auto">
               <div className="flex items-center gap-3 text-[var(--ai-icon-color)] mb-4">
                 <Navigation className="w-6 h-6 rotate-45" />
-                <h3 className="text-2xl md:text-3xl font-bold text-foreground">
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground">
                   Gestión de Rutas
                 </h3>
               </div>
@@ -72,7 +72,7 @@ export function CardsGeo() {
 
             {/* 3. Botón (Abajo) */}
             <div className="mt-auto">
-              <Button className="bg-[var(--ai-icon-color)] hover:brightness-110 text-primary-foreground rounded-xl px-10 py-6 h-auto text-base font-bold shadow-lg shadow-blue-500/20 transition-all active:scale-95">
+              <Button className="bg-[var(--ai-icon-color)] hover:brightness-110 text-primary-foreground rounded-xl px-10 py-6 h-auto text-base font-semibold shadow-lg shadow-blue-500/20 transition-all active:scale-95">
                 Ver Módulo
               </Button>
             </div>
@@ -96,7 +96,7 @@ export function CardsGeo() {
             <div className="w-10 h-10 bg-muted text-[var(--ai-icon-color)] rounded-xl flex items-center justify-center mb-4">
               <Users className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-foreground">
+            <h3 className="text-lg font-semibold text-foreground">
               Gestión de Clientes
             </h3>
             <p className="text-muted-foreground text-xs mt-2">
@@ -118,7 +118,7 @@ export function CardsGeo() {
             <div className="w-10 h-10 bg-muted text-indigo-500 rounded-xl flex items-center justify-center mb-4 border border-border">
               <Monitor className="w-5 h-5" />
             </div>
-            <h3 className="text-lg font-bold text-foreground">
+            <h3 className="text-lg font-semibold text-foreground">
               Gestión de Vendedores
             </h3>
             <p className="text-muted-foreground text-xs mt-2 leading-relaxed">
@@ -136,12 +136,12 @@ export function CardsGeo() {
             {["JD", "AN", "SR"].map((init, i) => (
               <div
                 key={i}
-                className={`w-8 h-8 rounded-full border-2 border-card flex items-center justify-center text-[10px] font-bold ${i === 0 ? "bg-blue-100 text-blue-600" : i === 1 ? "bg-emerald-100 text-emerald-600" : "bg-amber-100 text-amber-600"}`}
+                className={`w-8 h-8 rounded-full border-2 border-card flex items-center justify-center text-[10px] font-semibold ${i === 0 ? "bg-blue-100 text-blue-600" : i === 1 ? "bg-emerald-100 text-emerald-600" : "bg-amber-100 text-amber-600"}`}
               >
                 {init}
               </div>
             ))}
-            <div className="w-8 h-8 rounded-full border-2 border-card bg-muted flex items-center justify-center text-[10px] font-bold text-muted-foreground">
+            <div className="w-8 h-8 rounded-full border-2 border-card bg-muted flex items-center justify-center text-[10px] font-semibold text-muted-foreground">
               +5
             </div>
           </div>
@@ -155,7 +155,7 @@ export function CardsGeo() {
           <div className="flex-1 z-10 space-y-4 md:space-y-6">
             <div className="flex items-center gap-3">
               <Radio className="w-5 h-5 md:w-6 md:h-6 text-amber-400" />
-              <h3 className="text-xl md:text-2xl font-bold">
+              <h3 className="text-xl md:text-2xl font-semibold">
                 Rastreo en <br className="hidden md:block" />
                 Tiempo Real
               </h3>
@@ -176,7 +176,7 @@ export function CardsGeo() {
                   className="bg-white/10 backdrop-blur-md rounded-xl p-2 md:p-3 flex flex-col gap-1 border border-white/5 hover:bg-white/20 transition-colors"
                 >
                   <tag.icon className="w-4 h-4 text-amber-400" />
-                  <span className="text-[10px] font-bold">{tag.label}</span>
+                  <span className="text-[10px] font-semibold">{tag.label}</span>
                 </div>
               ))}
             </div>
@@ -185,9 +185,9 @@ export function CardsGeo() {
             <div className="absolute inset-0 bg-[url('/api/placeholder/400/400')] bg-cover opacity-20 rounded-2xl dark:invert" />
             <div className="relative z-10 flex flex-col items-center">
               <div className="w-10 h-10 md:w-12 md:h-12 bg-amber-400 rounded-full flex items-center justify-center text-blue-900 shadow-lg shadow-amber-400/20">
-                <span className="font-black text-lg md:text-xl italic">A</span>
+                <span className="font-semibold text-lg md:text-xl italic">A</span>
               </div>
-              <div className="mt-2 bg-blue-900/80 backdrop-blur-sm px-3 py-1 rounded-full text-[9px] md:text-[10px] font-black tracking-widest uppercase">
+              <div className="mt-2 bg-blue-900/80 backdrop-blur-sm px-3 py-1 rounded-full text-[9px] md:text-[10px] font-semibold tracking-widest uppercase">
                 Rastreo Activo
               </div>
             </div>
@@ -200,7 +200,7 @@ export function CardsGeo() {
         {/* Trayectoria Histórica */}
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <History className="w-5 h-5 text-[var(--ai-icon-color)] mb-4" />
-          <h4 className="font-bold text-foreground text-sm">
+          <h4 className="font-semibold text-foreground text-sm">
             Trayectoria Histórica
           </h4>
           <p className="text-muted-foreground text-[10px] mt-1">
@@ -218,7 +218,7 @@ export function CardsGeo() {
         {/* Paradas de Distribución */}
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <Navigation className="w-5 h-5 text-[var(--ai-icon-color)] mb-4" />
-          <h4 className="font-bold text-foreground text-sm">
+          <h4 className="font-semibold text-foreground text-sm">
             Paradas de Distribución
           </h4>
           <div className="mt-4 space-y-2">
@@ -229,7 +229,7 @@ export function CardsGeo() {
             ].map((st, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className={`w-2 h-2 rounded-full ${st.color}`} />
-                <span className="text-[10px] font-bold text-muted-foreground">
+                <span className="text-[10px] font-semibold text-muted-foreground">
                   {st.label}
                 </span>
               </div>
@@ -240,8 +240,8 @@ export function CardsGeo() {
         {/* Paradas Vacías */}
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <AlertCircle className="w-5 h-5 text-destructive mb-4" />
-          <h4 className="font-bold text-foreground text-sm">Paradas Vacías</h4>
-          <div className="mt-4 bg-destructive/10 text-destructive p-2 rounded-lg text-[9px] font-bold leading-tight border border-destructive/20">
+          <h4 className="font-semibold text-foreground text-sm">Paradas Vacías</h4>
+          <div className="mt-4 bg-destructive/10 text-destructive p-2 rounded-lg text-[9px] font-semibold leading-tight border border-destructive/20">
             Sin registro • Desvíos • Tiempos excesivos
           </div>
         </div>
@@ -249,7 +249,7 @@ export function CardsGeo() {
         {/* Mapas de Calor */}
         <div className="bg-card rounded-2xl md:rounded-3xl p-6 shadow-sm border border-border">
           <MapIcon className="w-5 h-5 text-indigo-500 mb-4" />
-          <h4 className="font-bold text-foreground text-sm">Mapas de Calor</h4>
+          <h4 className="font-semibold text-foreground text-sm">Mapas de Calor</h4>
           <p className="text-muted-foreground text-[10px] mt-1">
             Densidad de servicios.
           </p>
@@ -287,7 +287,7 @@ export function MetricCard({
     <Card className="border-border shadow-sm rounded-2xl bg-card transition-all hover:shadow-md">
       <CardContent className="p-6 md:p-7">
         <div className="flex items-center justify-between mb-5">
-          <span className="text-[10px] md:text-[11px] font-bold text-muted-foreground uppercase tracking-widest">
+          <span className="text-[10px] md:text-[11px] font-semibold text-muted-foreground uppercase tracking-widest">
             {title}
           </span>
           <div className={`${iconColor} bg-muted rounded-full p-2.5`}>
@@ -296,7 +296,7 @@ export function MetricCard({
         </div>
 
         <div className="flex items-baseline gap-3 flex-wrap">
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tighter text-foreground">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tighter text-foreground">
             {value}
           </h2>
           <span className={`${textColor} text-[10px] md:text-xs font-semibold`}>
@@ -338,7 +338,7 @@ export function Monitoreo() {
     <section className="py-16 md:py-24 px-6 md:px-10 font-sans bg-background">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="flex flex-col items-center gap-2">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center text-[hsl(200,50%,15%)] dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-center text-[hsl(200,50%,15%)] dark:text-white">
             Panel de monitoreo{" "}
             <span className="light-text-gradient">en vivo</span>
           </h2>
@@ -368,7 +368,7 @@ function BenefitCard({ icon: Icon, title, description }: BenefitCardProps) {
         <div className="w-10 h-10 bg-muted rounded-xl flex items-center justify-center text-[var(--ai-icon-color)] border border-border">
           <Icon className="w-5 h-5" />
         </div>
-        <h4 className="text-lg font-bold text-[hsl(200,50%,15%)] dark:text-white tracking-tight leading-snug">
+        <h4 className="text-lg font-semibold text-[hsl(200,50%,15%)] dark:text-white tracking-tight leading-snug">
           {title}
         </h4>
         <p className="text-muted-foreground text-xs leading-relaxed">
@@ -393,7 +393,7 @@ function ResultItem({ value, text, color }: ResultItemProps) {
         className={`w-3 h-3 flex-shrink-0 rounded-full ${color} animate-pulse`}
       />
       <p className="text-xs md:text-sm text-white leading-relaxed">
-        <span className="font-bold text-white/95">{value}</span> {text}
+        <span className="font-semibold text-white/95">{value}</span> {text}
       </p>
     </div>
   );
@@ -455,11 +455,11 @@ export function Beneficios() {
         <div className="text-center md:text-left space-y-3">
           <div className="flex items-center gap-2">
             <div className="h-0.5 w-6 bg-[var(--ai-icon-color)] rounded-full" />
-            <span className="text-xs font-bold text-[var(--ai-icon-color)] uppercase tracking-widest">
+            <span className="text-xs font-semibold text-[var(--ai-icon-color)] uppercase tracking-widest">
               Resultados comprobados
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-[hsl(200,50%,15%)] dark:text-white leading-[1.15]">
+          <h2 className="text-3xl md:text-5xl font-semibold tracking-tight text-[hsl(200,50%,15%)] dark:text-white leading-[1.15]">
             Beneficios que{" "}
             <span className="light-text-gradient">transforman</span>{" "}
             <br className="hidden md:block" />
@@ -481,10 +481,10 @@ export function Beneficios() {
         >
           {/* Lado Izquierdo: Textos y Gráfico Mockup */}
           <div className="flex-1 space-y-6 z-10">
-            <span className="text-[10px] font-extrabold text-blue-100 uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full backdrop-blur-md">
+            <span className="text-[10px] font-semibold text-blue-100 uppercase tracking-widest bg-white/10 px-3 py-1 rounded-full backdrop-blur-md">
               Resultados reales con Geoldrix
             </span>
-            <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight leading-tight">
+            <h3 className="text-2xl md:text-3xl font-semibold text-white tracking-tight leading-tight">
               Nuestros clientes han experimentado mejoras significativas
             </h3>
             <p className="text-blue-100/90 text-sm leading-relaxed max-w-lg">

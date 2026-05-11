@@ -54,7 +54,7 @@ export function CookiesSection() {
                     Artículo 3
                   </p>
                   <h3
-                    className="text-lg font-bold leading-tight"
+                    className="text-lg font-semibold leading-tight"
                     style={{ color: "var(--foreground)" }}
                   >
                     Políticas de Cookies
@@ -176,7 +176,7 @@ export function CookiesSection() {
               {/* Stats */}
               <div className="text-center">
                 <p
-                  className="text-2xl font-extrabold"
+                  className="text-2xl font-semibold"
                   style={{ color: "var(--ai-icon-color)" }}
                 >
                   100%
@@ -251,7 +251,7 @@ export function CookiesSection() {
                     Artículo 4
                   </p>
                   <h3
-                    className="text-lg font-bold leading-tight"
+                    className="text-lg font-semibold leading-tight"
                     style={{ color: "var(--foreground)" }}
                   >
                     Políticas de Enlaces
@@ -338,7 +338,7 @@ export function CookiesSection() {
 
               <div className="text-center">
                 <p
-                  className="text-2xl font-extrabold"
+                  className="text-2xl font-semibold"
                   style={{ color: "var(--ai-icon-color)" }}
                 >
                   Verificados

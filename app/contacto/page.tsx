@@ -45,11 +45,11 @@ export function Ubicacion() {
         {/* Etiqueta + Título */}
         <div className="flex items-center gap-3 mb-4">
           <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
-          <span className="text-xs font-bold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+          <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
             Ubícanos
           </span>
         </div>
-        <h2 className="text-4xl font-bold text-foreground mb-10">
+        <h2 className="text-4xl font-semibold text-foreground mb-10">
           ¿Cómo llegar a <span className="light-text-gradient mb-2 pb-2 inline-block">iDrix</span>?
         </h2>
 
@@ -64,7 +64,7 @@ export function Ubicacion() {
               >
                 {/* Header */}
                 <div className="flex items-center justify-between">
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+                  <span className="text-[10px] font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
                     {s.tipo}
                   </span>
                   <span className="w-2 h-2 rounded-full bg-green-400" />

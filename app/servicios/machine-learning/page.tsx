@@ -77,7 +77,7 @@ export function QueEsMachineLearning() {
             Machine Learning · IDRIX Technology
           </p>
           <h2
-            className="text-2xl md:text-3xl font-bold leading-snug"
+            className="text-2xl md:text-3xl font-semibold leading-snug"
             style={{ color: "hsl(210,100%,96%)" }}
           >
             Sistemas que aprenden solos, decisiones que impulsan tu negocio
@@ -95,7 +95,7 @@ export function QueEsMachineLearning() {
                   style={{ background: "hsl(210,80%,62%)" }}
                 />
                 <p className="text-sm leading-relaxed" style={{ color: "hsl(210,30%,78%)" }}>
-                  <span className="font-bold" style={{ color: "hsl(210,100%,92%)" }}>
+                  <span className="font-semibold" style={{ color: "hsl(210,100%,92%)" }}>
                     {bold}
                   </span>{" "}
                   — {desc}
@@ -108,7 +108,7 @@ export function QueEsMachineLearning() {
         {/* Derecha */}
         <div className="flex flex-col gap-8 pt-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[hsl(220,75%,40%)] dark:text-[hsl(210,80%,72%)]">
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4 text-[hsl(220,75%,40%)] dark:text-[hsl(210,80%,72%)]">
               ¿Qué es el Machine Learning?
             </h2>
             <p className="text-sm leading-relaxed text-[hsl(215,15%,40%)] dark:text-muted-foreground">
@@ -191,7 +191,7 @@ export function EcosistemaInteligente() {
   return (
     <section className="bg-[var(--hero-bg)] py-20 px-4 transition-colors duration-500">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
           El ecosistema de la{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
             Inteligencia
@@ -221,7 +221,7 @@ export function EcosistemaInteligente() {
               {tag}
             </span>
             <h3
-              className={`text-2xl font-black ${featured ? "text-white" : "text-[hsl(220,30%,18%)] dark:text-white"}`}
+              className={`text-2xl font-semibold ${featured ? "text-white" : "text-[hsl(220,30%,18%)] dark:text-white"}`}
             >
               {abbr}
             </h3>
@@ -277,7 +277,7 @@ export function Algoritmos() {
       style={{ background: "var(--info-bg)" }}
     >
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
           Algoritmos{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
             Estrategicos
@@ -306,7 +306,7 @@ export function Algoritmos() {
             <div className="flex flex-col gap-1 pb-1">
               <div className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[hsl(207,76%,55%)] shrink-0" />
-                <p className="text-sm font-bold text-white">{title}</p>
+                <p className="text-sm font-semibold text-white">{title}</p>
               </div>
               <p className="text-xs leading-relaxed text-[hsl(210,30%,65%)] pl-4">{desc}</p>
             </div>
@@ -342,7 +342,7 @@ export function ProcesamientoDigital() {
   return (
     <section className="bg-[var(--hero-bg)] py-20 px-4 transition-colors duration-500">
       <div className="text-center mb-14">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-4">
           Procesamiento Digital de{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
             Imagenes
@@ -377,7 +377,7 @@ export function ProcesamientoDigital() {
                   <path d={icon} />
                 </svg>
               </div>
-              <h3 className="text-base font-bold text-[hsl(207,76%,42%)] dark:text-[hsl(210,80%,72%)]">
+              <h3 className="text-base font-semibold text-[hsl(207,76%,42%)] dark:text-[hsl(210,80%,72%)]">
                 {title}
               </h3>
               <p className="text-sm leading-relaxed text-[hsl(215,15%,40%)] dark:text-muted-foreground">
@@ -422,7 +422,7 @@ export function ExtarccionCaracteristicas() {
       style={{ background: "var(--info-bg)" }}
     >
       <div className="text-center mb-14">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-3">
           Extracción de{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
             Características
@@ -441,13 +441,13 @@ export function ExtarccionCaracteristicas() {
           >
             {/* Header */}
             <div className="flex items-center justify-between">
-              <span className="text-2xl font-black text-[hsl(210,50%,50%)]">{number}</span>
-              <span className="text-[10px] font-bold tracking-widest px-3 py-1 rounded-full bg-[hsl(210,70%,20%)] text-[hsl(195,85%,65%)]">
+              <span className="text-2xl font-semibold text-[hsl(210,50%,50%)]">{number}</span>
+              <span className="text-[10px] font-semibold tracking-widest px-3 py-1 rounded-full bg-[hsl(210,70%,20%)] text-[hsl(195,85%,65%)]">
                 {tag}
               </span>
             </div>
             {/* Abbr + desc */}
-            <h3 className="text-2xl font-black text-white">{abbr}</h3>
+            <h3 className="text-2xl font-semibold text-white">{abbr}</h3>
             <p className="text-xs leading-relaxed text-[hsl(210,30%,65%)]">{desc}</p>
             {/* Image */}
             <div className="relative w-full aspect-video rounded-xl overflow-hidden bg-[hsl(220,60%,8%)] mt-auto">

@@ -17,11 +17,11 @@ export function InventarioTiempoReal() {
       
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16 md:mb-24">
-          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-semibold tracking-widest uppercase">
             <RefreshCw className="w-4 h-4 animate-spin-slow" />
             Live Inventory Updates
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-[hsl(200,50%,15%)] dark:text-white">
+          <h2 className="text-4xl md:text-6xl font-semibold tracking-tight text-[hsl(200,50%,15%)] dark:text-white">
             Inventario en <span className="light-text-gradient">Tiempo Real</span>
           </h2>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -39,12 +39,12 @@ export function InventarioTiempoReal() {
                 <div className="flex flex-col gap-1">
                   <div className="flex items-center gap-2">
                      <item.icon size={16} className={item.percent < 40 ? "text-amber-500" : "text-emerald-500"} />
-                     <span className="font-bold text-lg tracking-tight">{item.label}</span>
+                     <span className="font-semibold text-lg tracking-tight">{item.label}</span>
                   </div>
-                  <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Stock Actual</span>
+                  <span className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">Stock Actual</span>
                 </div>
                 <div
-                  className={`text-4xl font-black font-mono tabular-nums tracking-tighter ${
+                  className={`text-4xl font-semibold font-mono tabular-nums tracking-tighter ${
                     item.percent < 30 ? "text-red-500" : item.percent < 60 ? "text-amber-500" : "text-emerald-500"
                   }`}
                 >
@@ -61,7 +61,7 @@ export function InventarioTiempoReal() {
                     <div className="absolute inset-0 bg-white/20 animate-pulse" />
                   </div>
                 </div>
-                <div className="flex justify-between text-[10px] font-black uppercase tracking-widest text-muted-foreground">
+                <div className="flex justify-between text-[10px] font-semibold uppercase tracking-widest text-muted-foreground">
                   <span>Crítico</span>
                   <span>Óptimo</span>
                 </div>
@@ -74,7 +74,7 @@ export function InventarioTiempoReal() {
                  ) : (
                    <AlertCircle size={14} className="text-amber-500" />
                  )}
-                 <span className="text-[10px] font-bold text-muted-foreground uppercase">
+                 <span className="text-[10px] font-semibold text-muted-foreground uppercase">
                     {item.percent > 50 ? "Nivel de stock saludable" : "Reposición recomendada"}
                  </span>
               </div>

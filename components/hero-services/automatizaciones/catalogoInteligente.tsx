@@ -6,12 +6,12 @@ export function CatalogoInteligente() {
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="order-2 lg:order-1 space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 text-purple-600 dark:text-purple-400 text-xs font-semibold tracking-widest uppercase">
               <Sparkles className="w-4 h-4 animate-pulse" />
               AI-Driven Conversion
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight text-[hsl(200,50%,15%)] dark:text-white">
+            <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight text-[hsl(200,50%,15%)] dark:text-white">
               Catálogo <br />
               <span className="light-text-gradient">Inteligente</span>
             </h2>
@@ -30,7 +30,7 @@ export function CatalogoInteligente() {
                        <item.icon size={18} />
                     </div>
                     <div>
-                       <div className="text-sm font-bold uppercase tracking-tight">{item.label}</div>
+                       <div className="text-sm font-semibold uppercase tracking-tight">{item.label}</div>
                        <div className="text-xs text-muted-foreground">{item.desc}</div>
                     </div>
                  </div>
@@ -49,8 +49,8 @@ export function CatalogoInteligente() {
                   <Sparkles className="w-24 h-24 mx-auto text-purple-500 relative z-10 animate-bounce-slow" />
                 </div>
                 <div className="space-y-2">
-                  <div className="text-3xl font-black tracking-tight text-[hsl(200,50%,15%)] dark:text-white">El producto correcto</div>
-                  <div className="text-xl font-bold text-muted-foreground italic">en el momento preciso</div>
+                  <div className="text-3xl font-semibold tracking-tight text-[hsl(200,50%,15%)] dark:text-white">El producto correcto</div>
+                  <div className="text-xl font-semibold text-muted-foreground italic">en el momento preciso</div>
                 </div>
                 
                 {/* Floating elements inside the visual */}

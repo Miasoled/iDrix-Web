@@ -153,7 +153,7 @@ export default function EquipoTrabajo() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-foreground mb-4">
             Equipo de trabajo en{" "}
             <span className="light-text-gradient">Idrix Technologies</span>
           </h2>
@@ -184,7 +184,7 @@ export default function EquipoTrabajo() {
 
                 {/* Nombre */}
                 <div className="ml-36">
-                  <h3 className="text-white text-xl font-bold tracking-wide">
+                  <h3 className="text-white text-xl font-semibold tracking-wide">
                     {member.name}
                   </h3>
                 </div>

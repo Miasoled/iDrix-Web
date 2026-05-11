@@ -90,7 +90,7 @@ export function InfoMovil() {
           </div>
 
           {/* Título */}
-          <h2 className="text-4xl font-bold leading-tight text-foreground mb-6">
+          <h2 className="text-4xl font-semibold leading-tight text-foreground mb-6">
             Tu empresa necesita <br />
             <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
               adaptarse e innovar
@@ -222,7 +222,7 @@ export function TiposMovil() {
 
               {/* Título */}
               <h3
-                className={`text-2xl font-bold leading-tight -mt-3
+                className={`text-2xl font-semibold leading-tight -mt-3
                   ${tipo.featured ? "text-white" : "text-foreground"}`}
               >
                 {tipo.titulo}
@@ -331,7 +331,7 @@ export function StackMovil() {
         </div>
 
         {/* Título */}
-        <h2 className="text-4xl font-bold text-foreground mb-10">
+        <h2 className="text-4xl font-semibold text-foreground mb-10">
           Tecnologías que{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent ">
             potencian
@@ -348,7 +348,7 @@ export function StackMovil() {
             >
               {/* Badge */}
               <span
-                className={`absolute top-5 right-5 text-[10px] font-bold tracking-widest px-2.5 py-1 rounded-full ${tech.badgeColor}`}
+                className={`absolute top-5 right-5 text-[10px] font-semibold tracking-widest px-2.5 py-1 rounded-full ${tech.badgeColor}`}
               >
                 {tech.badge}
               </span>
@@ -356,11 +356,11 @@ export function StackMovil() {
               {/* Icono + Título */}
               <div className="flex items-center gap-4">
                 <div
-                  className={`w-14 h-14 rounded-xl flex items-center justify-center font-bold text-lg ${tech.iconBg} ${tech.iconColor}`}
+                  className={`w-14 h-14 rounded-xl flex items-center justify-center font-semibold text-lg ${tech.iconBg} ${tech.iconColor}`}
                 >
                   {tech.siglas}
                 </div>
-                <h3 className="text-xl font-bold text-foreground">{tech.titulo}</h3>
+                <h3 className="text-xl font-semibold text-foreground">{tech.titulo}</h3>
               </div>
 
               {/* Descripción */}
@@ -439,7 +439,7 @@ export function DiferenciasMovil() {
         </div>
 
         {/* Título */}
-        <h2 className="text-4xl font-bold text-foreground mb-10">
+        <h2 className="text-4xl font-semibold text-foreground mb-10">
           Lo que nos hace{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
             diferentes
@@ -454,7 +454,7 @@ export function DiferenciasMovil() {
               className="relative rounded-2xl p-6 flex flex-col gap-4 bg-white border border-[hsl(210,20%,90%)] shadow-sm transition-all duration-300 hover:shadow-md hover:border-[hsl(207,76%,65%)] dark:bg-white/5 dark:border-white/10 dark:hover:border-[hsl(207,76%,45%)] overflow-hidden"
             >
               {/* Número decorativo de fondo */}
-              <span className="absolute bottom-3 right-4 text-7xl font-black select-none leading-none pointer-events-none text-black/5 dark:text-white/5">
+              <span className="absolute bottom-3 right-4 text-7xl font-semibold select-none leading-none pointer-events-none text-black/5 dark:text-white/5">
                 {item.numero}
               </span>
 
@@ -464,7 +464,7 @@ export function DiferenciasMovil() {
               </div>
 
               {/* Título */}
-              <h3 className="text-base font-bold text-foreground">{item.titulo}</h3>
+              <h3 className="text-base font-semibold text-foreground">{item.titulo}</h3>
 
               {/* Descripción */}
               <p className="text-sm text-muted-foreground leading-relaxed">{item.descripcion}</p>
@@ -484,7 +484,7 @@ export function CtaMovil() {
         <div className="rounded-3xl bg-[hsl(217,60%,20%)] dark:bg-[hsl(217,60%,15%)] p-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Columna izquierda */}
           <div>
-            <h2 className="text-3xl font-bold text-white mb-4 leading-tight">
+            <h2 className="text-3xl font-semibold text-white mb-4 leading-tight">
               Soluciones personalizadas &amp; escalables
             </h2>
             <p className="text-white/65 text-sm leading-relaxed">
@@ -498,7 +498,7 @@ export function CtaMovil() {
           <div className="flex items-center justify-center lg:justify-end gap-0">
             {/* Stat 1 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">100+</span>
+              <span className="text-4xl font-semibold text-[hsl(207,76%,60%)]">100+</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Proyectos
               </span>
@@ -509,7 +509,7 @@ export function CtaMovil() {
 
             {/* Stat 2 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">7+</span>
+              <span className="text-4xl font-semibold text-[hsl(207,76%,60%)]">7+</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Años Exp.
               </span>
@@ -520,7 +520,7 @@ export function CtaMovil() {
 
             {/* Stat 3 */}
             <div className="flex flex-col items-center px-10">
-              <span className="text-4xl font-bold text-[hsl(207,76%,60%)]">4</span>
+              <span className="text-4xl font-semibold text-[hsl(207,76%,60%)]">4</span>
               <span className="text-[10px] tracking-widest uppercase text-white/50 mt-1">
                 Ciudades
               </span>
@@ -532,7 +532,7 @@ export function CtaMovil() {
         <div className="rounded-3xl bg-white border border-[hsl(210,20%,90%)] dark:bg-white/5 dark:border-white/10 p-8 flex flex-col lg:flex-row items-center justify-between gap-6">
           {/* Texto */}
           <div>
-            <h3 className="text-xl font-bold text-foreground mb-1">
+            <h3 className="text-xl font-semibold text-foreground mb-1">
               ¿Listo para dar el salto al futuro?
             </h3>
             <p className="text-sm text-muted-foreground">

@@ -94,10 +94,10 @@ export function Politicas() {
   return (
     <section className="w-full px-4 py-16 md:px-8 lg:px-16 bg-[hsl(210,40%,96%)] dark:bg-[hsl(215,50%,8%)]">
       <div className="mb-10">
-        <p className="text-xs font-bold tracking-[0.2em] uppercase text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,60%)] mb-1">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,60%)] mb-1">
           Marco legal y ético
         </p>
-        <h2 className="text-3xl font-black text-foreground tracking-wide uppercase mb-2">
+        <h2 className="text-3xl font-semibold text-foreground tracking-wide uppercase mb-2">
           Misión & Visión
         </h2>
         <div
@@ -114,7 +114,7 @@ export function Politicas() {
             <FileText size={120} strokeWidth={0.8} className="text-white" />
           </div>
           <Badge icon={FileText} label="Términos y Condiciones" dark />
-          <h3 className="mt-4 mb-3 text-lg font-bold text-white">
+          <h3 className="mt-4 mb-3 text-lg font-semibold text-white">
             Uso del contenido y servicios de iDrix Technology S.A.
           </h3>
           <p className="text-sm leading-relaxed text-white/65 max-w-sm">
@@ -131,11 +131,11 @@ export function Politicas() {
             etapa de nuestros servicios.
           </p>
           <div className="border-t border-border dark:border-white/10 pt-5 flex items-center gap-4">
-            <span className="text-4xl font-black text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,65%)]">
+            <span className="text-4xl font-semibold text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,65%)]">
               100 %
             </span>
             <div className="w-px h-8 bg-border dark:bg-white/10" />
-            <span className="text-2xl font-bold text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,65%)]">
+            <span className="text-2xl font-semibold text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,65%)]">
               Confiable
             </span>
           </div>
@@ -149,7 +149,7 @@ export function Politicas() {
             className="bg-white dark:bg-white/5 border-border dark:border-[hsl(207,68%,60%)]/30 flex flex-col gap-3"
           >
             <Badge icon={icon} label={badge} />
-            <h4 className="text-base font-bold text-foreground">{title}</h4>
+            <h4 className="text-base font-semibold text-foreground">{title}</h4>
             <p className="text-sm leading-relaxed text-muted-foreground flex-1">
               {desc}
             </p>

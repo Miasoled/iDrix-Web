@@ -49,7 +49,7 @@ export function MisionVision() {
       <div className="max-w-6xl mx-auto">
         {/* Título */}
         <div className="mb-10">
-          <h2 className="text-3xl font-black text-foreground tracking-wide uppercase mb-2">
+          <h2 className="text-3xl font-semibold text-foreground tracking-wide uppercase mb-2">
             Misión & Visión
           </h2>
           <div
@@ -98,7 +98,7 @@ export function MisionVision() {
               <div className="absolute rounded-full w-72 h-72 right-0 top-4 z-10 bg-white border-12 border-white dark:bg-[hsl(215,50%,12%)] dark:border-[hsl(215,50%,8%)] flex flex-col items-center justify-center text-center px-6">
                 <div className="absolute inset-2 rounded-full border border-gray-300 dark:border-white/10 pointer-events-none" />
                 <div className="relative z-20">
-                  <p className="text-lg font-bold text-[hsl(217,60%,20%)] dark:text-white mb-2">
+                  <p className="text-lg font-semibold text-[hsl(217,60%,20%)] dark:text-white mb-2">
                     Visión
                   </p>
                   <p className="text-sm text-gray-500 dark:text-white/60 leading-relaxed">
@@ -138,7 +138,7 @@ export function MisionVision() {
               >
                 <div className="absolute inset-2 rounded-full pointer-events-none" />
                 <div className="relative z-20">
-                  <p className="text-lg font-bold text-white mb-2">Misión</p>
+                  <p className="text-lg font-semibold text-white mb-2">Misión</p>
                   <p className="text-sm text-white/80 leading-relaxed">
                     Impulsar el crecimiento de empresas y emprendedores mediante
                     software a medida que transforme ideas en soluciones

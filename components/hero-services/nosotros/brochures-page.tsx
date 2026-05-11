@@ -240,7 +240,7 @@ export function BrochuresPage() {
             </span>
           </div>
 
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-foreground">
             Líderes en{" "}
             <span className="light-text-gradient">Transformación Digital</span>
           </h2>
@@ -290,7 +290,7 @@ export function BrochuresPage() {
                   />
                 </div>
                 <p
-                  className="text-sm font-bold mb-1.5"
+                  className="text-sm font-semibold mb-1.5"
                   style={{ color: "var(--foreground)" }}
                 >
                   {title}
@@ -387,7 +387,7 @@ export function BrochuresPage() {
                         </div>
                         <div>
                           <p
-                            className="text-base font-bold leading-tight"
+                            className="text-base font-semibold leading-tight"
                             style={{ color: "var(--foreground)" }}
                           >
                             {title}
@@ -405,7 +405,7 @@ export function BrochuresPage() {
                       <div className="flex items-center gap-1.5">
                         <span className="text-xl">{flag}</span>
                         <span
-                          className="text-[11px] font-bold px-2 py-0.5 rounded-md"
+                          className="text-[11px] font-semibold px-2 py-0.5 rounded-md"
                           style={{
                             background: "var(--ai-icon-bg)",
                             color: "var(--ai-icon-color)",

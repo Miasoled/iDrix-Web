@@ -200,7 +200,7 @@ export function HeroNosotros() {
             >
               <span className="text-blue-400 flex-shrink-0">{stat.icon}</span>
               <span className="flex flex-col leading-tight">
-                <span className="text-sm font-bold text-gray-800 dark:text-white">
+                <span className="text-sm font-semibold text-gray-800 dark:text-white">
                   {stat.value}
                 </span>
                 <span className="text-[10px] font-medium tracking-widest text-gray-400 uppercase">
@@ -251,7 +251,7 @@ export function HeroNosotros() {
                     {/* subtle top glow for dark mode */}
                     <div className="pointer-events-none absolute inset-x-0 top-0 h-px rounded-t-2xl bg-gradient-to-r from-transparent via-blue-400/40 to-transparent dark:via-blue-400/60" />
 
-                    <h3 className="mb-4 text-base font-bold text-blue-500 dark:text-blue-400">
+                    <h3 className="mb-4 text-base font-semibold text-blue-500 dark:text-blue-400">
                       {card.title}
                     </h3>
                     <p className="text-sm leading-relaxed text-gray-500 dark:text-slate-400">

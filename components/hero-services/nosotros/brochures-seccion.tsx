@@ -40,7 +40,7 @@ export function BrochuresSection() {
               </span>
             </div>
             <h2
-              className="text-2xl md:text-3xl font-extrabold tracking-tight"
+              className="text-2xl md:text-3xl font-semibold tracking-tight"
               style={{ color: "var(--foreground)" }}
             >
               Nuestros{" "}
@@ -108,7 +108,7 @@ export function BrochuresSection() {
               {/* Text */}
               <div className="flex-1 min-w-0">
                 <p
-                  className="text-sm font-bold leading-tight"
+                  className="text-sm font-semibold leading-tight"
                   style={{ color: "var(--foreground)" }}
                 >
                   {title}
@@ -125,7 +125,7 @@ export function BrochuresSection() {
               <div className="flex items-center gap-1.5 shrink-0">
                 <span className="text-lg">{flag}</span>
                 <span
-                  className="text-[11px] font-bold px-2 py-0.5 rounded-md"
+                  className="text-[11px] font-semibold px-2 py-0.5 rounded-md"
                   style={{
                     background: "var(--ai-icon-bg)",
                     color: "var(--ai-icon-color)",

@@ -209,13 +209,13 @@ function TimelineItem({
         {/* Title + number */}
         <div className="flex items-start justify-between gap-3 mb-3">
           <h3
-            className="text-base md:text-lg font-bold leading-snug"
+            className="text-base md:text-lg font-semibold leading-snug"
             style={{ color: "var(--foreground)" }}
           >
             {item.title}
           </h3>
           <span
-            className="shrink-0 text-2xl font-black tabular-nums leading-none select-none"
+            className="shrink-0 text-2xl font-semibold tabular-nums leading-none select-none"
             style={{ color: "var(--ai-icon-color)", opacity: 0.13 }}
           >
             {String(item.id).padStart(2, "0")}

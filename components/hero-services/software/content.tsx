@@ -55,9 +55,11 @@ export function WhyChooseUs() {
           ¿POR QUÉ ELEGIRNOS?
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold text-foreground max-w-3xl mx-auto mb-6">
-          ¿Por qué elegir nuestro servicio de desarrollo de software a la
-          medida?
+        <h2 className="text-3xl md:text-4xl font-semibold text-foreground max-w-3xl mx-auto mb-6">
+          ¿Por qué elegir nuestro servicio de
+          <span className="light-text-gradient mb-2 pb-2 inline-block">
+            desarrollo de software a la medida?
+          </span>
         </h2>
 
         <p className="text-muted-foreground max-w-2xl mx-auto mb-12">
@@ -137,10 +139,12 @@ export function CustomSoftwareSection() {
             SOFTWARE A MEDIDA
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 leading-tight text-foreground">
+          <h2 className="text-3xl md:text-4xl font-semibold mb-6 md:mb-8 leading-tight text-foreground">
             Aprovecha al máximo el <br className="hidden md:block" />
             potencial de tu{" "}
-            <span className="text-[var(--ai-icon-color)]">sistema</span>
+            <span className="light-text-gradient mb-2 pb-2 inline-block">
+              sistema
+            </span>
           </h2>
 
           <p className="text-muted-foreground mb-8 md:mb-10 leading-relaxed text-sm md:text-base">
@@ -232,9 +236,11 @@ export function AgileMethodologies() {
             FRAMEWORKS DE TRABAJO
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
             Nuestras Metodologías{" "}
-            <span className="text-[var(--ai-icon-color)]">Ágiles</span>
+            <span className="light-text-gradient mb-2 pb-2 inline-block">
+              Ágiles
+            </span>
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto mt-4 text-sm md:text-base">
@@ -275,7 +281,7 @@ export function AgileMethodologies() {
             );
           })}
 
-          <div className="rounded-2xl p-8 bg-primary text-primary-foreground flex flex-col justify-center">
+          <div className="rounded-2xl p-8 bg-[var(--ai-icon-color)] text-primary-foreground flex flex-col justify-center">
             <h3 className="text-lg font-semibold mb-3">
               ¿Necesitas una estrategia a medida?
             </h3>

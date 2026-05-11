@@ -58,7 +58,10 @@ export function ErpFeatures() {
         {/* Title */}
         <div className="text-center mb-10 md:mb-14">
           <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-3">
-            Todo lo que tu empresa necesita
+            Todo lo que tu empresa{" "}
+            <span className="light-text-gradient mb-2 pb-2 inline-block">
+              necesita
+            </span>
           </h2>
 
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm">
@@ -183,8 +186,11 @@ export function MobilitySection() {
         {/* Lado Izquierdo: Texto y Card Horizontal */}
         <div className="space-y-8">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-              Gestión Comercial y Movilidad
+            <h2 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
+              Gestión Comercial{" "}
+              <span className="light-text-gradient mb-2 pb-2 inline-block">
+                y Movilidad
+              </span>
             </h2>
             <p className="text-muted-foreground leading-relaxed max-w-md">
               Lleva tu oficina en el bolsillo. iDrix potencia a tu equipo de
@@ -200,7 +206,7 @@ export function MobilitySection() {
                 style={{ backgroundColor: "oklch(0.6 0.118 184.704)" }}
               />
               <div>
-                <h3 className="font-bold text-foreground mb-2">
+                <h3 className="font-semibold text-foreground mb-2">
                   Clientes geolocalizados
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
@@ -221,7 +227,7 @@ export function MobilitySection() {
                 <div className="flex gap-3">
                   <div className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
                   <div>
-                    <h4 className="font-bold text-[13px] text-foreground mb-1">
+                    <h4 className="font-semibold text-[13px] text-foreground mb-1">
                       Rutas inteligentes
                     </h4>
                     <p className="text-[11px] text-muted-foreground leading-tight">
@@ -235,7 +241,7 @@ export function MobilitySection() {
                 <div className="flex gap-3">
                   <div className="mt-1 h-2 w-2 rounded-full bg-primary shrink-0" />
                   <div>
-                    <h4 className="font-bold text-[13px] text-foreground mb-1">
+                    <h4 className="font-semibold text-[13px] text-foreground mb-1">
                       App para vendedores
                     </h4>
                     <p className="text-[11px] text-muted-foreground leading-tight">
@@ -279,7 +285,10 @@ export function BiSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-12 md:mb-16 space-y-3">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#1e3a5f]">
-            Business Intelligence para el Futuro
+            Business Intelligence{" "}
+            <span className="light-text-gradient mb-2 pb-2 inline-block">
+              para el Futuro
+            </span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-sm leading-relaxed">
             Toma el control total de tu empresa con análisis de datos avanzado.
@@ -303,7 +312,10 @@ export function BiSection() {
         <div className="space-y-10 md:space-y-12">
           <div className="text-center">
             <h3 className="text-xl md:text-2xl font-semibold text-[#1e3a5f]">
-              Beneficios de elegir iDrix
+              Beneficios de elegir{" "}
+              <span className="light-text-gradient mb-2 pb-2 inline-block">
+                iDrix
+              </span>
             </h3>
           </div>
 
@@ -321,7 +333,7 @@ export function BiSection() {
 
                   {benefit.value && (
                     <span
-                      className={`text-3xl md:text-4xl font-extrabold mb-1.5 ${benefit.highlight ? "text-primary" : "text-foreground"}`}
+                      className={`text-3xl md:text-4xl font-semibold mb-1.5 ${benefit.highlight ? "text-primary" : "text-foreground"}`}
                     >
                       {benefit.value}
                     </span>
@@ -357,7 +369,7 @@ export function IdrixErpBanner() {
         />
 
         <div className="relative z-10 space-y-6 md:space-y-8">
-          <h2 className="text-2xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-white tracking-tight">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-semibold leading-tight text-white tracking-tight">
             Transforma la gestión de tu empresa con iDrix ERP
           </h2>
 
@@ -367,7 +379,7 @@ export function IdrixErpBanner() {
           </p>
 
           <div className="pt-4">
-            <button className="bg-primary text-primary-foreground font-bold py-3.5 px-8 md:py-4 md:px-10 rounded-full text-base md:text-lg shadow-lg hover:opacity-90 transition-all active:scale-95 cursor-pointer">
+            <button className="bg-primary text-primary-foreground font-semibold py-3.5 px-8 md:py-4 md:px-10 rounded-full text-base md:text-lg shadow-lg hover:opacity-90 transition-all active:scale-95 cursor-pointer">
               Agendar demostración
             </button>
           </div>

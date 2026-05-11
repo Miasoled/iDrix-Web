@@ -40,7 +40,7 @@ export function AISection() {
     >
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-white/80 mb-4 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-semibold text-white/80 mb-4 leading-tight">
             Inteligencia Artificial en iDrix Contable
           </h2>
           <p className="text-white/50 text-base md:text-lg leading-relaxed max-w-xl mx-auto">
@@ -112,7 +112,7 @@ export function RealAnalisis() {
     <section className="py-20 px-8 xl:px-16 bg-background">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         <div>
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+          <h2 className="text-4xl md:text-5xl font-semibold leading-tight mb-5">
             <span className="light-text-gradient dark:from-[hsl(207,76%,60%)] dark:to-[hsl(200,80%,70%)] dark:bg-clip-text dark:text-transparent">
               Análisis en Tiempo Real
             </span>
@@ -244,7 +244,7 @@ export function PotenciaInteligente() {
     <section className="py-20 px-8 xl:px-16">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-14">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-semibold text-foreground mb-4">
             Potencia{" "}
             <span className="light-text-gradient  dark:from-[hsl(207,76%,60%)] dark:to-[hsl(200,80%,70%)] dark:bg-clip-text dark:text-transparent">
               Inteligente
@@ -334,7 +334,7 @@ export function CardsIA() {
                 >
                   {tag}
                 </p>
-                <h3 className="text-2xl font-bold text-white mb-3">{title}</h3>
+                <h3 className="text-2xl font-semibold text-white mb-3">{title}</h3>
                 <p className="text-sm text-white/65 leading-relaxed max-w-sm">
                   {desc}
                 </p>

@@ -77,7 +77,9 @@ function ProjectCard({ project }: { project: Project }) {
 
       {/* texto */}
       <div className="absolute bottom-4 left-4 text-white">
-        {project.subtitle && <p className="text-sm opacity-80">{project.subtitle}</p>}
+        {project.subtitle && (
+          <p className="text-sm opacity-80">{project.subtitle}</p>
+        )}
         <h3 className="text-lg font-semibold">{project.title}</h3>
       </div>
     </div>
@@ -92,11 +94,16 @@ export function PortafolioInformativo() {
   return (
     <section className="px-6 lg:px-20 py-16">
       <div className="mb-10">
-        <h2 className="text-3xl font-semibold">Webs informativas</h2>
+        <h2 className="text-3xl font-semibold">
+          Webs{" "}
+          <span className="light-text-gradient mb-2 pb-2 inline-block">
+            informativas
+          </span>
+        </h2>
 
         <p className="text-muted-foreground mt-2 max-w-xl">
-          Desarrollamos proyectos a medida según la naturaleza de su negocio y sus objetivos
-          comerciales.
+          Desarrollamos proyectos a medida según la naturaleza de su negocio y
+          sus objetivos comerciales.
         </p>
 
         <a className="text-chart-3 text-sm font-medium mt-2 inline-block hover:underline ">
@@ -124,8 +131,8 @@ export function PortafolioEcommerce() {
         <h2 className="text-3xl font-semibold">Ecommerce</h2>
 
         <p className="text-muted-foreground mt-2 max-w-xl">
-          Desarrollamos proyectos a medida según la naturaleza de su negocio y sus objetivos
-          comerciales.
+          Desarrollamos proyectos a medida según la naturaleza de su negocio y
+          sus objetivos comerciales.
         </p>
 
         <a className="text-chart-3 text-sm font-medium mt-2 inline-block hover:underline">

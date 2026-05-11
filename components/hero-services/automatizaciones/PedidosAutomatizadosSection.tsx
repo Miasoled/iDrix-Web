@@ -8,12 +8,12 @@ export function PedidosAutomatizadosSection() {
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           {/* Lado izquierdo - Texto */}
           <div className="lg:w-1/2 space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-semibold tracking-widest uppercase">
               <Zap className="w-4 h-4" />
               Real-time Integration
             </div>
 
-            <h2 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] text-[hsl(200,50%,15%)] dark:text-white">
+            <h2 className="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.1] text-[hsl(200,50%,15%)] dark:text-white">
               Pedidos <br />
               <span className="light-text-gradient">Automatizados</span>
             </h2>
@@ -31,12 +31,12 @@ export function PedidosAutomatizadosSection() {
             
             <div className="grid grid-cols-2 gap-6 pt-4">
               <div className="space-y-2">
-                 <div className="text-2xl font-bold text-[hsl(207,76%,45%)]">0.5s</div>
-                 <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Latencia de Sync</p>
+                 <div className="text-2xl font-semibold text-[hsl(207,76%,45%)]">0.5s</div>
+                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">Latencia de Sync</p>
               </div>
               <div className="space-y-2">
-                 <div className="text-2xl font-bold text-[hsl(207,76%,45%)]">100%</div>
-                 <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Precisión de Datos</p>
+                 <div className="text-2xl font-semibold text-[hsl(207,76%,45%)]">100%</div>
+                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest">Precisión de Datos</p>
               </div>
             </div>
           </div>
@@ -54,8 +54,8 @@ export function PedidosAutomatizadosSection() {
                     <ShoppingBag className="w-7 h-7 text-blue-500" />
                   </div>
                   <div className="text-center">
-                    <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-tighter">Frontend</div>
-                    <div className="text-xs font-bold">Shopify</div>
+                    <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-tighter">Frontend</div>
+                    <div className="text-xs font-semibold">Shopify</div>
                   </div>
                 </div>
 
@@ -64,7 +64,7 @@ export function PedidosAutomatizadosSection() {
                     <div className="absolute inset-0 bg-blue-500 blur-md opacity-20 animate-pulse" />
                     <Zap className="w-10 h-10 text-blue-500 relative z-10" />
                   </div>
-                  <div className="text-[10px] font-mono font-black text-blue-500 mt-2 tracking-[4px] uppercase animate-pulse">
+                  <div className="text-[10px] font-mono font-semibold text-blue-500 mt-2 tracking-[4px] uppercase animate-pulse">
                     Syncing
                   </div>
                 </div>
@@ -74,8 +74,8 @@ export function PedidosAutomatizadosSection() {
                     <Database className="w-7 h-7 text-purple-500" />
                   </div>
                   <div className="text-center">
-                    <div className="text-[10px] font-bold text-muted-foreground uppercase tracking-tighter">Backend</div>
-                    <div className="text-xs font-bold">Idrix ERP</div>
+                    <div className="text-[10px] font-semibold text-muted-foreground uppercase tracking-tighter">Backend</div>
+                    <div className="text-xs font-semibold">Idrix ERP</div>
                   </div>
                 </div>
               </div>
@@ -92,10 +92,10 @@ export function PedidosAutomatizadosSection() {
                        <Terminal size={14} />
                     </div>
                     <div className="flex-1">
-                      <div className="text-xs font-bold">Pedido #{pedido.id}</div>
+                      <div className="text-xs font-semibold">Pedido #{pedido.id}</div>
                       <div className="text-[10px] text-muted-foreground">{pedido.val}</div>
                     </div>
-                    <div className={`text-[10px] font-bold px-2 py-1 rounded-full ${pedido.status === "Done" ? "bg-emerald-500/10 text-emerald-500" : "bg-blue-500/10 text-blue-500 animate-pulse"}`}>
+                    <div className={`text-[10px] font-semibold px-2 py-1 rounded-full ${pedido.status === "Done" ? "bg-emerald-500/10 text-emerald-500" : "bg-blue-500/10 text-blue-500 animate-pulse"}`}>
                       {pedido.status}
                     </div>
                   </div>

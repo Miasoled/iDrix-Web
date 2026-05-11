@@ -59,10 +59,9 @@ export function Testimonios() {
 
               {/* Contenido */}
               <div className="p-5 flex flex-col gap-2">
-                <h3 className="text-base font-bold text-foreground">
+                <h3 className="text-base font-semibold text-foreground">
                   {t.empresa}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                </h3>                <p className="text-sm text-muted-foreground leading-relaxed">
                   {t.descripcion}
                 </p>
               </div>

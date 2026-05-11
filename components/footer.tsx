@@ -13,7 +13,7 @@ export default function FooterIdrix() {
             {/* Logo + Descripción */}
             <div className="md:col-span-5">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center text-white font-semibold text-xl">
                   i
                 </div>
                 <span className="text-2xl font-semibold tracking-tight">iDrix</span>

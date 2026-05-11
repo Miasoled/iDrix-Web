@@ -55,7 +55,7 @@ export function IntelectualSection() {
             </span>
           </div>
           <h2
-            className="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight"
+            className="text-3xl md:text-4xl font-semibold tracking-tight leading-tight"
             style={{ color: "var(--foreground)" }}
           >
             Propiedad{" "}
@@ -132,13 +132,13 @@ export function IntelectualSection() {
                 >
                   <div className="flex items-start justify-between gap-4 mb-4">
                     <h3
-                      className="text-base font-bold leading-snug"
+                      className="text-base font-semibold leading-snug"
                       style={{ color: "var(--foreground)" }}
                     >
                       {title}
                     </h3>
                     <span
-                      className="shrink-0 text-3xl font-black tabular-nums leading-none select-none"
+                      className="shrink-0 text-3xl font-semibold tabular-nums leading-none select-none"
                       style={{ color: "var(--ai-icon-color)", opacity: 0.15 }}
                     >
                       {number}

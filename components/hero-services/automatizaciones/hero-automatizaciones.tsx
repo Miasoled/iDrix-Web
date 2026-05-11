@@ -131,8 +131,8 @@ export function AutomatizacionesHero() {
                   <Zap className="w-5 h-5" />
                 </div>
                 <div className="text-left">
-                   <h4 className="text-sm font-bold">E-commerce Flow</h4>
-                   <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-bold">Smart Sync</p>
+                   <h4 className="text-sm font-semibold">E-commerce Flow</h4>
+                   <p className="text-[10px] text-muted-foreground uppercase tracking-widest font-semibold">Smart Sync</p>
                 </div>
               </div>
               <ul className="space-y-2 text-left">
@@ -161,7 +161,7 @@ export function AutomatizacionesHero() {
               <div className={`p-3 rounded-2xl bg-white/50 dark:bg-white/5 border border-white/20 shadow-sm transition-all group-hover:scale-110`}>
                 <feature.icon className={`w-6 h-6 ${feature.color}`} />
               </div>
-              <span className="font-bold text-[hsl(200,50%,15%)] dark:text-white/90 tracking-tight">
+              <span className="font-semibold text-[hsl(200,50%,15%)] dark:text-white/90 tracking-tight">
                 {feature.label}
               </span>
             </div>
@@ -178,7 +178,7 @@ export function AutomatizacionesCards() {
       <div className="w-full max-w-6xl">
         <div className="w-full mb-12 flex items-center gap-3">
           <div className="h-1 w-12 bg-[var(--ai-icon-color)] rounded-full"></div>
-          <span className="text-[var(--ai-icon-color)] font-bold uppercase tracking-widest text-sm">
+          <span className="text-[var(--ai-icon-color)] font-semibold uppercase tracking-widest text-sm">
             Soluciones de Automatización
           </span>
         </div>
@@ -219,7 +219,7 @@ export function AutomatizacionesCards() {
               </div>
               
               <CardHeader className="p-0 mb-4">
-                <CardTitle className="text-xl font-bold leading-tight group-hover:text-[hsl(207,76%,45%)] transition-colors">
+                <CardTitle className="text-xl font-semibold leading-tight group-hover:text-[hsl(207,76%,45%)] transition-colors">
                   {item.title}
                 </CardTitle>
               </CardHeader>

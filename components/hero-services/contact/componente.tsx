@@ -19,18 +19,18 @@ export function Formulario() {
           <div className="rounded-2xl p-6 bg-white border dark:border-[hsl(207,68%,60%)] dark:shadow-[0_0_25px_rgba(28,126,201,0.4)] dark:bg-white/5">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
-              <span className="text-xs font-bold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+              <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
                 Horario de atención
               </span>
             </div>
             <div className="flex gap-4">
               <div className="flex-1 rounded-xl p-4 bg-[hsl(210,40%,96%)] backdrop-blur dark:bg-white/5 ">
                 <p className="text-xs text-muted-foreground">LUNES – VIERNES</p>
-                <p className="font-bold text-foreground">08:30 – 18:00</p>
+                <p className="font-semibold text-foreground">08:30 – 18:00</p>
               </div>
               <div className="flex-1 rounded-xl p-4 bg-[hsl(210,40%,96%)] dark:bg-white/5">
                 <p className="text-xs text-muted-foreground">SÁBADOS</p>
-                <p className="font-bold text-foreground">09:00 – 18:00</p>
+                <p className="font-semibold text-foreground">09:00 – 18:00</p>
               </div>
             </div>
           </div>
@@ -39,7 +39,7 @@ export function Formulario() {
           <div className="rounded-2xl p-6 bg-[hsl(217,60%,18%)] flex-1">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[hsl(207,76%,55%)] rounded-full" />
-              <span className="text-xs font-bold tracking-widest uppercase text-[hsl(207,76%,55%)]">
+              <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,55%)]">
                 Contacto Directo
               </span>
             </div>
@@ -83,7 +83,7 @@ export function Formulario() {
           <div className="rounded-2xl p-6  bg-white border dark:border-[hsl(207,68%,60%)] dark:shadow-[0_0_25px_rgba(28,126,201,0.4)] dark:bg-white/5 ">
             <div className="flex items-center gap-3 mb-5">
               <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
-              <span className="text-xs font-bold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+              <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
                 Síguenos en
               </span>
             </div>
@@ -106,7 +106,7 @@ export function Formulario() {
           <p className="text-xs text-white/50 uppercase tracking-widest mb-2">
             Formulario de contacto
           </p>
-          <h3 className="text-4xl font-bold light-text-gradient dark:bg-gradient-to-r dark:from-[hsl(207,76%,60%)] dark:to-[hsl(200,80%,70%)] dark:bg-clip-text dark:text-transparent mb-2">
+          <h3 className="text-4xl font-semibold light-text-gradient dark:bg-gradient-to-r dark:from-[hsl(207,76%,60%)] dark:to-[hsl(200,80%,70%)] dark:bg-clip-text dark:text-transparent mb-2">
             Cuéntanos tu idea
           </h3>
           <p className="text-sm text-white/60 mb-6">

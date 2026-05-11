@@ -91,10 +91,10 @@ export function Valores() {
     <section className="w-full px-4 py-16 md:px-8 lg:px-16 bg-white dark:bg-[hsl(215,50%,8%)] transition-colors duration-500">
       {/* Header */}
       <div className="mb-10">
-        <p className="text-xs font-bold tracking-[0.2em] uppercase text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,60%)] mb-1">
+        <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[hsl(207,76%,45%)] dark:text-[hsl(207,68%,60%)] mb-1">
           Reflejando
         </p>
-        <h2 className="text-4xl font-black tracking-tight text-foreground mb-2">
+        <h2 className="text-4xl font-semibold tracking-tight text-foreground mb-2">
           NUESTROS <span className="light-text-gradient">VALORES</span>
         </h2>
         <div
@@ -117,11 +117,11 @@ export function Valores() {
                 className="bg-white dark:bg-white/5 border-border dark:border-[hsl(207,68%,60%)]/20 flex-1 relative"
               >
                 <IconBadge icon={icon} />
-                <h3 className="text-lg font-bold text-foreground">{title}</h3>
+                <h3 className="text-lg font-semibold text-foreground">{title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground flex-1">
                   {desc}
                 </p>
-                <span className="text-4xl font-black text-border dark:text-white/10 self-end leading-none">
+                <span className="text-4xl font-semibold text-border dark:text-white/10 self-end leading-none">
                   {num}
                 </span>
               </Card>
@@ -132,7 +132,7 @@ export function Valores() {
         <Card className="row-span-2 bg-[hsl(215,60%,22%)] dark:bg-[hsl(215,55%,14%)] border-[hsl(215,60%,30%)] dark:border-[hsl(207,68%,60%)]/30 justify-between shadow-xl">
           <div>
             <IconBadge icon={BookOpen} dark />
-            <h3 className="mt-4 mb-4 text-2xl font-bold text-white">
+            <h3 className="mt-4 mb-4 text-2xl font-semibold text-white">
               Conocimiento
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-white/65">
@@ -150,12 +150,12 @@ export function Valores() {
                 ["100+", "proyectos"],
               ].map(([num, label]) => (
                 <div key={label}>
-                  <p className="text-xl font-black text-white">{num}</p>
+                  <p className="text-xl font-semibold text-white">{num}</p>
                   <p className="text-xs text-white/50">{label}</p>
                 </div>
               ))}
             </div>
-            <span className="absolute bottom-5 right-6 text-4xl font-black text-white/10 leading-none">
+            <span className="absolute bottom-5 right-6 text-4xl font-semibold text-white/10 leading-none">
               2
             </span>
           </div>
@@ -171,11 +171,11 @@ export function Valores() {
                 className="bg-white dark:bg-white/5 border-border dark:border-[hsl(207,68%,60%)]/20 flex-1 relative"
               >
                 <IconBadge icon={icon} />
-                <h3 className="text-lg font-bold text-foreground">{title}</h3>
+                <h3 className="text-lg font-semibold text-foreground">{title}</h3>
                 <p className="text-sm leading-relaxed text-muted-foreground flex-1">
                   {desc}
                 </p>
-                <span className="text-4xl font-black text-border dark:text-white/10 self-end leading-none">
+                <span className="text-4xl font-semibold text-border dark:text-white/10 self-end leading-none">
                   {num}
                 </span>
               </Card>

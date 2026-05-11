@@ -41,7 +41,7 @@ export default function HeroPrivacidad() {
         </div>
 
         {/* Heading */}
-        <h1 className="mb-6 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:text-5xl lg:text-6xl">
+        <h1 className="mb-6 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-[hsl(200,50%,15%)] transition-all dark:bg-gradient-to-b dark:from-white dark:to-white/70 dark:bg-clip-text dark:text-transparent dark:drop-shadow-[0_0_25px_rgba(28,126,201,0.5)] md:text-5xl lg:text-6xl">
           Políticas y Protección <br className="hidden sm:block" />
           <span className="light-text-gradient inline-block">de Datos</span>
         </h1>
@@ -85,7 +85,7 @@ export default function HeroPrivacidad() {
                 {item.icon}
               </div>
               <div className="flex flex-col text-left leading-tight">
-                <span className="text-sm font-bold text-gray-800 dark:text-white">
+                <span className="text-sm font-semibold text-gray-800 dark:text-white">
                   {item.title}
                 </span>
                 <span className="text-[11px] text-gray-500 dark:text-slate-400">

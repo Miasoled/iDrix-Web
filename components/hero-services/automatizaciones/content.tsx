@@ -42,11 +42,11 @@ export function AutomationWorkflow() {
     <section className="py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-widest uppercase mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-semibold tracking-widest uppercase mb-4">
             <Cpu className="w-4 h-4" />
             Operational Excellence
           </div>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-[hsl(200,50%,15%)] dark:text-white mb-6">
+          <h2 className="text-4xl md:text-6xl font-semibold tracking-tight text-[hsl(200,50%,15%)] dark:text-white mb-6">
              El Camino hacia la <span className="light-text-gradient">Eficiencia</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -65,11 +65,11 @@ export function AutomationWorkflow() {
                 <step.icon className={`w-10 h-10 text-${step.color}-500`} />
                 
                 {/* Step number badge */}
-                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[hsl(207,76%,45%)] text-white text-xs font-black flex items-center justify-center shadow-lg">
+                <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-[hsl(207,76%,45%)] text-white text-xs font-semibold flex items-center justify-center shadow-lg">
                    {index + 1}
                 </div>
               </div>
-              <h3 className="text-xl font-bold mb-4 tracking-tight">{step.title}</h3>
+              <h3 className="text-xl font-semibold mb-4 tracking-tight">{step.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed font-medium">
                 {step.desc}
               </p>
@@ -92,11 +92,11 @@ export function IntegrationsSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-bold tracking-widest uppercase">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-xs font-semibold tracking-widest uppercase">
               <Layers className="w-4 h-4" />
               Connected Ecosystem
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[hsl(200,50%,15%)] dark:text-white leading-[1.1]">
+            <h2 className="text-4xl md:text-5xl font-semibold tracking-tight text-[hsl(200,50%,15%)] dark:text-white leading-[1.1]">
               Conectamos tu negocio <br />
               <span className="light-text-gradient">con el mundo</span>
             </h2>
@@ -107,7 +107,7 @@ export function IntegrationsSection() {
               {platforms.map((p) => (
                 <div key={p} className="flex items-center gap-3 p-3 rounded-xl bg-white dark:bg-white/5 border border-border/50 shadow-sm transition-all hover:border-[hsl(207,76%,45%)] group">
                   <div className="w-2 h-2 rounded-full bg-blue-500 transition-all group-hover:scale-150" />
-                  <span className="text-sm font-bold tracking-tight">{p}</span>
+                  <span className="text-sm font-semibold tracking-tight">{p}</span>
                 </div>
               ))}
             </div>
@@ -166,7 +166,7 @@ export function WhyAutomate() {
                 <b.icon size={36} />
               </div>
               <div>
-                <h3 className="text-3xl font-black mb-6 tracking-tighter text-[hsl(200,50%,15%)] dark:text-white">{b.title}</h3>
+                <h3 className="text-3xl font-semibold mb-6 tracking-tighter text-[hsl(200,50%,15%)] dark:text-white">{b.title}</h3>
                 <p className="text-lg text-muted-foreground leading-relaxed italic font-medium">
                   &quot;{b.desc}&quot;
                 </p>

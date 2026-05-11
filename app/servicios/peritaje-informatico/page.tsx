@@ -68,7 +68,7 @@ export function GarantiaPeritaje() {
       <div className="max-w-6xl mx-auto">
         {/* Título centrado */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground mb-3">
+          <h2 className="text-3xl font-semibold text-foreground mb-3">
             Garantía y Acreditación Oficial
           </h2>
           <p className="text-muted-foreground text-base max-w-xl mx-auto leading-relaxed">
@@ -100,7 +100,7 @@ export function GarantiaPeritaje() {
               </span>
 
               {/* Título */}
-              <h3 className="text-lg font-bold text-foreground -mt-2">
+              <h3 className="text-lg font-semibold text-foreground -mt-2">
                 {item.titulo}
               </h3>
             </div>
@@ -147,7 +147,7 @@ export function ServiciosPeritaje() {
     >
       <div className="max-w-6xl mx-auto">
         <div className="p-6 ">
-          <h2 className="text-3xl font-bold text-foreground mb-3 ">
+          <h2 className="text-3xl font-semibold text-foreground mb-3 ">
             Nuestros Servicios{" "}
             <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
               Especializado
@@ -175,7 +175,7 @@ export function ServiciosPeritaje() {
                   className="text-[hsl(207,76%,45%)]"
                 />
               </div>
-              <h3 className="text-2xl font-bold text-foreground -mt-2">
+              <h3 className="text-2xl font-semibold text-foreground -mt-2">
                 {item.titulo}
               </h3>
               <span className="text-accent text-muted-foreground">
@@ -222,7 +222,7 @@ export function ProcesoPeritaje() {
     <section className="bg-[var(--hero-bg)] py-20 px-4 transition-colors duration-500">
       {/* Header */}
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[hsl(220,30%,18%)] dark:text-white">
+        <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-[hsl(220,30%,18%)] dark:text-white">
           Proceso de{" "}
           <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
             Investigación
@@ -262,7 +262,7 @@ export function ProcesoPeritaje() {
             </div>
             {/* Text */}
             <div>
-              <p className="text-sm font-bold text-[hsl(220,30%,18%)] dark:text-white mb-1">
+              <p className="text-sm font-semibold text-[hsl(220,30%,18%)] dark:text-white mb-1">
                 {title}
               </p>
               <p className="text-xs leading-relaxed text-[hsl(215,15%,45%)] dark:text-muted-foreground">
@@ -308,7 +308,7 @@ const Check = () => (
 export function Judicial() {
   return (
     <section className="bg-background flex flex-col justify-center items-center py-16  transition-colors duration-500">
-      <h2 className="text-3xl md:text-4xl font-bold mb-3 text-[hsl(220,30%,18%)] dark:text-white py-4">
+      <h2 className="text-3xl md:text-4xl font-semibold mb-3 text-[hsl(220,30%,18%)] dark:text-white py-4">
         Casos de Uso{" "}
         <span className="light-text-gradient dark:bg-gradient-to-r dark:from-white dark:via-[hsl(200,80%,80%)] dark:to-[hsl(207,76%,60%)] dark:bg-clip-text dark:text-transparent">
           Legales y Evidencia
@@ -321,7 +321,7 @@ export function Judicial() {
             <li key={title} className="flex gap-3 py-5">
               <Check />
               <div>
-                <p className="text-sm font-bold text-[hsl(220,40%,15%)] dark:text-white mb-1">
+                <p className="text-sm font-semibold text-[hsl(220,40%,15%)] dark:text-white mb-1">
                   {title}
                 </p>
                 <p className="text-sm leading-relaxed text-[hsl(215,15%,45%)] dark:text-muted-foreground">

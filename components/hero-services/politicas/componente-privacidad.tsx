@@ -42,7 +42,7 @@ export function PrivacidadSection() {
         </div>
 
         <h2
-          className="text-3xl md:text-4xl font-extrabold tracking-tight mb-3"
+          className="text-3xl md:text-4xl font-semibold tracking-tight mb-3"
           style={{ color: "var(--foreground)" }}
         >
           Marco de{" "}
@@ -116,7 +116,7 @@ export function PrivacidadSection() {
 
                 {/* Title */}
                 <h3
-                  className="text-base font-bold mb-3 leading-snug"
+                  className="text-base font-semibold mb-3 leading-snug"
                   style={{ color: "var(--foreground)" }}
                 >
                   {title}

@@ -128,7 +128,7 @@ export function Investigacion() {
         {/* Etiqueta */}
         <div className="flex items-center gap-3 mb-6">
           <div className="w-8 h-[2px] bg-[hsl(207,76%,45%)] rounded-full" />
-          <span className="text-xs font-bold tracking-widest uppercase text-[hsl(207,76%,45%)]">
+          <span className="text-xs font-semibold tracking-widest uppercase text-[hsl(207,76%,45%)]">
             Innovación Constante
           </span>
         </div>
@@ -179,12 +179,12 @@ export function Investigacion() {
                         {a.fecha}
                       </span>
                       <span
-                        className={`text-[10px] font-bold px-2.5 py-1 rounded-full ${badgeColors[a.categoria] ?? "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)]"}`}
+                        className={`text-[10px] font-semibold px-2.5 py-1 rounded-full ${badgeColors[a.categoria] ?? "text-[hsl(207,76%,45%)] bg-[hsl(207,76%,93%)]"}`}
                       >
                         {a.categoria}
                       </span>
                     </div>
-                    <h3 className="text-base font-bold text-foreground leading-snug">
+                    <h3 className="text-base font-semibold text-foreground leading-snug">
                       {a.titulo}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">
@@ -207,7 +207,7 @@ export function Investigacion() {
             {/* Artículos recientes */}
             <div className="rounded-2xl p-5 bg-white border border-[hsl(210,20%,90%)] shadow-sm dark:bg-white/5 dark:border-white/10">
               <div className="flex items-center gap-2 border-l-4 border-[hsl(207,76%,45%)] pl-3 mb-5">
-                <h3 className="text-base font-bold text-foreground">
+                <h3 className="text-base font-semibold text-foreground">
                   Artículos Recientes
                 </h3>
               </div>
@@ -244,7 +244,7 @@ export function Investigacion() {
             {/* Categorías */}
             <div className="rounded-2xl p-5 bg-white border border-[hsl(210,20%,90%)] shadow-sm dark:bg-white/5 dark:border-white/10">
               <div className="flex items-center gap-2 border-l-4 border-[hsl(207,76%,45%)] pl-3 mb-5">
-                <h3 className="text-base font-bold text-foreground">
+                <h3 className="text-base font-semibold text-foreground">
                   Categorías
                 </h3>
               </div>

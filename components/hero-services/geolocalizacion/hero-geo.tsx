@@ -200,16 +200,16 @@ export default function HeroGeo() {
                   <User className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-sm md:text-base font-bold text-foreground">
+                  <h4 className="text-sm md:text-base font-semibold text-foreground">
                     Vendedor Quito
                   </h4>
-                  <p className="text-[9px] md:text-[10px] text-muted-foreground font-extrabold uppercase tracking-widest">
+                  <p className="text-[9px] md:text-[10px] text-muted-foreground font-semibold uppercase tracking-widest">
                     En ruta • Amazonas
                   </p>
                 </div>
               </div>
               <div className="space-y-2 md:space-y-3">
-                <div className="flex justify-between text-[10px] md:text-[11px] font-bold text-muted-foreground">
+                <div className="flex justify-between text-[10px] md:text-[11px] font-semibold text-muted-foreground">
                   <span>Progreso Visitas</span>
                   <span className="text-[hsl(207,76%,45%)] bg-muted px-2 rounded-md">
                     8/10
@@ -228,16 +228,16 @@ export default function HeroGeo() {
                   <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-sm md:text-base font-bold text-foreground">
+                  <h4 className="text-sm md:text-base font-semibold text-foreground">
                     Vendedor GYE
                   </h4>
-                  <p className="text-[9px] md:text-[10px] text-muted-foreground font-extrabold uppercase tracking-widest">
+                  <p className="text-[9px] md:text-[10px] text-muted-foreground font-semibold uppercase tracking-widest">
                     Completado • Malecón
                   </p>
                 </div>
               </div>
               <div className="space-y-2 md:space-y-3">
-                <div className="flex justify-between text-[10px] md:text-[11px] font-bold text-muted-foreground">
+                <div className="flex justify-between text-[10px] md:text-[11px] font-semibold text-muted-foreground">
                   <span>Progreso Visitas</span>
                   <span className="text-emerald-500 bg-muted px-2 rounded-md">
                     12/15
@@ -287,7 +287,7 @@ export default function HeroGeo() {
               >
                 <feature.icon className="w-5 h-5 md:w-6 md:h-6" />
               </div>
-              <span className="font-bold text-[hsl(200,50%,15%)] dark:text-white/90 tracking-tight text-sm md:text-base whitespace-nowrap">
+              <span className="font-semibold text-[hsl(200,50%,15%)] dark:text-white/90 tracking-tight text-sm md:text-base whitespace-nowrap">
                 {feature.label}
               </span>
             </div>

@@ -88,7 +88,7 @@ export default function HeroIA() {
                   PREDICCIÓN
                 </span>
                 <div className="flex items-baseline gap-1 mb-3">
-                  <span className="text-6xl sm:text-7xl font-black text-white">
+                  <span className="text-6xl sm:text-7xl font-semibold text-white">
                     +24.5%
                   </span>
                   <span className="text-xl font-semibold text-white/80">

@@ -152,7 +152,7 @@ export function CloudCards() {
         {/* Encabezado superior azul */}
         <div className="w-full mb-8 flex items-center gap-2">
           <div className="h-1 w-10 bg-[var(--ai-icon-color)] rounded-full"></div>
-          <span className="text-[var(--ai-icon-color)] font-bold uppercase tracking-wider text-sm">
+          <span className="text-[var(--ai-icon-color)] font-semibold uppercase tracking-wider text-sm">
             Computación en la nube
           </span>
         </div>
@@ -163,13 +163,13 @@ export function CloudCards() {
             <Card className="h-full shadow-lg rounded-2xl bg-card p-6">
               <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
                 <CloudIcon className="w-4 h-4 text-muted-foreground" />
-                <span className="text-xs font-bold text-foreground">
+                <span className="text-xs font-semibold text-foreground">
                   Computación en la nube
                 </span>
               </div>
 
               <CardHeader className="p-0 mb-6">
-                <CardTitle className="text-2xl font-bold text-card-foreground leading-tight">
+                <CardTitle className="text-2xl font-semibold text-card-foreground leading-tight">
                   Computación en la nube como servicio
                 </CardTitle>
               </CardHeader>
@@ -199,7 +199,7 @@ export function CloudCards() {
             <Card className="shadow-lg rounded-2xl bg-card p-6 flex-grow">
               <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
                 <CloudIcon className="w-4 h-4 text-muted-foreground" />
-                <span className="text-xs font-bold text-foreground">
+                <span className="text-xs font-semibold text-foreground">
                   Flexibilidad
                 </span>
               </div>
@@ -215,7 +215,7 @@ export function CloudCards() {
             <Card className="shadow-lg rounded-2xl bg-card p-6 flex-grow">
               <div className="inline-flex items-center gap-2 bg-muted px-3 py-1 rounded-full mb-6 border border-border">
                 <CloudIcon className="w-4 h-4 text-muted-foreground" />
-                <span className="text-xs font-bold text-foreground uppercase">
+                <span className="text-xs font-semibold text-foreground uppercase">
                   transformación
                 </span>
               </div>
@@ -258,7 +258,7 @@ export function CloudModels() {
         {/* Header */}
         <div className="flex flex-col items-center gap-3 mb-10  text-center">
           <h2
-            className="text-3xl md:text-4xl font-extrabold tracking-tight"
+            className="text-3xl md:text-4xl font-semibold tracking-tight"
             style={{ color: "var(--foreground)" }}
           >
             Soluciones <span className="light-text-gradient">a su Medida</span>
@@ -332,13 +332,13 @@ export function CloudModels() {
 
               {/* Title */}
               <h3
-                className="text-2xl font-extrabold mb-0.5"
+                className="text-2xl font-semibold mb-0.5"
                 style={{ color: "var(--foreground)" }}
               >
                 {item.title}
               </h3>
               <p
-                className="text-[10px] font-bold uppercase tracking-widest mb-3"
+                className="text-[10px] font-semibold uppercase tracking-widest mb-3"
                 style={{ color: "var(--muted-foreground)" }}
               >
                 {item.subtitle}
@@ -406,7 +406,7 @@ export function CloudTypes() {
         {/* Header */}
         <div className="flex flex-col items-center gap-3 mb-16 text-center">
           <h2
-            className="text-3xl md:text-4xl font-extrabold tracking-tight"
+            className="text-3xl md:text-4xl font-semibold tracking-tight"
             style={{ color: "var(--foreground)" }}
           >
             Tipos de{" "}
@@ -458,7 +458,7 @@ export function CloudTypes() {
                   />
                 </div>
                 <span
-                  className="text-4xl font-black tabular-nums select-none"
+                  className="text-4xl font-semibold tabular-nums select-none"
                   style={{ color: "var(--ai-icon-color)", opacity: 0.12 }}
                 >
                   0{i + 1}
@@ -468,7 +468,7 @@ export function CloudTypes() {
               {/* Text */}
               <div>
                 <h3
-                  className="text-base font-bold mb-2 leading-snug"
+                  className="text-base font-semibold mb-2 leading-snug"
                   style={{ color: "var(--foreground)" }}
                 >
                   {type.title}

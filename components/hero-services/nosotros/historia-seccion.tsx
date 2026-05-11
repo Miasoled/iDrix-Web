@@ -38,7 +38,7 @@ export function HistoriaSection() {
               </span>
             </div>
             <h2
-              className="text-2xl md:text-3xl font-extrabold tracking-tight"
+              className="text-2xl md:text-3xl font-semibold tracking-tight"
               style={{ color: "var(--foreground)" }}
             >
               Nuestra{" "}
@@ -107,7 +107,7 @@ export function HistoriaSection() {
               {/* Text */}
               <div className="flex-1 min-w-0">
                 <p
-                  className="text-sm font-bold leading-tight"
+                  className="text-sm font-semibold leading-tight"
                   style={{ color: "var(--foreground)" }}
                 >
                   {title}
